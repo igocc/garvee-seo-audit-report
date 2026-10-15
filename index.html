@@ -1,0 +1,2458 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="noindex,nofollow" name="robots"/><meta content="GARVEE 页面类型 SEO 审计、80 条完整标准与证据、SSR 判断及具体实施方案。" name="description"/><title>GARVEE SEO 审计与实施方案 · 2026-10-15</title><style>*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:#f5f5f1;color:#233236;font:16px/1.8 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}a{color:#126e69;text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#063f3b}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #d39b40;outline-offset:4px}.skip{position:absolute;left:-1000px}.skip:focus{left:20px;top:10px;background:white;padding:10px;z-index:10}.layout{display:grid;grid-template-columns:246px minmax(0,1fr);max-width:1520px;margin:auto}.sidebar{position:sticky;top:0;height:100dvh;padding:40px 24px;border-right:1px solid #dce2df;background:#edf0ed}.brand{font-size:24px;letter-spacing:1px;font-weight:780;color:#173e42}.edition{font-size:12px;color:#627875;margin:4px 0 30px}.sidebar nav{display:grid;gap:6px}.sidebar nav a{display:flex;gap:12px;padding:10px 6px;text-decoration:none;color:#405957;border-bottom:1px solid transparent;font-size:14px}.sidebar nav a span{color:#8a9d98;font:12px/2 monospace}.sidebar nav a:hover{border-color:#aac5bc;color:#126e69}.sidebar-foot{font-size:12px;color:#6c7d77;margin-top:36px}.sidebar button{margin-top:16px;padding:8px 12px;background:transparent;border:1px solid #b6c9c2;border-radius:4px;color:#264a43}.content{min-width:0;padding:0 54px 64px}.hero{padding:66px 0 36px;border-bottom:2px solid #193e43}.eyebrow{letter-spacing:2px;font-size:12px;font-weight:700;color:#55776c}.hero h1{font-size:clamp(32px,3.6vw,52px);line-height:1.25;letter-spacing:-1px;margin:18px 0 20px;color:#173e42;max-width:800px}.hero .deck{font-size:19px;max-width:760px;color:#536d68}.meta{font-size:13px;color:#71867f}.hero-line{display:flex;gap:10px 24px;flex-wrap:wrap;border-top:1px solid #dce2df;margin-top:24px;padding-top:16px;font-size:13px;color:#60776f}.chapter{position:relative;margin-top:64px;scroll-margin-top:24px}.chapter-num{font:14px/1.4 monospace;color:#8aa399;letter-spacing:2px;margin-bottom:10px}.chapter>h2{font-size:30px;line-height:1.35;margin:0 0 10px;color:#173e42}.chapter-intro{color:#6a7e76;margin:0 0 30px;padding-bottom:20px;border-bottom:1px solid #dce2df}.chapter h3{font-size:21px;line-height:1.5;color:#234e4c;margin:34px 0 14px}.chapter h4{font-size:15px;margin:18px 0 4px;color:#59716b}.chapter p{margin:12px 0}.chapter li{margin:7px 0}.lead-callout{padding:22px 24px;border-left:4px solid #227e72;background:#e9f0eb}.lead-callout strong{font-size:21px;color:#1c544b}.lead-callout p{margin:8px 0 0}.overview-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.overview-grid h3{font-size:18px}.status-strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #cbd8d0;border-bottom:1px solid #cbd8d0;margin:24px 0 8px}.status-strip>div{padding:20px 12px 20px 0}.status-strip b{display:block;font-size:34px;line-height:1.3;color:#244d47}.status-strip span{font-size:12px;color:#61796e}.caption{font-size:12px;color:#7c8a80}code{font-size:.88em;overflow-wrap:anywhere;background:#eaf0eb;padding:2px 4px;border-radius:3px}pre{background:#19363e;color:#e7f1eb;padding:20px;white-space:pre-wrap;overflow-wrap:anywhere;border-radius:4px;font-size:13px;line-height:1.7}pre code{background:none;padding:0;color:inherit}table{width:100%;border-collapse:collapse;margin:20px 0;font-size:13px;line-height:1.7}th,td{padding:12px 13px;border:1px solid #d5dfd7;text-align:left;vertical-align:top;overflow-wrap:anywhere}th{background:#e7eee8;color:#2e5048;font-weight:650}tbody tr:nth-child(even){background:#f9faf7}.table-wrap{overflow-x:auto;max-width:100%}.table-wrap table{min-width:620px}blockquote{margin:18px 0;padding:10px 18px;border-left:3px solid #b3c9bc;background:#edf1eb;color:#4a675b}.appendix{border-top:1px solid #cddbd1;margin:16px 0;padding-top:4px}.appendix>summary{padding:14px 4px;cursor:pointer;font-weight:650;color:#345b51}.appendix[open]{padding-bottom:20px}.appendix[open]>summary{margin-bottom:16px}.appendix h1{font-size:22px}.appendix h2{font-size:20px}.appendix h3{font-size:17px}.appendix p,.appendix li{font-size:14px}.appendix table{font-size:12px}.rule-legend{font-size:13px;color:#61766d}.rule-tools{position:sticky;top:0;z-index:2;background:#f5f5f1;border:1px solid #d2dfd4;padding:14px;display:flex;gap:12px;flex-wrap:wrap;align-items:end;margin:24px 0}.rule-tools[hidden]{display:none}.rule-tools label{font-size:11px;color:#667e71;display:grid;gap:5px}.rule-tools input,.rule-tools select{padding:8px 10px;background:#fff;border:1px solid #bdcec1;border-radius:3px;color:#314c40;font-size:13px}.rule-tools input{width:280px;max-width:100%}.rule-tools button{padding:8px 10px;border:1px solid #bdcec1;border-radius:3px;background:#e8f0e8;color:#345647;font-size:13px}.rule-tools>span{font-size:12px;color:#6a7e72;padding:8px 0}.rule-group>h3{font-size:17px;border-bottom:2px solid #c8d9cc;padding-bottom:12px}.rule{border-bottom:1px solid #d6e0d6}.rule>summary{display:grid;grid-template-columns:48px 1fr auto;gap:12px;align-items:start;cursor:pointer;padding:15px 0;list-style:none}.rule>summary::-webkit-details-marker{display:none}.rule-id{font:12px/1.8 monospace;color:#718a7a}.rule-title{font-size:14px;color:#2e4f40}.badge{font-size:11px;white-space:nowrap;padding:2px 7px;border:1px solid;border-radius:3px}.issue{color:#925430;background:#f8eee2;border-color:#e3c8a7}.partial{color:#527263;background:#eaf0e8;border-color:#c5d6c7}.method{color:#536b86;background:#edf0f6;border-color:#c8d2e0}.unknown{color:#79715d;background:#f1eee6;border-color:#ddd5c1}.rule-body{margin:0 0 22px 60px;padding:0 20px 20px;border-left:2px solid #bcd1bd;font-size:14px}.rule-grade{font-size:11px;letter-spacing:1px;color:#76907c}.rule-links{font-size:12px;color:#657d6c}.anchor{display:block;scroll-margin-top:24px}.source-list{padding-left:20px;line-height:1.7}.source-list li{padding:4px 0;font-size:12px;overflow-wrap:anywhere}.source-list span{font-family:monospace;color:#7f9686;margin-right:8px}footer{font-size:12px;color:#7a8a7c;border-top:1px solid #cad9cb;margin-top:64px;padding-top:24px}@media(max-width:1100px){.layout{grid-template-columns:210px 1fr}.sidebar{padding:30px 18px}.content{padding:0 30px 48px}}@media(max-width:800px){html{scroll-padding-top:0}.layout{display:block}.sidebar{position:static;height:auto;padding:20px;border-right:0;border-bottom:1px solid #dce2df}.sidebar .edition{margin-bottom:14px}.sidebar nav{display:flex;gap:16px;overflow-x:auto;white-space:nowrap}.sidebar nav a{padding:6px 0}.sidebar-foot,.sidebar button{display:none}.content{padding:0 20px 40px}.hero{padding-top:36px}.hero h1{font-size:34px}.hero .deck{font-size:17px}.chapter{margin-top:44px}.chapter>h2{font-size:26px}.overview-grid{grid-template-columns:1fr;gap:0}.status-strip{grid-template-columns:repeat(2,1fr)}.status-strip>div{padding:14px 4px}.status-strip b{font-size:28px}.rule>summary{grid-template-columns:40px 1fr;gap:6px}.badge{grid-column:2;justify-self:start}.rule-body{margin-left:42px;padding-left:12px}.rule-tools{position:static}.rule-tools input{width:100%}.rule-tools label:first-child{flex:1 0 100%}.table-wrap table{min-width:650px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{body{background:#fff;font-size:10pt}.layout{display:block}.sidebar,.rule-tools{display:none!important}.content{padding:0}.hero{padding-top:0}.hero h1{font-size:28pt}.chapter{page-break-before:always;margin-top:25px}.chapter>h2{font-size:21pt}.status-strip{grid-template-columns:repeat(4,1fr)}.table-wrap{overflow:visible}.table-wrap table{min-width:0;font-size:8pt}th,td{padding:5px 6px}.rule>summary{break-after:avoid}.rule-body{font-size:9pt}.appendix{break-inside:auto}a{color:inherit;text-decoration:none}pre{background:#eee;color:#111;break-inside:avoid}.source-list li{font-size:8pt}.chapter-num{font-size:10pt}}</style></head><body><a class="skip" href="#main-report">跳到报告正文</a><div class="layout"><aside class="sidebar"><div class="brand">GARVEE</div><div class="edition">SEO 审计报告 · 2026.10.15</div><nav aria-label="报告目录"><a href="#overview"><span>01</span>结论与范围</a><a href="#pages"><span>02</span>逐页面诊断</a><a href="#findings"><span>03</span>问题与修复</a><a href="#delivery"><span>04</span>实施与验收</a><a href="#requirements"><span>05</span>80 条规则与证据</a><a href="#evidence"><span>06</span>方法与证据附录</a><a href="#sources"><span>07</span>官方参考资料</a></nav><button id="print-report" type="button">打印 / 保存 PDF</button><p class="sidebar-foot">V2 完整复核<br/>飞书 revision 1156<br/>传统搜索 · 电商 · 渲染交付</p></aside><main class="content" id="main-report"><header class="hero"><div class="eyebrow">TECHNICAL SEO · ECOMMERCE · RENDERING</div><h1>SEO 审计与实施方案</h1><p class="deck">从飞书规范、官方依据到页面证据，统一呈现诊断结论与执行路径。</p><div class="hero-line"><span>审计日期 2026-10-15</span><span>美国站 www.garvee.com</span><span>V2 全面复核</span><span>单文件 · 可离线阅读</span></div></header><section class="chapter" id="overview"><div class="chapter-num">01</div><h2>结论与范围</h2><p class="chapter-intro">先明确已确认的问题，以及本次证据能支持到哪里。</p><div class="lead-callout"><strong>优先修复已确认的输出与事实问题。</strong><p>先处理 canonical、博客元数据、搜索与筛选索引策略、分页跟踪参数和商品事实；对 hidden / 流式 SSR，先验证 Google 实际渲染，再决定是否重构。</p></div><div class="overview-grid"><div><h3>这份报告依据什么</h3><p>已读取飞书《Garvee 全局 SEO 需求规范》全文和 8 张嵌入规则表，本轮核对版本仍为 revision 1156。结合项目 SEO Skills 与官方资料，形成 80 条分级标准，并逐条登记检查证据。</p></div><div><h3>检查到了什么程度</h3><p>原始 12 个页面 / 状态样本，加本轮搜索、排序、HTTP、响应式、政策及媒体补查。尚缺真实 GSC、GMC、CWV、后台事实及部分状态样本，不将未知项记为通过。</p></div></div><div class="status-strip"><div><b>12</b><span>已确认窄范围问题</span></div><div><b>35</b><span>部分核验</span></div><div><b>13</b><span>规则 / 方法纠正</span></div><div><b>20</b><span>未验证</span></div></div><p class="caption">以上为 80 条标准的证据状态，既不是网站通过率，也不是 Google 健康分。</p><h3>阅读时需要保留的边界</h3><ul><li>原始 HTML、禁 JS 页面、自动渲染 DOM 和 Google 实际索引是不同证据。</li><li>链接可发现、正文可索引和排名权重分别判断；hidden 本身不使真实 a[href] 失效。</li><li>P1 表示优先处理事实或治理问题，P2 表示后续优化，V 表示优先验证；没有量化流量损失依据。</li><li>本次没有修改生产网站或飞书原文，也没有把部署建议写成已经完成的修复。</li></ul><details class="appendix"><summary>原报告完整性审核与本轮修订</summary><p><strong>有依据，但覆盖不完整。上一版不能被称为“已按完整规范完成全面诊断”。</strong></p>
+<ol>
+<li><strong>是否依据飞书？是。</strong> 已读取《Garvee 全局 SEO 需求规范》全文及8张业务规则嵌表；本轮重新读取outline，revision仍为1156，与保存快照一致。展开文本2307行。原文编号跳过“二十二”，不是少读一章。读取完整不等于检查完整。V1的66个主要规则组中，窄范围检查完成3组、部分45组、未验证18组；8张嵌表为部分5、未验证3（是规则组的子集，不能相加）。这些数字不是网站通过率。</li>
+<li><strong>是否使用skill和网络资料补充？是，但补充不够系统。</strong> V1重心是SSR/body、canonical、title/description、筛选和商品事实。OG/X、品牌实体、图片/视频、搜索、变体恢复、错误/生命周期、移动等价、sitemap准入和后台验证存在明显缺口。</li>
+<li><strong>方法是否完全正确？不是。</strong> 原文允许“服务端返回或自动渲染HTML”，V1额外采用“无JS必须可见”的工程合同，却把它整体列为高优先修复，容易被理解为Google索引硬要求；这个判断已修正。多条Breadcrumb也不能仅因数量而判错。</li>
+<li><strong>本轮怎样补齐？</strong> 建立原文覆盖矩阵 → 核对skill中的非硬性/过时规则 → 形成分层标准 → 增补静态、HTTP、搜索/排序、CSS视口、政策和媒体检查 → 重新分配结论与实施优先级。</li>
+</ol>
+<p><a href="https://starmerx.feishu.cn/wiki/SeM5wPfoZib6fEkWUr6ctx32nCc" rel="noreferrer">原文</a>；<a href="#coverage">V1逐章覆盖审核</a>；<a href="#requirements">补全后的执行标准</a>；<a href="#requirements">80条逐项诊断登记</a>；<a href="#delivery">实施工单</a>。原文快照与嵌表保留在本地证据包，不上传GitHub。</p></details></section><section class="chapter" id="pages"><div class="chapter-num">02</div><h2>逐页面诊断</h2><p class="chapter-intro">覆盖用户指定的页面类型，并补入搜索与排序状态。</p><div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>页面类型</th>
+<th>已确认输出</th>
+<th>Google SEO判断</th>
+<th>处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首页</td>
+<td>canonical=https://garvee.com/en，需两次301返回正式首页；无H1；禁JS空白，JS后可见入口及后续商品；WebSite在JS后出现</td>
+<td>canonical目标/品牌URL不一致是明确优化项；无JS空白不证明Google无法索引</td>
+<td>P1修标准URL，P2补主题/品牌实体；V验证Google渲染</td>
+</tr>
+<tr>
+<td>专题类目Rugs</td>
+<td>无canonical/H1；有真HTML指南和子类目；JS后重点商品卡</td>
+<td>指南与链接不是无效内容；专题和普通PLP应分别验收</td>
+<td>P1 canonical；P2主标题与页面意图</td>
+</tr>
+<tr>
+<td>普通类目</td>
+<td>H1/商品/Next真实HTML在hidden流式块；JS后正常；无canonical；OG继承首页</td>
+<td>href具备发现条件；正文索引待真实Google渲染验证</td>
+<td>P1规范化/参数；P2分享；SSR改造条件化</td>
+</tr>
+<tr>
+<td>普通分页</td>
+<td>真实cursor URL和不同商品集、Prev/Next；无canonical</td>
+<td>已经存在可抓取分页格式，不能判无分页</td>
+<td>保留分页身份，核cursor稳定性，不统归第一页</td>
+</tr>
+<tr>
+<td>筛选/筛选分页</td>
+<td>实际价筛选与下一页index,follow，无canonical</td>
+<td>与项目普通筛选noindex策略不一致；不等于Google禁止筛选索引</td>
+<td>P1 URL策略与分阶段退出索引</td>
+</tr>
+<tr>
+<td>新品</td>
+<td>无description/canonical/H1；原始无商品href，JS后出现商品；存在导航a和加载button</td>
+<td>JS生成的真a可用；仅button后续内容发现需补证</td>
+<td>P1 metadata；V后续商品发现；P2常青内容</td>
+</tr>
+<tr>
+<td>热卖</td>
+<td>title为Jump to Popular Categories；无canonical/H1；商品JS后出现</td>
+<td>标题不准确已确认；渲染依赖不是自动索引失败</td>
+<td>P1 title/canonical；核真实热卖口径</td>
+</tr>
+<tr>
+<td>Halloween</td>
+<td>缺description/canonical/H1；规则主要在Banner；初始无商品链接，后续出现</td>
+<td>文本信息与商品发现风险，需要Google渲染与活动配置验证</td>
+<td>P1真实HTML规则；V渲染；不虚构结束时区</td>
+</tr>
+<tr>
+<td>博客列表</td>
+<td>原始与JS后title为空；缺description/canonical；禁JS Loading</td>
+<td>metadata缺陷确认；文章入口在JS后可发现</td>
+<td>P1 metadata；V Google渲染</td>
+</tr>
+<tr>
+<td>文章</td>
+<td>title/description/canonical缺；两个H1、两个main；Article实体/en地址301</td>
+<td>metadata与实体标准地址问题确认；正文在浏览器自动渲染可读</td>
+<td>P1 meta/entity；P2语义/单位/作者审核</td>
+</tr>
+<tr>
+<td>PDP</td>
+<td>主事实SSR可读；JS Product评论166、正文198；Tufted/Flat Woven；无canonical；主图alt通用</td>
+<td>字段不一致确认；统计范围与真实规格待主数据；Product JS支持但Shopping可靠性需优化</td>
+<td>P1同源事实/metadata；P2媒体/语义；V富结果</td>
+</tr>
+<tr>
+<td>搜索（新增）</td>
+<td>index,follow，无canonical；title品牌后缀重复</td>
+<td>与补全后的搜索noindex项目合同不符</td>
+<td>P1排除策略；不将普通搜索批量做SEO页</td>
+</tr>
+<tr>
+<td>排序（新增）</td>
+<td>sort_by=price-ascending+availability，index,follow，无canonical</td>
+<td>与原文排序noindex合同不符</td>
+<td>P1规范化与robots协调，排序分页按实际集合判断</td>
+</tr>
+</tbody>
+</table></div></section><section class="chapter" id="findings"><div class="chapter-num">03</div><h2>问题与修复</h2><p class="chapter-intro">按事实、条件风险和待验证事项提出处理方案。</p><h3 id="finding-D01">D01：canonical和实体URL缺失/不一致（P1，F/D）</h3>
+<p>10个初始raw样本中首页canonical有值但指向重定向URL，其余9个没有；浏览器筛选、筛选分页、搜索和排序也没有。V2新增6个政策/品牌页raw同样未发现canonical。这个统计按各组分别报告，不冒充全站错误比例。</p>
+<p>修复：服务端公开路由解析器输出标准主机/市场/实体/分页身份；首页直接https://www.garvee.com/；Article.url/mainEntityOfPage去掉会301的/en前缀；WebSite实体URL统一www。tracking参数剔除，业务参数按内容身份处理。canonical缺失并非技术上不能收录，但违反本项目明确合同，并使重复URL治理缺少信号。<a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">Google规范化</a></p>
+<h3 id="finding-D02">D02：博客元数据与热卖标题错误（P1，F/D）</h3>
+<p>博客列表/文章title在原始和JS后均为空；新品、Halloween及博客缺description；热卖title误用组件文案；Contact和搜索title品牌后缀重复。</p>
+<p>修复：自定义字段优先，其次由页面实体生成准确fallback；title后缀仅加一次；正文H1与主题一致。缺description不等于不收录，Google可从正文生成摘要；仍应按原文为重点页提供准确摘要。不能编造free shipping/30-day returns等承诺，需引用政策并核适用SKU。<a href="https://developers.google.com/search/docs/appearance/title-link">标题</a>、<a href="https://developers.google.com/search/docs/appearance/snippet">摘要</a></p>
+<h3 id="finding-D03">D03：搜索、排序、普通筛选的索引策略未落实（P1，F/D）</h3>
+<p>原文robots表规定这些页面noindex；V2实际search、sort和此前filter均index,follow，无canonical。robots中最具体Googlebot/Bingbot组Allow:/，不会继承通用组对search/sort/filter的Disallow。</p>
+<p>修复：先划定普通组合与SEO白名单；普通搜索/价格/临时库存/任意组合采用可抓取noindex，不进sitemap/hreflang；sorting重复副本按等价内容定义规范化目标。退出索引和限制抓取分阶段做，不期待被robots阻止后还能读noindex。该政策是GARVEE治理选择，不是Google规定所有筛选一定不可索引。<a href="https://developers.google.com/crawling/docs/faceted-navigation">筛选导航</a>、<a href="https://developers.google.com/search/docs/crawling-indexing/block-indexing">noindex</a></p>
+<h3 id="finding-D04">D04：分页继承UTM已独立复现（P1，F/D）</h3>
+<p>无cookieHTTP带utm_source/utm_medium进入类目，307补availability后，原始Next继续携带UTM。因此不仅是浏览器既有会话观察。跟踪参数进入分页扩散，且没有canonical。</p>
+<p>修复：分页href用允许列表仅复制filter/cursor等必要内容参数，不克隆整段query；canonical去跟踪参数而保留当前页身份。不要同时清除variant/after等有意义参数。验收必须包含带UTM入口→Next→刷新恢复状态。</p>
+<h3 id="finding-D05">D05：商品评论数和规格存在冲突（P1，F/D）</h3>
+<p>Product.aggregateRating.reviewCount=166，页面评价模块为198；ratingValue均4.77。两套规格同字段为Tufted与Flat Woven。其他Style/Pattern信息有一致性疑问，但不机械视作全部语义互斥。</p>
+<p>修复：确认评论聚合是SKU、商品还是group，并统一过滤条件、缓存与更新时间；页面和schema用同一快照。规格回到商品主数据核验，不猜哪套正确。不能只把166手改198，也不能据冲突推断评论造假。</p>
+<h3 id="finding-D06">D06：Product动态注入是可靠性建议，不是已无效（P1数据轨道/P2交付，F/R）</h3>
+<p>raw和模拟Googlebot UA只有Breadcrumb；普通浏览器JS后有Product/Offer且语法可解析。Google支持JS生成结构化数据；Shopping对价格库存等快速变化数据建议初始HTML交付，以减少抓取可靠性问题。现状不能直接判没有Product富结果资格。<a href="https://developers.google.com/search/docs/appearance/structured-data/product-variants">Google Product variants</a></p>
+<p>修复：优先解决事实来源，再服务端输出同源Product/Offer；保持hydration一致。真实多产品URL还是同页variant由业务数据模型确认；ProductGroup不是只要颜色按钮存在就必须硬套。多套Breadcrumb可能是合法多路径，只有路径错误、字段冲突或与用户导航无关才要求调整。<a href="https://developers.google.com/search/docs/appearance/structured-data/breadcrumb">多路径Breadcrumb</a></p>
+<h3 id="finding-D07">D07：hidden不等于正文或链接SEO无效（V优先验证，F/R）</h3>
+<p>类目商品、H1、Next和文章正文在hidden流式真HTML中，脚本搬运到可见DOM；禁JS时缺失，JS自动渲染后出现。<strong>这一事实证明交付依赖，不证明Google不能发现或索引。</strong></p>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>内容形态</th>
+<th>本轮能确认</th>
+<th>还需什么证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hidden中的真实a[href]</td>
+<td>满足链接格式，URL可从原始HTML提取，不因hidden自动无效</td>
+<td>实际抓取发生与目标索引；不能保证权重</td>
+</tr>
+<tr>
+<td>hidden真正文，自动JS后显示</td>
+<td>存在浏览器可行渲染路径</td>
+<td>Google渲染HTML是否包含该正文</td>
+</tr>
+<tr>
+<td>只有script中的商品JSON</td>
+<td>只是数据存在，尚不算正文或HTML内链</td>
+<td>最终是否生成实际元素与链接</td>
+</tr>
+<tr>
+<td>按钮/点击后才请求新内容</td>
+<td>不能依赖Google点击发现</td>
+<td>持久URL、可抓取a或自动渲染替代</td>
+</tr>
+<tr>
+<td>Tab折叠但正文已在DOM</td>
+<td>不能仅凭折叠判无效或作弊</td>
+<td>与真实交互后才加载区分</td>
+</tr>
+</tbody>
+</table></div>
+<p>Google会解析初始响应链接，渲染后再次提取；JS插入的真实a也符合规范。链接发现、正文索引和排名价值必须分别表述。<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable">链接规范</a>、<a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics">JavaScript处理流程</a></p>
+<p><strong>改造门槛：</strong> 先用GSC Live Test核正文/链接，再看已索引版本和Google canonical。如果Google稳定取得全文与链接，就不为消除hidden而重构；若关键模块渲染失败、只在交互后生成、或有非JS抓取器业务需求，再按模块改服务端可见输出。保持框架支持的streaming/hydration机制，不直接删除框架hidden属性。</p>
+<h3 id="finding-D08">D08：OG/X分享身份不完整或错误（P2，F/D）</h3>
+<p>类目、新品、热卖等og:url为首页，og:title/description通用且缺图；首页缺og:url，文章缺OG title/type/url，PDP缺OG type/url，活动缺OG image/url。出现的og:locale为en，而OG要求language_TERRITORY。html lang=en合法，不要混淆两者。</p>
+<p>修复：共享metadata构造器同时生成SEO/OG/X，但按页面分享目的明确当前页或母类目身份，不能把所有子页指站点首页。分页/筛选是否用母类目OG地址是社交聚合策略，不能要求OG地址与canonical逐字相同；PDP分享价与所选variant一致。此项关系分享预览与身份，不承诺Google直接排名提升。<a href="https://ogp.me/">Open Graph</a></p>
+<h3 id="finding-D09">D09：图片语义和调度存在优化点（P2，F/R）</h3>
+<p>PDP信息性图使用Product Image/Product Main，活动为Banner Image；图片链接有alt="0"等弱描述。所有样本img均有alt属性；大量空alt是aria-hidden评分星，不能全部算错。</p>
+<p>主图浏览器为eager且有srcset/sizes，已做对的部分保留。源码类目首批42个high priority、后页55个；这只是属性数量，不能断言全部并发下载或导致LCP失败。width/height缺失也要检查CSS aspect-ratio，不能直接推出CLS。</p>
+<p>修复：按图意补商品/颜色/视角的简洁alt；复杂尺寸在正文解释；优化实际LCP图优先级，离屏图auto/lazy，网络瀑布再验。一个680×680资源响应不证明原图最大尺寸，也不证明Shopping不合格；不采用skill800px资格线。GMC图片政策的当前/未来生效日期见补全标准。<a href="https://developers.google.com/search/docs/appearance/google-images">Google图片</a></p>
+<h3 id="finding-D10">D10：主标题、main和移动布局语义（P2，F/D）</h3>
+<p>首页/专题/新品/热卖/活动无主H1；文章两个H1、两个main；PDP两个main，桌面商品H1可见而390布局商品H1隐藏、Customer Reviews H1显示，移动商品文本仍存在。</p>
+<p>修复：把主要商品名称用同一语义组件表达，响应式只调整布局；评论改H2；每页单一主内容landmark，避免嵌套main。多H1、多个main不等于自动处罚，目标是语义和项目一致性。</p>
+<h3 id="finding-D11">D11：viewport禁止缩放与促销弹窗（P2，F/R）</h3>
+<p>10个raw样本viewport均含maximum-scale=1,user-scalable=no。390视口还遇到大面积SITEPOP5促销dialog；触发条件与首次自然搜索落地未验证。</p>
+<p>修复：移除禁缩放限制，验证200%缩放；促销改为较小banner或延后/频控，不能遮挡核心购买信息。可访问性和插页体验是明确优化领域，但本次不声称已触发排名惩罚。<a href="https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/">W3C缩放规则</a>、<a href="https://developers.google.com/search/docs/appearance/avoid-intrusive-interstitials">Google插页建议</a></p>
+<h3 id="finding-D12">D12：活动规则和常青活动分流（P1规则/P2内容，F/D/U）</h3>
+<p>Halloween图片展示10%OFF、HC10、10.14–11.2及排除flash/clearance，初始main没有对应文字；后续产品在滚动加等待后出现，不能仅凭观察断言代码只监听scroll。优惠后台有效性、准确时区与截止时刻未验证。</p>
+<p>修复：促销数据源生成HTML规则、适用/排除范围、起止时区与已结束状态；首批商品无需点击才能生成；可抓取续页。新品/热卖独立为evergreen，无真实折扣时不编造coupon/endsAt；热卖口径应可追溯。活动结束按长期价值与替代意图处理，不统一301首页。</p>
+<h3 id="finding-D13">D13：内容完整性与信任不是字数（P2，F/R/U）</h3>
+<p>类目已有丰富指南，但部分句子把“assembly, connection, or first use”等通用模板套进地毯场景；文章出现2x6/2x8 inch rugs，需编辑核实尺寸单位。政策/联系/About的6个公开页面均200且有正文，但不等于验证履约真实性或全部商品承诺。</p>
+<p>修复：用测量、门缝/绒高、垫层、洗护标签、洗衣机容量等实际决策问题替代泛化句；核实尺寸与性能/安全承诺。PDP包装、安装、安全、配件等按商品适用性检查，不为地毯编造安装手册。作者/审校、测试图片与引用必须真实；不设固定字数或关键词密度。<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">有帮助内容</a></p>
+<h3 id="finding-D14">D14：异常状态与变体只完成窄范围验证（F/U）</h3>
+<p>不存在通用路径样本返回真实404、noindex，未跳首页，样本通过；不能推断不存在商品、无效cursor、空筛选、缺货、停售和API故障都正确。尾斜杠先308去斜杠，再307加入availability，两跳确认但不自动定为重大问题。</p>
+<p>一个真实variant参数页200/index、无canonical；尚未证明选择恢复和价格/图片正确。颜色/尺寸部分入口实际指向不同product路径，实施前先确认实体模型，不能统一把问号URL noindex或默认全部并到一个商品。</p></section><section class="chapter" id="delivery"><div class="chapter-num">04</div><h2>实施与验收</h2><p class="chapter-intro">8 组工单连接问题、责任、交付和验证条件。</p><h3>执行规则</h3>
+<p>P1优先处理明确输出/事实/索引治理问题；P2下一批优化；V优先验证。没有流量损失量化依据，不将优先级写成排名惩罚。部署前需要真实生产仓库、基线revision、责任人与环境；不在报告仓库伪造生产代码修复。</p>
+<p>项目现行合同与新增建议分开：原文明确普通筛选/排序noindex，原文也允许自动渲染正文。若要追加“禁JS必须全部可读”，需单独作为非JS兼容目标批准，不用它判当前GoogleSEO不合格。</p>
+<h3>工单总表</h3>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>工单</th>
+<th>优先级/负责人</th>
+<th>依据标准</th>
+<th>具体交付</th>
+<th>完成条件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T01 metadata与实体URL</td>
+<td>P1 前端/SEO</td>
+<td>H04–H07、U01/U04、D10</td>
+<td>首页canonical、博客title/description、热卖title、公共URL builder、Article实体规范地址</td>
+<td>源/自动DOM值准确唯一、目标最终200；分页/variant身份保留</td>
+</tr>
+<tr>
+<td>T02 URL索引治理</td>
+<td>P1 SEO/路由</td>
+<td>U01–U08/U10、I04</td>
+<td>搜索/排序/普通filter合同、白名单和bot-group规则</td>
+<td>实际UI/直访/刷新/翻页一致；noindex可读；不误封商品发现</td>
+</tr>
+<tr>
+<td>T03 分页参数扩散</td>
+<td>P1 前端</td>
+<td>U02/U04、R04</td>
+<td>业务参数允许列表；Next/Prev不继承UTM/affiliate</td>
+<td>无cookie带UTM进入，Next不含营销参数并可恢复同一商品集</td>
+</tr>
+<tr>
+<td>T04 商品事实同源</td>
+<td>P1 商品/评论系统/前端</td>
+<td>D03/D06–D09、R07</td>
+<td>评论166/198根因、Tufted/FlatWoven事实、市场/variant快照和缓存规则</td>
+<td>正文/schema/Feed同scope事实一致，有审核记录；失败不假0价/库存</td>
+</tr>
+<tr>
+<td>T05 促销与常青内容</td>
+<td>P1规则/P2内容 运营/CMS</td>
+<td>C03–C05、H05、M01</td>
+<td>Halloween可读HTML规则和生命周期；新品/热卖选择口径</td>
+<td>Banner/正文/配置一致，到期切换；无促销不造coupon/endsAt</td>
+</tr>
+<tr>
+<td>T06 分享/实体/图像/语义</td>
+<td>P2 前端/品牌/内容</td>
+<td>H08–H10、D12、M01–M05、P03/P04</td>
+<td>OG/X按页生成、真实OnlineStore、有效alt、移动H1/main与缩放</td>
+<td>分享身份正确；品牌字段有来源；装饰alt不填词；多Breadcrumb按路径核实</td>
+</tr>
+<tr>
+<td>T07 Google真实渲染验证</td>
+<td>V SEO/前端</td>
+<td>R01–R09、V03/V04</td>
+<td>GSC live与indexed两套证据、产品富结果、关键模块清单</td>
+<td>按模块判断Google是否取得内容/链接；有失败再立精确SSR改造工单</td>
+</tr>
+<tr>
+<td>T08 余项验证</td>
+<td>V 各域owner</td>
+<td>I01–I04、S01–S06、M06/M07、U07/U09、P01/P02</td>
+<td>国际化、全部sitemap准入、真实视频、缺货停售/API故障、CWV</td>
+<td>每项有样本、事实源和证据；缺权限保持未验证</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="task-T01">T01：共享URL与metadata解析器</h3>
+<p>输入：公开页面类型、稳定实体路径、市场/语言、业务参数、分页、variant和业务状态。输出：HTTP状态、canonical、robots、hreflang候选、sitemap准入、title/description、OG/X及schema实体URL。</p>
+<ol>
+<li>首页canonical直接https://www.garvee.com/，不用/en重定向地址。</li>
+<li>正常实体各自标准URL；后续页保留分页身份，不全部指第一页；Article不拼会301的/en前缀。</li>
+<li>自定义内容字段优先，缺失按真实实体fallback；title品牌后缀只加一次。</li>
+<li>不克隆请求URL中的营销参数；参数用途由URLpolicy决定。</li>
+<li>服务端/客户端导航用同一输出，防止hydrate重写成其他实体。Google支持JSmetadata，但初始head稳健输出优先。</li>
+</ol>
+<p>验收：初始GET、正常JS自动DOM、客户端切换和刷新；head数量/值、HTTP Link/X-Robots-Tag一致；无需按60/155字符截断判合格。空description是优化项；错误承诺是事实风险。</p>
+<span class="anchor" id="task-T03"></span><h3 id="task-T02">T02/T03：索引矩阵与分页</h3>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>状态</th>
+<th>建议默认</th>
+<th>canonical</th>
+<th>发现路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>正常类目/文章/PDP/活动</td>
+<td>按价值index</td>
+<td>对应最终标准URL</td>
+<td>导航/内容链接/sitemap</td>
+</tr>
+<tr>
+<td>普通类目分页</td>
+<td>通常可index</td>
+<td>保留当前页身份</td>
+<td>真实Prev/Next</td>
+</tr>
+<tr>
+<td>普通价格/库存/任意组合及分页</td>
+<td>先可抓取noindex</td>
+<td>去营销、保留状态或按明确排除政策省略；不谎称子集等于母类目</td>
+<td>商品另有可索引入口</td>
+</tr>
+<tr>
+<td>排序</td>
+<td>按项目策略noindex；或明确重复合并目的</td>
+<td>是否等价按商品集判断，尤其排序分页</td>
+<td>不无限扩散组合</td>
+</tr>
+<tr>
+<td>SEO白名单</td>
+<td>待业务批准后index</td>
+<td>稳定独立路径</td>
+<td>有上下文入口</td>
+</tr>
+<tr>
+<td>搜索</td>
+<td>建议noindex</td>
+<td>排除策略</td>
+<td>不进sitemap/hreflang</td>
+</tr>
+<tr>
+<td>仅tracking参数</td>
+<td>继承实体策略</td>
+<td>干净对应页</td>
+<td>常规链接不复制tracking</td>
+</tr>
+<tr>
+<td>variant参数</td>
+<td>按真实单页/多页模型决定</td>
+<td>不能统一删参数或一律noindex</td>
+<td>直接恢复正确SKU/图/价/库存</td>
+</tr>
+</tbody>
+</table></div>
+<p>bot groups逐个匹配：Googlebot/Bingbot当前独立Allow:/，通用Disallow并不继承。已收录待移除URL先让Google读到noindex；确认后再评估robots抓取限制。不要用一条Disallow所有问号误封分页。</p>
+<p>cursor无需为SEO强改成page=2；先验证可直访、稳定、无会话依赖、不无限重复。合法cursor与业务筛选用允许列表序列化；无效cursor/不存在分页按明确404合同。默认availability与基础集合是否等价由业务决定。</p>
+<p>验收用例：带UTM→Next；筛选→Next→刷新；不同参数顺序；sorting+pagination；有效/无效variant；空结果；后退/前进；Googlebot/通用组。正常UI流程不得丢选中状态。</p>
+<h3 id="task-T04">T04：字段事实与缓存</h3>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>字段</th>
+<th>须核实</th>
+<th>输出/失效</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>评论数/评分</td>
+<td>variant/product/group聚合范围、审核/删除过滤、时间</td>
+<td>正文与aggregateRating同一结果；无真实数据省略</td>
+</tr>
+<tr>
+<td>编织/材质/尺寸</td>
+<td>PIM/Shopify metafield、来源、单位、审核人</td>
+<td>消除Tufted/FlatWoven冲突，不人工猜值</td>
+</tr>
+<tr>
+<td>price/currency/stock</td>
+<td>市场、variant、有效价/compare-at/会员条件</td>
+<td>页面/Offer/GMC同scope；时效事件驱动刷新</td>
+</tr>
+<tr>
+<td>brand/GTIN/MPN</td>
+<td>Vendor与品牌区别、条码格式与真实标识</td>
+<td>不造编号；非必需缺失宁可不输出</td>
+</tr>
+</tbody>
+</table></div>
+<p>先解决数据来源，再将Product/Offer放初始HTML。Google支持动态schema，当前动态注入不能单独判无效。缓存键包含市场/币种/variant，原始与hydrate用同快照；可用有时效可信快照或真实错误状态，不假成功。</p>
+<p>Breadcrumb逐条列trail，核实路径/字段/导航关系。多个真实路径可以保留；不得以“只能一套”为验收。Rich Results Test通过也不能替代事实验证或保证展示。</p>
+<span class="anchor" id="task-T06"></span><h3 id="task-T05">T05/T06：内容与体验</h3>
+<ul>
+<li>限时活动：规则、范围、排除项、开始/结束/时区、状态统一由配置驱动，HTML与Banner一致。常青新品/热卖使用独立资格合同。</li>
+<li>OG/X：每页标题、描述、图与URL；不要把子页分享身份变成首页。OGlocale en_US与htmllang=en含义不同。</li>
+<li>图片：信息性alt描述图意、功能图表达目的、装饰图空alt；图中尺寸/安全信息用正文补足。保留已有eager主图及有效srcset；不因JPEG/随机文件名/某张680图直接判失败。</li>
+<li>响应式语义：移动商品名有明确主标题，评论H2；避免嵌套main；移除禁缩放限制。商品/文章文本与schema等价，不要求布局完全一致。</li>
+<li>促销dialog：核自然搜索首次落地、触发/频控和遮挡；可改小banner。当前只是实测遮挡风险，非已判Google惩罚。</li>
+<li>博客与指南：核2x6/2x8 inch单位；按测量、地板/绒高、洗护标签与真实产品差异补内容。不按字数/关键词密度生成填充文本。</li>
+<li>品牌：legalName/contact/sameAs/policy由owner核准，不从示例填公司信息；公开页面存在不证明真实履约。</li>
+</ul>
+<h3 id="task-T07">T07：SSR改造的证据门槛</h3>
+<ol>
+<li>每模板列真实模块：H1、主要正文、当前商品集合、详情字段、文章入口与Prev/Next。</li>
+<li>保存初始HTML真实节点/hidden节点/script数据三类；记录普通浏览器无交互与交互增量；禁JS用于诊断依赖。</li>
+<li>GSC界面LiveTest检查当前Google渲染；已索引版本看历史内容和Google canonical。URLInspection API不能取LiveHTML，不能替代界面。</li>
+<li>Google已取得模块且无其他业务需求：保留框架streaming/hydration，不仅为hidden重写。</li>
+<li>Google渲染缺关键内容、必须点击才生成、或已批准非JS兼容目标：按模块定位bailout/Suspense/客户端请求/交互条件，设计可见服务端输出或可抓取独立URL。不能只从外部HTML猜具体文件根因。</li>
+<li>修复后重测TTFB/缓存/购买交互，防止把非关键模块同步阻塞造成退化。</li>
+</ol>
+<p>完成定义：用Google证据说明哪些模块能取得，哪些需要修；不是“禁JS字数增加”即SEO成功。</p>
+<h3 id="task-T08">T08：未验证项目的具体采集合同</h3>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>待验证项</th>
+<th>最小样本/事实源</th>
+<th>owner与期望</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GSC/真实Googlebot</td>
+<td>各模板代表URL，live与indexed分别记录；日志验证bot身份</td>
+<td>SEO/平台；索引状态、Googlecanonical、正文和链接</td>
+</tr>
+<tr>
+<td>GMC/Feed</td>
+<td>本次SKU及一个不同variant、价格库存变更</td>
+<td>Feed/商品；正确落地、价/币种/库存与标识</td>
+</tr>
+<tr>
+<td>缺货/停售/错误</td>
+<td>真实暂缺、已停售保留/替代/删除、无效product/cursor、API故障测试环境</td>
+<td>商品/平台；状态码和内容schema同步</td>
+</tr>
+<tr>
+<td>全部sitemap准入</td>
+<td>全部54子图、产品图、抽样URL状态/meta/canonical；内容版本事件</td>
+<td>SEO/平台；合法XML/上限/准入、真实lastmod</td>
+</tr>
+<tr>
+<td>国际化</td>
+<td>同实体真实国家对应组，含缺失国家商品与分页</td>
+<td>国际SEO；互返/自引/标准URL，不凭路径拼接</td>
+</tr>
+<tr>
+<td>视频</td>
+<td>至少一个真实视频主体页及一个PDP附带视频</td>
+<td>内容/前端；无交互发现、资源可达、上下文/schema与目的一致</td>
+</tr>
+<tr>
+<td>性能</td>
+<td>CrUX/RUM手机桌面p75，另做模板Lighthouse/网络trace</td>
+<td>性能；基线、LCP/INP/CLS、资源与API原因，不能用429判性能</td>
+</tr>
+<tr>
+<td>业务策略</td>
+<td>白名单、variant模型、上新/热卖、活动截止、停售替代、登录/x-default</td>
+<td>业务owner批准；建议不能伪装已批准规则</td>
+</tr>
+</tbody>
+</table></div>
+<p>没有样本或权限的项目保持未验证；不通过付费API、额外授权或新建账号绕过缺口。需要权限时由owner按已有访问流程提供，当前报告不要求用户立即完成认证。</p>
+<h3>发布、回滚与效果</h3>
+<p>以模板灰度发布，T01/T03/T04可独立回滚；T02索引范围变更另批审查。价格/库存/variant错误、错误noindex/canonical扩散、分页断链、5xx或购买交互退化阻断扩量并回退该批。</p>
+<p>开发验收与SEO效果验收分开：前者响应/DOM/事实与路由用例通过；后者真实Google重抓后的索引/展示点击及交易观察。GA4正式渠道用Garvee Channel Group v1（sessionCustomChannelGroup:15429916316），控制季节、库存与活动干扰，不承诺排名和收录时间。</p></section><section class="chapter" id="requirements"><div class="chapter-num">05</div><h2>80 条规则与证据</h2><p class="chapter-intro">每条规则合并完整要求、实际事实、验收责任和实施入口。</p><div class="rule-legend"><p><b>G</b> Google 要求　<b>O</b> 官方建议　<b>P</b> 项目策略 / 新增建议　<b>B</b> 待业务确认</p><p>原文已有合同与新增建议分开。一个复合规则下发现窄范围问题，不表示该规则其余部分已通过。</p></div><div class="rule-tools" hidden="" id="rule-tools"><label for="rule-search">查找规则或事实<input id="rule-search" placeholder="例如 canonical、hidden、评论、T04" type="search"/></label><label for="rule-status">证据状态<select id="rule-status"><option value="all">全部 80 条</option><option>已确认问题</option><option>部分核验</option><option>规则已纠正</option><option>未验证</option></select></label><button id="expand-rules" type="button">展开全部</button><span aria-live="polite" id="rule-count">80 / 80 项</span></div><div class="rule-group" data-rule-group=""><h3>技术响应、head 与品牌</h3><details class="rule" data-status="部分核验" id="rule-H01"><summary><span class="rule-id">H01</span><span class="rule-title">待索引页面须能被 Google 访问、返回成功状态且有可索引内容；达到最低条件不保证收录。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G</div><h4>完整要求</h4><p>待索引页面须能被 Google 访问、返回成功状态且有可索引内容；达到最低条件不保证收录。<a href="https://developers.google.com/search/docs/essentials/technical">S05</a></p><h4>实际检查与结论</h4><p>正常样本GET200；真实Google访问/索引与WAF日志未知</p><h4>验收与责任</h4><p>平台：GET 状态、WAF/CDN 日志、原始响应、GSC。不能用 HEAD 成功代替 GET 正常</p><p class="rule-links">证据：<a href="#raw">原始 HTTP 记录</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-H02"><summary><span class="rule-id">H02</span><span class="rule-title">https://www.garvee.com 为美国站标准主机；协议/主机别名永久跳转到对应路径，目标一跳可达；修正原文 g…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p><code>https://www.garvee.com</code> 为美国站标准主机；协议/主机别名永久跳转到对应路径，目标一跳可达；修正原文 <code>garve.com</code> 和两跳示例。<a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">S06</a></p><h4>实际检查与结论</h4><p>首页canonical链及尾斜杠两跳已测；全部深层别名未穷举</p><h4>验收与责任</h4><p>平台：HTTP/HTTPS × www/非 www × 深层 URL；保留有效业务参数，消除链/环</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T01">T01</a></p></div></details><details class="rule" data-status="部分核验" id="rule-H03"><summary><span class="rule-id">H03</span><span class="rule-title">不存在资源返回真实 404/410；临时服务失败用适当 5xx，不返回空壳 200 或价格 0；请求受限按实际返回 401/…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>不存在资源返回真实 404/410；临时服务失败用适当 5xx，不返回空壳 200 或价格 0；请求受限按实际返回 401/403/429。<a href="https://developers.google.com/crawling/docs/troubleshooting/http-status-codes">S07</a></p><h4>实际检查与结论</h4><p>通用不存在路径真404/noindex、不跳首页；商品404/cursor/故障未测</p><h4>验收与责任</h4><p>平台：无效 handle、超范围页码、API 超时用例；错误页不得残留正常 Product 实体</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-H04"><summary><span class="rule-id">H04</span><span class="rule-title">title 准确描述当前主题，避免模板重复和堆词；摘要描述真实页面。 没有 60/155 字符硬限制 ，截断取决于展示。</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O</div><h4>完整要求</h4><p>title 准确描述当前主题，避免模板重复和堆词；摘要描述真实页面。<strong>没有 60/155 字符硬限制</strong>，截断取决于展示。<a href="https://developers.google.com/search/docs/appearance/snippet">S08</a></p><h4>实际检查与结论</h4><p>博客title空、热卖标题不准、部分description缺；不按字符判错</p><h4>验收与责任</h4><p>内容/前端：源 HTML 和渲染值、模板与字段兜底；不以字符超标自动判失败</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T01">T01</a></p></div></details><details class="rule" data-status="部分核验" id="rule-H05"><summary><span class="rule-id">H05</span><span class="rule-title">SEO 自定义值优先，缺失时按页面事实生成；叶子类目不能把兄弟类目写成自身包含的商品。价格/免邮/退货/折扣字段须有事实来源…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>SEO 自定义值优先，缺失时按页面事实生成；叶子类目不能把兄弟类目写成自身包含的商品。价格/免邮/退货/折扣字段须有事实来源和失效条件。<a href="https://developers.google.com/search/docs/appearance/snippet">S09</a></p><h4>实际检查与结论</h4><p>商品描述/规格冲突和泛化文案可见；fallback来源/承诺适用SKU未核</p><h4>验收与责任</h4><p>内容/商品：检查空字段、促销结束、特殊地区和特殊商品；不得输出占位变量</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T01">T01</a> / <a href="#task-T04">T04</a></p></div></details><details class="rule" data-status="部分核验" id="rule-H06"><summary><span class="rule-id">H06</span><span class="rule-title">robots 在 HTML 和 HTTP header 中一致；index/follow 是默认值，缺少显式 index,f…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>robots 在 HTML 和 HTTP header 中一致；index/follow 是默认值，缺少显式 index,follow 不算错误。需要索引时不能初始 noindex 再指望 JS 删除。<a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics">S10</a></p><h4>实际检查与结论</h4><p>正常样本index/follow、404meta/header noindex；账户/preview未查</p><h4>验收与责任</h4><p>前端：原始、禁 JS、自动渲染三态；读取 X-Robots-Tag；记录更严格指令</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T02">T02</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-H07"><summary><span class="rule-id">H07</span><span class="rule-title">canonical 唯一、绝对 HTTPS、指向所选有效规范页；优先初始 HTML 输出。JS 注入受支持，但不得将源 HT…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>canonical 唯一、绝对 HTTPS、指向所选有效规范页；优先初始 HTML 输出。JS 注入受支持，但不得将源 HTML 值改成另一地址。<a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics">S06</a></p><h4>实际检查与结论</h4><p>10raw首页canonical跳转，其余9缺；搜索/排序/筛选也缺</p><h4>验收与责任</h4><p>前端：HTML/HTTP header/渲染 canonical 与 URL policy 对照</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T01">T01</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-H08"><summary><span class="rule-id">H08</span><span class="rule-title">输出有效 doctype、charset、viewport、正确 lang；清晰主标题与语义区块。 X-UA-Compati…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>输出有效 doctype、charset、viewport、正确 lang；清晰主标题与语义区块。<code>X-UA-Compatible</code> 无需作为现代 SEO 验收；固定 head 排序、唯一 H1、一个 main 是工程规范而非公开排名阈值。<a href="https://developers.google.com/search/docs/crawling-indexing/special-tags">S12</a></p><h4>实际检查与结论</h4><p>lang/utf8存在；禁缩放、主标题与两个main问题已见；非排名硬门槛</p><h4>验收与责任</h4><p>前端/无障碍：HTML 解析、语义与页面可用性；不单凭 H1 数量推断排名</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="部分核验" id="rule-H09"><summary><span class="rule-id">H09</span><span class="rule-title">首页统一 GARVEE 网站名称、WebSite、Organization/OnlineStore、官网和真实社交身份；fa…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>首页统一 GARVEE 网站名称、WebSite、Organization/OnlineStore、官网和真实社交身份；favicon 按支持格式、正方形、稳定可抓取链接配置。<a href="https://developers.google.com/search/docs/appearance/favicon-in-search">S13</a><a href="https://developers.google.com/search/docs/appearance/structured-data/organization">S15</a></p><h4>实际检查与结论</h4><p>favicon700方形与Logo200；首页WebSite实体主机不统一，法律/社交归属未核</p><h4>验收与责任</h4><p>品牌/前端：主页值与品牌信息一致；favicon 最小 8×8，官方建议大于 48×48。Logo 不应虚构法人/地址</p><p class="rule-links">证据：<a href="#trust">信任与媒体证据</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-H10"><summary><span class="rule-id">H10</span><span class="rule-title">Open Graph/X Card 用真实标题、描述、主图和分享地址；变体分享需恢复用户选择，禁止失效价格。社交预览规范不能…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>Open Graph/X Card 用真实标题、描述、主图和分享地址；变体分享需恢复用户选择，禁止失效价格。社交预览规范不能直接当 Google 排名要求。<a href="https://support.google.com/merchants/answer/9340054">S09</a></p><h4>实际检查与结论</h4><p>OG/X缺字段/串首页、locale用en；真实平台预览待核</p><h4>验收与责任</h4><p>内容/前端：分享调试与平台预览；不因少一个非 Google meta 宣称无法收录</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T06">T06</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>索引、URL、分页与筛选</h3><details class="rule" data-status="部分核验" id="rule-U01"><summary><span class="rule-id">U01</span><span class="rule-title">建立一个 URL policy，按页面类型、参数语义与业务状态输出 canonical/index/sitemap/href…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>建立一个 URL policy，按页面类型、参数语义与业务状态输出 canonical/index/sitemap/hreflang；URL 使用稳定可描述路径，参数本身合法。<a href="https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites">S17</a></p><h4>实际检查与结论</h4><p>多参数状态已抽测并有建议矩阵；生产policy/所有类型不明</p><h4>验收与责任</h4><p>平台/SEO：以首页、类目、PDP、博客、活动、筛选、分页等形成路由矩阵</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T01">T01</a> / <a href="#task-T02">T02</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-U02"><summary><span class="rule-id">U02</span><span class="rule-title">普通类目/博客/活动分页给独立 URL、自引用 canonical 和顺序 &lt;a href&gt; ；不可全部 canonical…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O</div><h4>完整要求</h4><p>普通类目/博客/活动分页给独立 URL、自引用 canonical 和顺序 <code>&lt;a href&gt;</code>；不可全部 canonical 到第一页，不能仅用 <code>#page=2</code>。<a href="https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading">S18</a></p><h4>实际检查与结论</h4><p>类目真实cursor/Next和不同列表已见；缺当前页canonical，长期稳定未测</p><h4>验收与责任</h4><p>前端：直接访问/刷新第二页仍恢复该页商品集，上一/下一页可发现</p><p class="rule-links">证据：<a href="#raw">原始 HTTP 记录</a>　实施：<a href="#task-T01">T01</a> / <a href="#task-T03">T03</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-U03"><summary><span class="rule-id">U03</span><span class="rule-title">Google 已不使用 rel next/prev；可以为其他客户端保留，但不能代替正文分页链接。分页 title/desc…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>Google 已不使用 rel next/prev；可以为其他客户端保留，但不能代替正文分页链接。分页 title/description 可以重复，添加页码是项目选择。<a href="https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading">S18</a></p><h4>实际检查与结论</h4><p>rel next/prev不作为Google失败项；button续载需后备发现路径</p><h4>验收与责任</h4><p>SEO：删除「缺 rel next/prev = SEO故障」规则；长列表和 Load More 有分页后备</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T03">T03</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-U04"><summary><span class="rule-id">U04</span><span class="rule-title">跟踪参数去除出 canonical 和常规内链；保留分页、变体等有意义状态。 ?page=1 与无参数首页规范统一。</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>跟踪参数去除出 canonical 和常规内链；保留分页、变体等有意义状态。<code>?page=1</code> 与无参数首页规范统一。<a href="https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites">S17</a></p><h4>实际检查与结论</h4><p>无cookie带UTM入口，Next继承UTM；variant/cursor不能全删</p><h4>验收与责任</h4><p>平台：参数顺序/重复键/编码、营销参数混合场景；避免全站删除问号参数</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T03">T03</a></p></div></details><details class="rule" data-status="部分核验" id="rule-U05"><summary><span class="rule-id">U05</span><span class="rule-title">robots.txt 控制抓取，noindex 控制索引；被禁抓页面的 noindex 可能不可见。不能把二者同时使用描述成…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/O</div><h4>完整要求</h4><p>robots.txt 控制抓取，noindex 控制索引；被禁抓页面的 noindex 可能不可见。不能把二者同时使用描述成必然退出索引。<a href="https://developers.google.com/crawling/docs/faceted-navigation">S19</a></p><h4>实际检查与结论</h4><p>通用组和具体bot组规则已读；真实退出索引过程无GSC证据</p><h4>验收与责任</h4><p>SEO/平台：已收录待移除 URL 先允许抓取 noindex，观察处理后再评估抓取控制</p><p class="rule-links">证据：<a href="#raw">原始 HTTP 记录</a>　实施：<a href="#task-T02">T02</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-U06"><summary><span class="rule-id">U06</span><span class="rule-title">普通筛选/排序组合及其分页控制抓取和索引；有独立需求、稳定商品集与内容的组合可建立白名单索引页。具体白名单和保留范围待业务确…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/B</div><h4>完整要求</h4><p>普通筛选/排序组合及其分页控制抓取和索引；有独立需求、稳定商品集与内容的组合可建立白名单索引页。具体白名单和保留范围待业务确认。<a href="https://developers.google.com/crawling/docs/faceted-navigation">S20</a></p><h4>实际检查与结论</h4><p>实际普通筛选/排序index/follow与项目noindex要求不符；白名单未知</p><h4>验收与责任</h4><p>SEO/运营：每个白名单记录主题、商品资格、内容负责人、canonical 和有效期</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T02">T02</a></p></div></details><details class="rule" data-status="未验证" id="rule-U07"><summary><span class="rule-id">U07</span><span class="rule-title">无结果筛选、荒谬组合和不存在分页返回 404；长期类目暂空与删除需区别。有限、重复无意义组合不应无限产生 200 页。</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>无结果筛选、荒谬组合和不存在分页返回 404；长期类目暂空与删除需区别。有限、重复无意义组合不应无限产生 200 页。<a href="https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites">S20</a></p><h4>实际检查与结论</h4><p>没有无结果/荒谬组合/超页cursor实测；不能用通用404替代</p><h4>验收与责任</h4><p>平台：空结果、负页码、超大页码、重复过滤器、参数排列测试</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-U08"><summary><span class="rule-id">U08</span><span class="rule-title">搜索结果建议 noindex、不进 Sitemap、不输出 hreflang；解决索引表「待定」与正文 noindex 矛盾…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P/B</div><h4>完整要求</h4><p>搜索结果建议 noindex、不进 Sitemap、不输出 hreflang；解决索引表「待定」与正文 noindex 矛盾。购物车/订单/结账排除索引；登录页是否保留品牌导航搜索用途需业务决定。<a href="https://developers.google.com/search/docs/crawling-indexing/block-indexing">S19</a></p><h4>实际检查与结论</h4><p>实际搜索index/follow，与建议统一后的noindex合同不符；交易页未访问</p><h4>验收与责任</h4><p>SEO/账户：游客与登录态策略一致；私密数据使用鉴权，noindex不是安全边界</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T02">T02</a></p></div></details><details class="rule" data-status="未验证" id="rule-U09"><summary><span class="rule-id">U09</span><span class="rule-title">缺货有望恢复时保留内容、200 与正确库存。停售有价值说明可保留；等效替代可永久跳转；无内容无替代用 404/410。不得统…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>缺货有望恢复时保留内容、200 与正确库存。停售有价值说明可保留；等效替代可永久跳转；无内容无替代用 404/410。不得统一跳首页。<a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">S07</a></p><h4>实际检查与结论</h4><p>未取得真实暂缺/停售/删除PDP及等效替代决策</p><h4>验收与责任</h4><p>商品/SEO：停售策略表，替代映射人工确认；仅「相关」不自动等于等效</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-U10"><summary><span class="rule-id">U10</span><span class="rule-title">不使用 noindex 作为 canonical 的替代方案；排序 noindex 与 canonical 的双信号要明确目…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>不使用 noindex 作为 canonical 的替代方案；排序 noindex 与 canonical 的双信号要明确目标，不保证两者同等生效。<a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">S06</a></p><h4>实际检查与结论</h4><p>现样本canonical缺；尚无双信号实际页面；治理目标已分开</p><h4>验收与责任</h4><p>SEO：区分「退出索引」与「重复合并」，分别监控</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T02">T02</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>SSR、正文与链接</h3><details class="rule" data-status="规则已纠正" id="rule-R01"><summary><span class="rule-id">R01</span><span class="rule-title">原飞书允许服务端返回或自动渲染HTML。初始HTML交付重点页核心字段与链接是本次建议的稳健交付策略，尚不能作为已批准的加严…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>原飞书允许服务端返回或自动渲染HTML。初始HTML交付重点页核心字段与链接是本次建议的稳健交付策略，尚不能作为已批准的加严门槛；Google可执行JS，不能把CSR/React/Vue或hidden本身列为错误。<a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics">S11</a></p><h4>实际检查与结论</h4><p>原文允许自动渲染；hidden/React不是Google失败条件；初始可见为新增建议</p><h4>验收与责任</h4><p>前端：以实际输出分类 SSR/SSG/CSR/混合，不从框架名推断</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="部分核验" id="rule-R02"><summary><span class="rule-id">R02</span><span class="rule-title">同一 URL 保存 HTTP 原始 HTML、禁 JS 浏览器、启 JS无交互、交互后增量四套证据，记录设备/地区/会话/时…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>同一 URL 保存 HTTP 原始 HTML、禁 JS 浏览器、启 JS无交互、交互后增量四套证据，记录设备/地区/会话/时间/等待条件。</p><h4>实际检查与结论</h4><p>12状态三层抽样和交互记录；Rugs缺禁JS、不是全部同会话同条件，未保留完整DOM截图</p><h4>验收与责任</h4><p>QA：每一结论追溯到文件与模块，不将滚动后的 DOM 混入首次自动渲染</p><p class="rule-links">证据：<a href="#nojs">禁 JS 记录</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="部分核验" id="rule-R03"><summary><span class="rule-id">R03</span><span class="rule-title">分开统计：真实元素文本、JSON-LD、普通 script/hydration 数据、template、noscript、隐…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>分开统计：真实元素文本、JSON-LD、普通 script/hydration 数据、template、noscript、隐藏/折叠 DOM；不得单凭原始字符串出现称 SSR 完整。</p><h4>实际检查与结论</h4><p>10raw解析已分script/template/hidden/正文与href；其余模板未全覆盖</p><h4>验收与责任</h4><p>QA：解析后模块清单和链接集合，body 与 main 分列；流式隐藏片段是否需要脚本搬运另列</p><p class="rule-links">证据：<a href="#raw">原始 HTTP 记录</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="部分核验" id="rule-R04"><summary><span class="rule-id">R04</span><span class="rule-title">重要导航、商品卡、子类目、文章与分页使用真实 &lt;a href&gt; ；JS 动态插入的合规链接也可抓取。不能以可见链接数代替 D…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>重要导航、商品卡、子类目、文章与分页使用真实 <code>&lt;a href&gt;</code>；JS 动态插入的合规链接也可抓取。不能以可见链接数代替 DOM 全部可提取链接数。<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable">S04</a></p><h4>实际检查与结论</h4><p>真实a href可提取且含Next；目标全量状态/Google实际跟踪未知</p><h4>验收与责任</h4><p>前端：按源/渲染/交互生成时机、可见/折叠状态分别计数；链接目标抽查</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T03">T03</a> / <a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-R05"><summary><span class="rule-id">R05</span><span class="rule-title">正常 Tab/折叠/轮播不因隐藏失败；分辨「已有 DOM、交互仅展示」与「交互才请求生成」。不为了排名制造用户不可用的隐藏关…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>正常 Tab/折叠/轮播不因隐藏失败；分辨「已有 DOM、交互仅展示」与「交互才请求生成」。不为了排名制造用户不可用的隐藏关键词。<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">S02</a></p><h4>实际检查与结论</h4><p>streaming hidden与正常折叠不直接判无效或作弊；无权重结论</p><h4>验收与责任</h4><p>QA：选择器、文本片段、展开机制、请求时机；隐藏状态只作描述性证据</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="部分核验" id="rule-R06"><summary><span class="rule-id">R06</span><span class="rule-title">Google 不主动执行用户交互；核心内容若只在点击后请求，应有自动交付或独立可抓取 URL。viewport 感知懒加载受…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>Google 不主动执行用户交互；核心内容若只在点击后请求，应有自动交付或独立可抓取 URL。viewport 感知懒加载受支持，不应一概判错。<a href="https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading">S21</a></p><h4>实际检查与结论</h4><p>新品button/首页活动滚动后增量已见；未确认触发代码或Google渲染</p><h4>验收与责任</h4><p>前端：初始无交互与交互增量比对；GSC live rendered HTML验证</p><p class="rule-links">证据：<a href="#rendered">JS 渲染记录</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="部分核验" id="rule-R07"><summary><span class="rule-id">R07</span><span class="rule-title">源与 hydration 的商品、变体、价格、库存、筛选、页码保持一致；避免登录/地理状态把公开页面替换成错误实体。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>源与 hydration 的商品、变体、价格、库存、筛选、页码保持一致；避免登录/地理状态把公开页面替换成错误实体。</p><h4>实际检查与结论</h4><p>普通价库存在样本JS/SSR一致；评论数冲突；市场/variant导航/缓存全覆盖不足</p><h4>验收与责任</h4><p>前端/商品：直接访问和客户端导航双路径；语言/币种/缓存键、失效策略测试</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T04">T04</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-R08"><summary><span class="rule-id">R08</span><span class="rule-title">覆盖率以核心字段/模块清单为分母，不能用全 body 字数估计收录率；导航重复文本不得冒充商品/文章内容。</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>覆盖率以核心字段/模块清单为分母，不能用全 body 字数估计收录率；导航重复文本不得冒充商品/文章内容。</p><h4>实际检查与结论</h4><p>不用字符/href比例作收录率；按模块清单验收</p><h4>验收与责任</h4><p>QA：逐模板通过/缺失/脚本数据/交互新增/无法验证；不赋予推测排名分</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="未验证" id="rule-R09"><summary><span class="rule-id">R09</span><span class="rule-title">Google 所选 canonical、已索引状态与真实渲染用 GSC 核实；本地 Chromium及伪装Googlebot…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O</div><h4>完整要求</h4><p>Google 所选 canonical、已索引状态与真实渲染用 GSC 核实；本地 Chromium及伪装Googlebot UA 只能作实验。<a href="https://support.google.com/webmasters/answer/9012289">S46</a></p><h4>实际检查与结论</h4><p>无GSC真实渲染/已索引证据；模拟Googlebot UA不替代</p><h4>验收与责任</h4><p>SEO：保存检查时间、抓取时间；无权限时明示未验证</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T07">T07</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>商品事实与结构化数据</h3><details class="rule" data-status="部分核验" id="rule-D01"><summary><span class="rule-id">D01</span><span class="rule-title">富结果须遵循类型对应必需属性和质量政策；JSON-LD为推荐格式，Microdata/RDFa亦受支持；语法通过不保证展示。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/O</div><h4>完整要求</h4><p>富结果须遵循类型对应必需属性和质量政策；JSON-LD为推荐格式，Microdata/RDFa亦受支持；语法通过不保证展示。<a href="https://developers.google.com/search/docs/appearance/structured-data/sd-policies">S23</a></p><h4>实际检查与结论</h4><p>rawJSON均可解析、JS类型已记录；富结果在线测试未返回结果，不能判通过</p><h4>验收与责任</h4><p>前端/SEO：Schema validator + Rich Results Test + 人工事实核对</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="部分核验" id="rule-D02"><summary><span class="rule-id">D02</span><span class="rule-title">Merchant listing 的 Product/Offer按当前必需字段实现：产品 name/image/offers…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G</div><h4>完整要求</h4><p>Merchant listing 的 Product/Offer按当前必需字段实现：产品 name/image/offers，有效售价与币种；brand/description等不得把整个示例都声称必需。<a href="https://developers.google.com/search/docs/appearance/structured-data/merchant-listing">S24</a></p><h4>实际检查与结论</h4><p>JS Product包含name/image/Offer价币种；图片/必需字段Google验证与资格未完成</p><h4>验收与责任</h4><p>商品/前端：必需字段与推荐字段分开，所有占位符禁止上线；不要填假0价/假评论</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T04">T04</a> / <a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="部分核验" id="rule-D03"><summary><span class="rule-id">D03</span><span class="rule-title">Product/Offer优先初始HTML；Google明确提醒JS生成可能影响Shopping抓取的频率/可靠性。body…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>Product/Offer优先初始HTML；Google明确提醒JS生成可能影响Shopping抓取的频率/可靠性。body、Schema、GMC和后台来源一致。<a href="https://developers.google.com/search/docs/appearance/structured-data/merchant-listing">S24</a></p><h4>实际检查与结论</h4><p>raw无Product、JS后有；仅为Shopping可靠性建议；GMC/后台未核</p><h4>验收与责任</h4><p>平台：一份市场/变体快照驱动多输出，记录刷新/过期窗口</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T04">T04</a></p></div></details><details class="rule" data-status="未验证" id="rule-D04"><summary><span class="rule-id">D04</span><span class="rule-title">每个variant有可预选的独立URL，恢复图片、价格、库存和可购买状态；单页ProductGroup采用共同canonic…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/O/B</div><h4>完整要求</h4><p>每个variant有可预选的独立URL，恢复图片、价格、库存和可购买状态；单页ProductGroup采用共同canonical，多页变体另行设计。<a href="https://developers.google.com/search/docs/appearance/structured-data/product-variants">S25</a></p><h4>实际检查与结论</h4><p>一个真实variant参数200；颜色尺寸指向不同product路径；选择恢复/模型未确认</p><h4>验收与责任</h4><p>产品/SEO：决定哪些是单页变体、哪些有独立价值；不得对带参数PDP统一noindex</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-D05"><summary><span class="rule-id">D05</span><span class="rule-title">GMC link指向所售具体变体；canonical_link/HTML canonical表达规范实体，不能要求三者字面完…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>GMC link指向所售具体变体；canonical_link/HTML canonical表达规范实体，不能要求三者字面完全相同。<a href="https://support.google.com/merchants/answer/9340054">S16</a></p><h4>实际检查与结论</h4><p>未读取GMC Feed/link/canonical_link或后台SKU</p><h4>验收与责任</h4><p>Feed/前端：选择SKU、落地价格库存与加购目标一致</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-D06"><summary><span class="rule-id">D06</span><span class="rule-title">条码先验证是否真实GTIN再映射；Vendor不必然等于brand；SKU/MPN/认证/产品尺寸单位来源明确。</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>条码先验证是否真实GTIN再映射；Vendor不必然等于brand；SKU/MPN/认证/产品尺寸单位来源明确。<a href="https://developers.google.com/search/docs/appearance/structured-data/merchant-listing">S24</a></p><h4>实际检查与结论</h4><p>可见SKU但GTIN/MPN/vendor来源和真实性未核</p><h4>验收与责任</h4><p>商品：数据质量规则与错误队列，不填虚构标识和认证</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T04">T04</a> / <a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-D07"><summary><span class="rule-id">D07</span><span class="rule-title">现价与Compare-at价分清；促销有效期真实且含明确时区；缺货、预订、预售与停售按事实映射。PreSale是合法枚举。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>现价与Compare-at价分清；促销有效期真实且含明确时区；缺货、预订、预售与停售按事实映射。PreSale是合法枚举。<a href="https://schema.org/PreSale">S24</a></p><h4>实际检查与结论</h4><p>样本127.99USD/InStock、划线价和会员入口存在；预售/停售/市场与源系统未核</p><h4>验收与责任</h4><p>商品/运营：价格及库存边界测试，不能凭库存字段单一真假忽略可预订状态</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T04">T04</a> / <a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-D08"><summary><span class="rule-id">D08</span><span class="rule-title">真实评分/评论对应当前商品或明确产品组；无评论时不伪造aggregateRating。评论内容可让用户访问，不要求所有评论一…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>真实评分/评论对应当前商品或明确产品组；无评论时不伪造aggregateRating。评论内容可让用户访问，不要求所有评论一次全部展开。<a href="https://developers.google.com/search/docs/appearance/structured-data/merchant-listing">S23</a></p><h4>实际检查与结论</h4><p>同页schema166与正文198不一致；评论真实性及聚合范围未知，不判造假</p><h4>验收与责任</h4><p>客服/商品：评分总数与有效评论来源；UGC/付费推广关系透明</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T04">T04</a></p></div></details><details class="rule" data-status="部分核验" id="rule-D09"><summary><span class="rule-id">D09</span><span class="rule-title">配送、退货、会员价按现有真实政策表达；组织级默认和商品例外区分。缺失推荐属性通常是改进项，不等于Product无效。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>配送、退货、会员价按现有真实政策表达；组织级默认和商品例外区分。缺失推荐属性通常是改进项，不等于Product无效。<a href="https://developers.google.com/search/docs/appearance/structured-data/organization">S24</a></p><h4>实际检查与结论</h4><p>公开配送退货政策200、有正文；未逐地区/SKU核费用与资格</p><h4>验收与责任</h4><p>运营：地区、费用、时间、条件与政策页一致；免邮/30天退货等不能硬编码无例外</p><p class="rule-links">证据：<a href="#trust">信任与媒体证据</a>　实施：<a href="#task-T04">T04</a> / <a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="部分核验" id="rule-D10"><summary><span class="rule-id">D10</span><span class="rule-title">首页WebSite/OnlineStore，列表BreadcrumbList（ItemList可选），文章Article/B…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>首页WebSite/OnlineStore，列表BreadcrumbList（ItemList可选），文章Article/BlogPosting，视频主页面VideoObject；普通促销页不因有日期就标Event。<a href="https://developers.google.com/search/docs/appearance/structured-data/organization">S13</a><a href="https://developers.google.com/search/docs/appearance/structured-data/breadcrumb">S27</a><a href="https://developers.google.com/search/docs/appearance/structured-data/event">S29</a></p><h4>实际检查与结论</h4><p>各模板schema类型已有记录；首页缺OnlineStore，Article实体/en跳转；作者视频未测</p><h4>验收与责任</h4><p>前端：每个实体有明确主体，列表卡片不是整页单一Product</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T01">T01</a> / <a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-D11"><summary><span class="rule-id">D11</span><span class="rule-title">FAQ富结果自2026-05-07起不再展示；保留有价值FAQ正文，停止以FAQPage富结果为验收目标。Schema.or…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>FAQ富结果自2026-05-07起不再展示；保留有价值FAQ正文，停止以FAQPage富结果为验收目标。Schema.org有某类型不代表Google有对应展示。<a href="https://developers.google.com/search/updates">S30</a></p><h4>实际检查与结论</h4><p>FAQ富结果2026停用已核；FAQ正文保留价值、不要求删合法既存schema</p><h4>验收与责任</h4><p>SEO：删除Skill旧的「仅政府/医疗可用」当前口径；不要求删掉所有合法既存FAQPage</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-D12"><summary><span class="rule-id">D12</span><span class="rule-title">同一页面可有多条合法BreadcrumbList路径 ，Google有明确multiple trails示例。不能仅凭两套面…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p><strong>同一页面可有多条合法BreadcrumbList路径</strong>，Google有明确multiple trails示例。不能仅凭两套面包屑要求删除；检查路径真实性、字段/顺序、实体关系、是否相互冲突。完全相同冗余对象可按工程策略去重。<a href="https://developers.google.com/search/docs/appearance/structured-data/breadcrumb">S28</a></p><h4>实际检查与结论</h4><p>两条Breadcrumb不自动失败；需核每条真实路径与用户导航</p><h4>验收与责任</h4><p>SEO/前端：分别列出各trail；保留真实不同路径，纠正错误/冲突路径，不将“多套”当失败条件</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T06">T06</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>图片与视频</h3><details class="rule" data-status="已确认问题" id="rule-M01"><summary><span class="rule-id">M01</span><span class="rule-title">商品主图、细节、规格等用可发现图像元素及真实src；有意义alt描述功能与内容，装饰图alt为空。alt不设10–125字硬…</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>商品主图、细节、规格等用可发现图像元素及真实src；有意义alt描述功能与内容，装饰图alt为空。alt不设10–125字硬阈值，文件名自然可描述。<a href="https://developers.google.com/search/docs/appearance/google-images">S31</a></p><h4>实际检查与结论</h4><p>主图Product Image/Product Main和图链alt0/活动Banner弱描述；装饰空alt不算错</p><h4>验收与责任</h4><p>内容/前端：图像角色抽样；CSS背景可作装饰，不让唯一关键商品信息只存在背景或图片文字</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="部分核验" id="rule-M02"><summary><span class="rule-id">M02</span><span class="rule-title">根据实际布局提供响应式尺寸；预留长宽或比例；LCP图不要lazy，适当提高优先级；非首屏可懒加载。格式/字节预算基于视觉质量…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>根据实际布局提供响应式尺寸；预留长宽或比例；LCP图不要lazy，适当提高优先级；非首屏可懒加载。格式/字节预算基于视觉质量与实测，而非统一200KB失败。<a href="https://web.dev/articles/vitals">S21</a></p><h4>实际检查与结论</h4><p>主图eager/srcset已见；high priority多、缺尺寸属性但CSS占位/网络未测</p><h4>验收与责任</h4><p>性能：实际下载尺寸、LCP资源、布局偏移与流量；不因JPEG格式自动失败</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T06">T06</a> / <a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-M03"><summary><span class="rule-id">M03</span><span class="rule-title">GMC主图必须真实对应商品、可访问，符合支持格式与内容要求。官方已公告 2027-01-31起最低500×500 ；1500…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/O</div><h4>完整要求</h4><p>GMC主图必须真实对应商品、可访问，符合支持格式与内容要求。官方已公告<strong>2027-01-31起最低500×500</strong>；1500×1500+为建议，不是当前800px准入线。<a href="https://support.google.com/merchants/answer/6324350">S33</a></p><h4>实际检查与结论</h4><p>一个680资源和浏览器1280候选可读；不代表GMC实际image_link/全图库资格</p><h4>验收与责任</h4><p>Feed/设计：按生效日分当前合规与未来整改；不把网页支持AVIF等同GMC image_link支持</p><p class="rule-links">证据：<a href="#trust">信任与媒体证据</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-M04"><summary><span class="rule-id">M04</span><span class="rule-title">若GMC素材由生成式AI生成，保留/提供AI来源元数据；普通原摄影图无需为SEO批量造IPTC作者。不能把「EXIF/IPT…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>若GMC素材由生成式AI生成，保留/提供AI来源元数据；普通原摄影图无需为SEO批量造IPTC作者。不能把「EXIF/IPTC非必需」扩大为所有来源元数据均可删除。<a href="https://support.google.com/merchants/answer/6324350">S33</a></p><h4>实际检查与结论</h4><p>没有媒体来源/AI生成与转码元数据证据</p><h4>验收与责任</h4><p>设计/媒体管线：转码前后元数据保留、真实创作者与许可</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-M05"><summary><span class="rule-id">M05</span><span class="rule-title">CDN图片稳定可抓取、不被WAF/robots误拦截；重要图片加入image sitemap，跨域CDN按官方要求验证所有权…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>CDN图片稳定可抓取、不被WAF/robots误拦截；重要图片加入image sitemap，跨域CDN按官方要求验证所有权。<a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps">S34</a></p><h4>实际检查与结论</h4><p>favicon/logo/一图普通UA200；所有重要图/CDN bot抓取/image sitemap未查全</p><h4>验收与责任</h4><p>平台：实际GET、缓存与robots、图像URL有效性</p><p class="rule-links">证据：<a href="#trust">信任与媒体证据</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-M06"><summary><span class="rule-id">M06</span><span class="rule-title">目标视频可在自动渲染HTML发现video/iframe等，不能只点击后创建；提供稳定缩略图、可访问文件/播放器与正确Vid…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/O</div><h4>完整要求</h4><p>目标视频可在自动渲染HTML发现video/iframe等，不能只点击后创建；提供稳定缩略图、可访问文件/播放器与正确VideoObject。视频特性有watch page等条件。<a href="https://developers.google.com/search/docs/appearance/video">S29</a></p><h4>实际检查与结论</h4><p>尚无代表视频主体/附带视频完整实测；不能判全站无视频</p><h4>验收与责任</h4><p>内容/前端：无交互渲染、视频索引报告；PDP附带视频不保证视频富结果</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-M07"><summary><span class="rule-id">M07</span><span class="rule-title">点播加载播放器可作为性能取舍，但若放弃无交互发现须明确记录；文字说明/字幕按用户需要提供，不宣称每个视频都必须文字稿才能Go…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>点播加载播放器可作为性能取舍，但若放弃无交互发现须明确记录；文字说明/字幕按用户需要提供，不宣称每个视频都必须文字稿才能Google收录。<a href="https://developers.google.com/search/docs/appearance/video">S29</a></p><h4>实际检查与结论</h4><p>视频目的、播放器交付与文字说明/字幕未形成实际样本</p><h4>验收与责任</h4><p>内容/产品：视频目的、可访问性、是否建立独立视频主页面</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>性能、移动与安全</h3><details class="rule" data-status="未验证" id="rule-P01"><summary><span class="rule-id">P01</span><span class="rule-title">CWV以真实用户p75：LCP≤2.5s、INP≤200ms、CLS≤0.1，手机/桌面分开；一次实验室分数不能代替fiel…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O</div><h4>完整要求</h4><p>CWV以真实用户p75：LCP≤2.5s、INP≤200ms、CLS≤0.1，手机/桌面分开；一次实验室分数不能代替field数据。<a href="https://web.dev/articles/vitals">S32</a></p><h4>实际检查与结论</h4><p>无CrUX/RUM；PSI429是API配额，不是性能失败</p><h4>验收与责任</h4><p>性能：CrUX/GSC/RUM，标明URL或origin、时间窗与样本不足</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-P02"><summary><span class="rule-id">P02</span><span class="rule-title">建立模板性能预算，优先LCP图、关键CSS、字体、API串行、第三方脚本、hydration开销和布局跳动；目标由真实基线制…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>建立模板性能预算，优先LCP图、关键CSS、字体、API串行、第三方脚本、hydration开销和布局跳动；目标由真实基线制定。<a href="https://web.dev/articles/vitals">S32</a></p><h4>实际检查与结论</h4><p>DOM/图片调度属性和异步现象已见；无trace/瀑布/TTFB缓存预算</p><h4>验收与责任</h4><p>前端：实验室复现、RUM回归；不为凑Lighthouse100引入业务退化</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-P03"><summary><span class="rule-id">P03</span><span class="rule-title">手机与桌面主体内容、结构化数据、robots及重要媒体等价，可改变布局和折叠；核心资源需手机Googlebot可访问。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>手机与桌面主体内容、结构化数据、robots及重要媒体等价，可改变布局和折叠；核心资源需手机Googlebot可访问。<a href="https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing">S35</a></p><h4>实际检查与结论</h4><p>三个模板1280/390视口同meta/schema；PDP标题语义有差异；不是真手机UA</p><h4>验收与责任</h4><p>QA：手机视口与设备 UA，首屏/折叠/分页/筛选；移动优先不意味着日志绝不出现桌面Googlebot</p><p class="rule-links">证据：<a href="#browser">浏览器证据</a>　实施：<a href="#task-T06">T06</a> / <a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-P04"><summary><span class="rule-id">P04</span><span class="rule-title">保持HTTPS、无混合内容；CSP/HSTS等按安全设计实施，不能把缺某安全header或HSTS preload列为Goo…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>保持HTTPS、无混合内容；CSP/HSTS等按安全设计实施，不能把缺某安全header或HSTS preload列为Google索引失败。48px触控与16px字体可作UX标准，非SEO排名门槛。<a href="https://developers.google.com/search/docs/appearance/page-experience">S36</a></p><h4>实际检查与结论</h4><p>静态资源未见明文http；禁缩放已确认；XHR/播放器/安全策略未全测</p><h4>验收与责任</h4><p>安全/前端：协议、资源与交互测试；避免CSP误封渲染/API</p><p class="rule-links">证据：<a href="#static">静态与 HTTP 证据</a>　实施：<a href="#task-T06">T06</a> / <a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-P05"><summary><span class="rule-id">P05</span><span class="rule-title">公开内容缓存按市场/语言/币种/variant区分；账户及购物车不得通过共享缓存泄露。API故障保留可解释状态，避免缓存空2…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>公开内容缓存按市场/语言/币种/variant区分；账户及购物车不得通过共享缓存泄露。API故障保留可解释状态，避免缓存空200/错误价。</p><h4>实际检查与结论</h4><p>未读部署/缓存/接口；不能确认市场缓存键或故障回退</p><h4>验收与责任</h4><p>平台：异常、缓存失效、并发与地区验证；这是正确性要求，不伪称排名指标</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T04">T04</a> / <a href="#task-T08">T08</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>页面内容与可信度</h3><details class="rule" data-status="规则已纠正" id="rule-C01"><summary><span class="rule-id">C01</span><span class="rule-title">按任务覆盖内容，Google无偏好字数；200词PDP、500词首页、1500词博客均不能作为硬门槛；固定关键词密度和每千字…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>按任务覆盖内容，Google无偏好字数；200词PDP、500词首页、1500词博客均不能作为硬门槛；固定关键词密度和每千字内链配额取消。<a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable">S03</a></p><h4>实际检查与结论</h4><p>取消固定字数/密度/内链配额；按任务和事实审稿</p><h4>验收与责任</h4><p>内容：用模块事实与用户问题验收，不为达字数制造重复段落</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="部分核验" id="rule-C02"><summary><span class="rule-id">C02</span><span class="rule-title">首页交代品牌与主要品类；类目解释范围/选择维度并连接商品；普通分页保持正确商品集；筛选白名单有区别于母类目的独立价值。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>首页交代品牌与主要品类；类目解释范围/选择维度并连接商品；普通分页保持正确商品集；筛选白名单有区别于母类目的独立价值。</p><h4>实际检查与结论</h4><p>指南/类目商品入口已读，部分模板文案泛化；全类目主题/重复/需求未核</p><h4>验收与责任</h4><p>内容/商品：主题一致、SKU集合、子类目/指南内链；导航文字不冒充主类目介绍</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="未验证" id="rule-C03"><summary><span class="rule-id">C03</span><span class="rule-title">新品与热卖分别定义时间窗口、上新/销售资格和刷新机制；它们不一定是折扣活动，不强制编造结束日期与优惠码。</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>新品与热卖分别定义时间窗口、上新/销售资格和刷新机制；它们不一定是折扣活动，不强制编造结束日期与优惠码。</p><h4>实际检查与结论</h4><p>新品/热卖页面存在；上新窗口与销售资格/排序真实依据未公开核实</p><h4>验收与责任</h4><p>运营：资格规则和数据源；<strong>B：窗口/热卖口径需业务确认</strong></p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T05">T05</a></p></div></details><details class="rule" data-status="部分核验" id="rule-C04"><summary><span class="rule-id">C04</span><span class="rule-title">场景活动覆盖主题、适用商品、真实规则与有效期；可长期复用同一路径。活动结束后的保留/更新/替代/移除由长期需求和内容价值决定…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P/B</div><h4>完整要求</h4><p>场景活动覆盖主题、适用商品、真实规则与有效期；可长期复用同一路径。活动结束后的保留/更新/替代/移除由长期需求和内容价值决定。</p><h4>实际检查与结论</h4><p>活动图示规则和正文缺口确认；code/时区/到期去向未验证</p><h4>验收与责任</h4><p>运营/SEO：时区、到期行为、历史权益说明；不统一301到首页</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T05">T05</a></p></div></details><details class="rule" data-status="已确认问题" id="rule-C05"><summary><span class="rule-id">C05</span><span class="rule-title">PDP按产品适用性补足规格、单位、材料、尺寸、兼容性、包装、安装、安全与售后；不要求每个商品凭空有评论、配件或FAQ。</span><span class="badge issue">已确认问题</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>PDP按产品适用性补足规格、单位、材料、尺寸、兼容性、包装、安装、安全与售后；不要求每个商品凭空有评论、配件或FAQ。</p><h4>实际检查与结论</h4><p>同PDP编织规格冲突，尺寸/Style有待审；安全/包装/承诺按适用性未齐核</p><h4>验收与责任</h4><p>商品：资料来源及事实审核；特别核对图中文字与规格表一致</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T04">T04</a> / <a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="部分核验" id="rule-C06"><summary><span class="rule-id">C06</span><span class="rule-title">博客列表有文章链接/分页；文章提供有用原创信息、真实作者与来源、适当发布日期和实质更新日期。不要仅改时间戳伪装新鲜。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>博客列表有文章链接/分页；文章提供有用原创信息、真实作者与来源、适当发布日期和实质更新日期。不要仅改时间戳伪装新鲜。<a href="https://developers.google.com/search/docs/appearance/structured-data/article">S03</a></p><h4>实际检查与结论</h4><p>博客列表/全文/日期与内链存在；单位疑问；作者资格/原创/实质更新未核</p><h4>验收与责任</h4><p>内容：作者资格、测试方法、引用支持、文章与商品内链；E-E-A-T不是可测量的官方四项25分</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="未验证" id="rule-C07"><summary><span class="rule-id">C07</span><span class="rule-title">禁止低价值批量内容、关键词堆砌、伪装用户体验的隐藏内容或虚假评价；AI使用与否不是单独定罪依据，审核事实和价值。</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>禁止低价值批量内容、关键词堆砌、伪装用户体验的隐藏内容或虚假评价；AI使用与否不是单独定罪依据，审核事实和价值。<a href="https://developers.google.com/search/docs/essentials/spam-policies#hidden-text-and-link-abuse">S02</a></p><h4>实际检查与结论</h4><p>已见泛化文案不等于作弊/AI来源；没有全站批量滥用或评论造假证据</p><h4>验收与责任</h4><p>内容/审核：真实性、原创增量、权益与投诉流程；不保证AI检测器能判生成来源</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="部分核验" id="rule-C08"><summary><span class="rule-id">C08</span><span class="rule-title">About、Contact、配送、退货、保修及服务区域真实一致；不编造美国地址、认证、作者经历或媒体背书。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>About、Contact、配送、退货、保修及服务区域真实一致；不编造美国地址、认证、作者经历或媒体背书。</p><h4>实际检查与结论</h4><p>About/Contact/Shipping/Refund/Privacy/Terms均200；法律/履约/保修及SKU例外未核</p><h4>验收与责任</h4><p>品牌/客服：由业务核准数据；标准客服/政策事实统一维护</p><p class="rule-links">证据：<a href="#trust">信任与媒体证据</a>　实施：<a href="#task-T06">T06</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-C09"><summary><span class="rule-id">C09</span><span class="rule-title">Google AI搜索沿用基本可抓取、可索引和内容要求，不需要特殊AI schema、llms.txt或固定问答格式；外部代…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>Google AI搜索沿用基本可抓取、可索引和内容要求，不需要特殊AI schema、llms.txt或固定问答格式；外部代理发现另立范围。<a href="https://developers.google.com/search/docs/appearance/ai-features">S37</a></p><h4>实际检查与结论</h4><p>不以llms.txt/特殊AI标签当Google硬门槛；代理发现另行评估</p><h4>验收与责任</h4><p>SEO：不以有无llms.txt打Google SEO分，不承诺增加某字段必被AI引用</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T08">T08</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>国际化</h3><details class="rule" data-status="未验证" id="rule-I01"><summary><span class="rule-id">I01</span><span class="rule-title">真正对应的语言/地区版本使用完整URL、自引用和双向hreflang；缺失国家商品不凭路径拼接；lang不能代替hrefla…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O</div><h4>完整要求</h4><p>真正对应的语言/地区版本使用完整URL、自引用和双向hreflang；缺失国家商品不凭路径拼接；lang不能代替hreflang。<a href="https://developers.google.com/search/docs/specialty/international/localized-versions">S38</a></p><h4>实际检查与结论</h4><p>样本未见hreflang；未取得真实对应国家实体与互返证据</p><h4>验收与责任</h4><p>国际SEO：按实体映射核对200、互返与版本内容</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-I02"><summary><span class="rule-id">I02</span><span class="rule-title">分页若存在真正对应本地版本可互联；不能全部指回各国类目首页，也不能仅按页码强行对应不同商品集。无法对应时省略。</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P/B</div><h4>完整要求</h4><p>分页若存在真正对应本地版本可互联；不能全部指回各国类目首页，也不能仅按页码强行对应不同商品集。无法对应时省略。</p><h4>实际检查与结论</h4><p>撤销分页全指首页/只按页码配对；实际国际分页尚未验证</p><h4>验收与责任</h4><p>SEO：分页商品范围/顺序与映射验证；x-default统一美国站是待确认业务策略</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-I03"><summary><span class="rule-id">I03</span><span class="rule-title">每种币种/区域内容有可直接访问URL；避免仅靠IP/cookie锁定或强制跳转使爬虫不可访问。</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>每种币种/区域内容有可直接访问URL；避免仅靠IP/cookie锁定或强制跳转使爬虫不可访问。<a href="https://developers.google.com/search/docs/specialty/international/localized-versions">S24</a></p><h4>实际检查与结论</h4><p>未测试无cookie跨国家/币种/IP访问与购买事实</p><h4>验收与责任</h4><p>平台：无cookie直访、地区切换、价格库存和配送市场一致</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-I04"><summary><span class="rule-id">I04</span><span class="rule-title">noindex搜索/账户/购物车/普通筛选不配无意义hreflang；独立可索引国家内容不一律canonical美国站。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>noindex搜索/账户/购物车/普通筛选不配无意义hreflang；独立可索引国家内容不一律canonical美国站。</p><h4>实际检查与结论</h4><p>已补与noindex协调策略；实际国际搜索/交易/筛选hreflang未查</p><h4>验收与责任</h4><p>SEO：对齐索引策略与hreflang；消除相互冲突</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T02">T02</a> / <a href="#task-T08">T08</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>Sitemap 与平台分工</h3><details class="rule" data-status="部分核验" id="rule-S01"><summary><span class="rule-id">S01</span><span class="rule-title">Sitemap每个文件最多50,000 URL或50MB未压缩，超限拆分；有效XML、命名空间、转义、绝对URL。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G</div><h4>完整要求</h4><p>Sitemap每个文件最多50,000 URL或50MB未压缩，超限拆分；有效XML、命名空间、转义、绝对URL。<a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">S39</a></p><h4>实际检查与结论</h4><p>root54子图、读3张；全部54图有效XML/50k/50MB未测完</p><h4>验收与责任</h4><p>平台：生成校验、计数、解压尺寸、全部索引子图可访问</p><p class="rule-links">证据：<a href="#raw">原始 HTTP 记录</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-S02"><summary><span class="rule-id">S02</span><span class="rule-title">纳入希望索引的规范有效页面；排除重定向、错误、noindex、交易/跟踪URL；分页通常通过内链发现，是否入图按策略。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>纳入希望索引的规范有效页面；排除重定向、错误、noindex、交易/跟踪URL；分页通常通过内链发现，是否入图按策略。<a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">S39</a></p><h4>实际检查与结论</h4><p>抽样成员关系已知；缺canonical本身不证明所有图内URL违规；全准入未查</p><h4>验收与责任</h4><p>SEO/平台：与路由policy同源，差集检测；不能把所有不在Sitemap的URL都当故障</p><p class="rule-links">证据：<a href="#raw">原始 HTTP 记录</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-S03"><summary><span class="rule-id">S03</span><span class="rule-title">lastmod反映实质变化；同一时刻真实批量更新可相同，不因值相同直接判假。priority/changefreq被Goog…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>lastmod反映实质变化；同一时刻真实批量更新可相同，不因值相同直接判假。priority/changefreq被Google忽略，不是非法或会惩罚的标签。<a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">S39</a></p><h4>实际检查与结论</h4><p>没有lastmod历史与内容事件源，不能证明可信或造假</p><h4>验收与责任</h4><p>平台：内容版本与更新时间；不每日重写无变化日期</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-S04"><summary><span class="rule-id">S04</span><span class="rule-title">通过GSC提交或robots声明；Sitemap是提示，不保证抓取/索引。缺robots文件不自动视SEO失败，区分404与…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O</div><h4>完整要求</h4><p>通过GSC提交或robots声明；Sitemap是提示，不保证抓取/索引。缺robots文件不自动视SEO失败，区分404与5xx后果。<a href="https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec">S39</a></p><h4>实际检查与结论</h4><p>robots200声明sitemap且root可读；GSC提交/读取结果未知</p><h4>验收与责任</h4><p>SEO：提交、读取错误、最后读取时间；robots实际状态</p><p class="rule-links">证据：<a href="#raw">原始 HTTP 记录</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-S05"><summary><span class="rule-id">S05</span><span class="rule-title">Shopify后台源数据、前端meta/body/schema、实际域名robots/sitemap/feed各有责任人；主…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>Shopify后台源数据、前端meta/body/schema、实际域名robots/sitemap/feed各有责任人；主题默认SEO不自动适用于自研前端。<a href="https://shopify.dev/docs/storefronts/hydrogen">S41</a></p><h4>实际检查与结论</h4><p>前端公开输出已见；Shopify/Feed/backend owner与字段源没有核实</p><h4>验收与责任</h4><p>平台：分工表与实际发布域名验证，不能只检查myshopify后台输出</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T04">T04</a> / <a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-S06"><summary><span class="rule-id">S06</span><span class="rule-title">先核对真实技术栈和版本再套实现方案；Shopify旧Hydrogen SEO文档现归legacy，适用2026-04及以前；…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>先核对真实技术栈和版本再套实现方案；Shopify旧Hydrogen SEO文档现归legacy，适用2026-04及以前；2026-10新文档把路由/渲染交给框架。<a href="https://shopify.dev/docs/storefronts/headless/legacy/hydrogen/seo">S41</a></p><h4>实际检查与结论</h4><p>观察React/Next流式标记不等于读生产代码；框架部署/API版本未确认</p><h4>验收与责任</h4><p>技术负责人：记录框架/部署/API版本；不未经查证要求迁移Hydrogen或照抄旧CLI</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details></div><div class="rule-group" data-rule-group=""><h3>监控、发布与验收</h3><details class="rule" data-status="部分核验" id="rule-V01"><summary><span class="rule-id">V01</span><span class="rule-title">建立模板测试清单：首页、类目1/2页、普通筛选1/2页、白名单筛选、排序、新品、热卖、场景活动、博客列表/文章、PDP/va…</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>建立模板测试清单：首页、类目1/2页、普通筛选1/2页、白名单筛选、排序、新品、热卖、场景活动、博客列表/文章、PDP/variant、空结果/错误页。</p><h4>实际检查与结论</h4><p>已有12初始状态+search/sort/404/variant等补查；白名单/空结果/真实生命周期缺</p><h4>验收与责任</h4><p>QA：原始HTML/自动DOM/禁JS/交互证据与期望字段；不用同一模板一个URL代表全站</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T07">T07</a> / <a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="未验证" id="rule-V02"><summary><span class="rule-id">V02</span><span class="rule-title">发布前校验关键meta、链接、商品实体和三态一致；先模板灰度，再扩样，保留回滚与前后版本。</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>发布前校验关键meta、链接、商品实体和三态一致；先模板灰度，再扩样，保留回滚与前后版本。</p><h4>实际检查与结论</h4><p>本次只诊断，没有生产灰度/回滚或前后版本实测</p><h4>验收与责任</h4><p>前端/QA：索引范围误改、价格/商品不一致、分页断链为阻断发布项</p><p class="rule-links">证据：<a href="#delivery">实施与验收</a>　实施：<a href="#delivery">T01–T08</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-V03"><summary><span class="rule-id">V03</span><span class="rule-title">URL Inspection API仅返回Google已索引版本信息，不是实时渲染测试；GSC界面live test另行检查…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>URL Inspection API仅返回Google已索引版本信息，不是实时渲染测试；GSC界面live test另行检查，API也不能返回live渲染HTML。<a href="https://support.google.com/webmasters/answer/9012289">S22</a></p><h4>实际检查与结论</h4><p>API已索引状态与界面live分开；当前无GSC执行证据</p><h4>验收与责任</h4><p>SEO：结果注明工具、时间和限制，不能把API PASS写为最新页面实测通过</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T07">T07</a></p></div></details><details class="rule" data-status="未验证" id="rule-V04"><summary><span class="rule-id">V04</span><span class="rule-title">监控GSC索引、canonical、Sitemap、富结果与抓取异常；性能用URL/origin粒度区分；无CrUX不判性能…</span><span class="badge unknown">未验证</span></summary><div class="rule-body"><div class="rule-grade">规则等级：O/P</div><h4>完整要求</h4><p>监控GSC索引、canonical、Sitemap、富结果与抓取异常；性能用URL/origin粒度区分；无CrUX不判性能差，也不要求先人为增流量。</p><h4>实际检查与结论</h4><p>没有GSC监控/CrUX基线与发布后数据</p><h4>验收与责任</h4><p>SEO/性能：基线及发布后7/28天对比，低样本标未知；用实验室与RUM补证据</p><p class="rule-links">证据：<a href="#overview">本页诊断</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-V05"><summary><span class="rule-id">V05</span><span class="rule-title">商品/类目不使用Google Indexing API批量催收录；它限JobPosting及嵌入BroadcastEvent…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>商品/类目不使用Google Indexing API批量催收录；它限JobPosting及嵌入BroadcastEvent的VideoObject。Sitemap和正常发现路径用于电商。<a href="https://developers.google.com/search/apis/indexing-api/v3/using-api">S43</a></p><h4>实际检查与结论</h4><p>不对商品/类目调用GoogleIndexingAPI；本次未提交收录</p><h4>验收与责任</h4><p>SEO：任务配置与URL类型校验；IndexNow不是Google收录接口</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-V06"><summary><span class="rule-id">V06</span><span class="rule-title">区分GSC搜索表现与GA4站内结果；Garvee正式GA4渠道用 Garvee Channel Group v1 / ses…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>区分GSC搜索表现与GA4站内结果；Garvee正式GA4渠道用 <code>Garvee Channel Group v1</code> / <code>sessionCustomChannelGroup:15429916316</code>，不套Skill默认渠道口径。</p><h4>实际检查与结论</h4><p>已沿用正式GA4渠道合同；本次未取GA4/GSC效果数据</p><h4>验收与责任</h4><p>分析：记录维度、筛选、时区、归因口径；按页面类型/设备/国家观察，避免将季节性归于修复</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="规则已纠正" id="rule-V07"><summary><span class="rule-id">V07</span><span class="rule-title">GSC将AI Overviews/AI Mode并入Web搜索表现；不能声称现成有独立AI引用过滤器。独立AI可见度需另行定…</span><span class="badge method">规则已纠正</span></summary><div class="rule-body"><div class="rule-grade">规则等级：G/P</div><h4>完整要求</h4><p>GSC将AI Overviews/AI Mode并入Web搜索表现；不能声称现成有独立AI引用过滤器。独立AI可见度需另行定义方法与样本。<a href="https://developers.google.com/search/docs/appearance/ai-features">S37</a></p><h4>实际检查与结论</h4><p>AI搜索表现口径已补；本次无AI引用/流量份额数据</p><h4>验收与责任</h4><p>分析：展示可观测指标和无法拆分部分，不杜撰AI流量份额</p><p class="rule-links">证据：<a href="#requirements">完整标准</a>　实施：<a href="#task-T08">T08</a></p></div></details><details class="rule" data-status="部分核验" id="rule-V08"><summary><span class="rule-id">V08</span><span class="rule-title">技术验收与效果验收分开：前者检查响应/DOM/事实，后者观察抓取、索引、展示点击转化；不承诺排名或收录时间。</span><span class="badge partial">部分核验</span></summary><div class="rule-body"><div class="rule-grade">规则等级：P</div><h4>完整要求</h4><p>技术验收与效果验收分开：前者检查响应/DOM/事实，后者观察抓取、索引、展示点击转化；不承诺排名或收录时间。</p><h4>实际检查与结论</h4><p>诊断/工单/验证边界已形成；未开发部署，因此效果验收未发生</p><h4>验收与责任</h4><p>SEO/项目负责人：每项负责人、样例URL、截止/复查日期、证据链接、回滚条件</p><p class="rule-links">证据：<a href="#delivery">实施与验收</a>　实施：<a href="#delivery">T01–T08</a></p></div></details></div></section><section class="chapter" id="evidence"><div class="chapter-num">06</div><h2>方法与证据附录</h2><p class="chapter-intro">需要追溯时在本页展开，不中断主报告阅读。</p><p>正文结论对应以下方法与观察。附录均嵌入本页；无需其他 Markdown 文件。原始 HTTP、飞书全文、完整 JSON、授权材料保留在本地证据包，未嵌入报告。</p><details class="appendix" id="samples"><summary>样本 URL、检查方法与证据口径</summary><h3>初始12个页面/状态</h3>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>页面</th>
+<th>观察范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S01</td>
+<td><a href="https://www.garvee.com/">首页</a></td>
+<td>原始HTTP、禁JS、启JS、滚动后</td>
+</tr>
+<tr>
+<td>S02</td>
+<td><a href="https://www.garvee.com/collections/rugs">Rugs专题类目</a></td>
+<td>原始HTTP和启JS；该专题未独立做禁JS</td>
+</tr>
+<tr>
+<td>S03</td>
+<td><a href="https://www.garvee.com/collections/living-room-rugs">Living Room Rugs</a></td>
+<td>三层对照，V2双视口</td>
+</tr>
+<tr>
+<td>S04</td>
+<td>S03实际Next（after cursor）</td>
+<td>原始HTTP、禁JS、启JS</td>
+</tr>
+<tr>
+<td>S05</td>
+<td><a href="https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;filter.v.price.gte=0&amp;filter.v.price.lte=150">有货且价格$0–150</a></td>
+<td>浏览器和禁JS；自动HTTP按通用robots跳过</td>
+</tr>
+<tr>
+<td>S06</td>
+<td>S05实际Next（保留筛选）</td>
+<td>浏览器和禁JS；自动HTTP跳过</td>
+</tr>
+<tr>
+<td>S07</td>
+<td><a href="https://www.garvee.com/collections/new-arrivals">新品</a></td>
+<td>原始HTTP、禁JS、启JS</td>
+</tr>
+<tr>
+<td>S08</td>
+<td><a href="https://www.garvee.com/collections/best-sellers">热卖</a></td>
+<td>原始HTTP、禁JS、启JS</td>
+</tr>
+<tr>
+<td>S09</td>
+<td><a href="https://www.garvee.com/pages/activity-halloween-sale">Halloween</a></td>
+<td>原始HTTP、禁JS、启JS及滚动后</td>
+</tr>
+<tr>
+<td>S10</td>
+<td><a href="https://www.garvee.com/blogs/buying-guides">博客列表</a></td>
+<td>原始HTTP、禁JS、启JS</td>
+</tr>
+<tr>
+<td>S11</td>
+<td><a href="https://www.garvee.com/blogs/buying-guides/everything-you-need-to-know-about-rug-sizes-and-placement">地毯尺寸文章</a></td>
+<td>三层对照，V2双视口</td>
+</tr>
+<tr>
+<td>S12</td>
+<td><a href="https://www.garvee.com/products/garvee-washable-area-rugs-10x13-living-pho-16khfwwy">10×13 ft地毯PDP</a></td>
+<td>三层对照，V2双视口</td>
+</tr>
+</tbody>
+</table></div>
+<p>真实普通Next：</p>
+<pre><code class="language-text">https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NzM3ODA3MTM1MDMzLCJvZmZzZXQiOjYzfQ%3D%3D
+</code></pre>
+<p>真实筛选Next：</p>
+<pre><code class="language-text">https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;filter.v.price.gte=0&amp;filter.v.price.lte=150&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NDgzMjMxMjk3ODQ5LCJvZmZzZXQiOjYzfQ%3D%3D
+</code></pre>
+<h3>V2新增检查</h3>
+<ul>
+<li>10个既有原始HTML重新逐字段检查：doctype/lang/charset/viewport、head、OG/X、a[href]与锚文本代理、图片、schema解析/实体URL、HTTPS资源和heading。</li>
+<li>真实搜索操作：输入washable rugs并回车；真实类目排序：选择Price: Low to High。浏览器访问不伪装Googlebot；自动抓取器仍遵守通用robots。</li>
+<li>小量HTTP探测：不存在路径、尾斜杠、带UTM进入并检查Next、一个从已有数据提取的真实variant ID、Article实体/en路径。没有访问账户、购物车和Checkout。</li>
+<li>PDP、普通类目、文章在1280×900与390×844 CSS视口对照；不是实际手机UA或Googlebot环境。</li>
+<li>另从真实导航发现DIY Ideas页面，原始HTML200但未见video/iframe/视频链接或VideoObject；这不证明全站没有视频，视频专项仍需代表样本。</li>
+<li>6个公开信任/政策页面：About、Contact、Shipping、Refund、Privacy、Terms；3个资源：favicon、Logo、商品图。只确认公开输出与可访问性，不做法律合规或官方归属背书。</li>
+<li>GSC配置未找到；PSI公共API此前429；Google Rich Results Test本轮提交URL后没有返回测试结果（页面加载reCAPTCHA组件），不将其计作通过。没有完成验证码或触发重新索引。</li>
+</ul>
+<p>原始/渲染状态请求时间、设备、默认availability及会话参数可能不同；不按字数或商品href数相除计算“收录率”。浏览器出现营销参数的来源未确认；本轮无cookieHTTP已独立复现“输入UTM→Next继承UTM”。</p><div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>标记</th>
+<th>含义</th>
+<th>禁止替代成的结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F：已确认事实</td>
+<td>响应、DOM、真实UI操作或明确字段直接证明</td>
+<td>不能自动推导掉排名、流量损失或全站发生率</td>
+</tr>
+<tr>
+<td>D：已确认不符合</td>
+<td>已核实输出违反明确项目合同，或页面内事实冲突</td>
+<td>不等于违反Google政策或已被处罚</td>
+</tr>
+<tr>
+<td>R：条件风险/优化建议</td>
+<td>有实现依据，但影响与是否需要改造仍需验证</td>
+<td>不能写成已失效、不可索引或保证提升</td>
+</tr>
+<tr>
+<td>U：未验证</td>
+<td>无所需样本、权限、日志、性能或后台事实源</td>
+<td>不能记作通过或失败</td>
+</tr>
+<tr>
+<td>N/A：条件不适用</td>
+<td>如无真实门店不应用LocalBusiness，或无需特殊AI标签</td>
+<td>不等于该领域永久无需复核</td>
+</tr>
+</tbody>
+</table></div>
+<p>P1是优先处理明确事实/模板/索引治理问题；P2是下一批内容、分享、语义和体验优化；V是优先验证。它们不是排名损失分数。本轮没有足够证据将任何项目定为已造成Google全站索引阻断的P0。</p></details><details class="appendix" id="coverage"><summary>飞书原文逐章覆盖审核 · 66 个规则组与 8 张嵌表</summary><h3>飞书原文 → 上一版审计覆盖矩阵</h3>
+<p>复核日期：2026-10-15。已通读 <code>feishu-source-expanded.md</code> 全部 2307 行、<code>FULL-AUDIT-REPORT.md</code> 全部 273 行及 <code>ACTION-PLAN.md</code> 全部 120 行，并核对 <code>raw-audit.md</code>、<code>rendered-observations.md</code>、<code>nojs-observations.md</code> 与嵌入表清单。本轮只核对已有材料，没有新做线上测试。</p>
+<p><strong>结论：上一版完成了请求所列页面类型的主要模板抽样，尤其是 SSR/body、title/description/canonical、筛选和商品事实；没有完成飞书全局规范的逐项审计。读完原文、写了实施建议、列入未来验收，均不能算对应项目已实测。</strong></p>
+<h4>口径与文件索引</h4>
+<ul>
+<li><strong>完成</strong>：所列窄范围检查已执行，能给出样本级结论；不表示网站已通过或已修复。</li>
+<li><strong>部分</strong>：已有部分实测，但规则组仍有未查字段、页面类型或状态。</li>
+<li><strong>未验证</strong>：没有足够对应实测证据；实施计划和泛化建议不计实测。</li>
+<li><strong>不适用</strong>：规则不是 SEO 必需项，或没有适用前提；不代表全站永远无需检查。</li>
+<li>原文行号均指当前 <code>feishu-source-expanded.md</code> 快照。原文从“一”的内容开始但无“一”标题，编号从二到二十一后跳到二十三；<strong>原文不存在二十二章</strong>，不是遗漏读取。</li>
+<li><code>F</code> = <strong>V1</strong> <code>v1-archive/FULL-AUDIT-REPORT.md</code>（复核时根目录同名文件，273行）；<code>A</code> = <strong>V1</strong> <code>v1-archive/ACTION-PLAN.md</code>（复核时根目录同名文件，120行）；<code>R</code> = <code>raw-audit.md</code>；<code>J</code> = <code>rendered-observations.md</code>；<code>N</code> = <code>nojs-observations.md</code>。表中的文件与小节/行号是V1定位依据。主代理后续将根目录F/A升级到V2，勿用V2行号套本矩阵；V1归档由主代理保留，本代理不改动其他文件。</li>
+<li>R 的原始 HTTP 样本有存档；J 明确说明没有另存完整渲染 DOM 或逐页截图，因此渲染证据可复现性较弱。N 是实际禁 JS 操作观察记录，不能用作全部页面所有资源字段的完整快照。</li>
+</ul>
+<h4>覆盖状态计数（仅V1工作覆盖，不是网站通过率）</h4>
+<ul>
+<li>逐章矩阵共 <strong>66 个规则组</strong>：完成 3、部分 45、未验证 18、不适用 0。</li>
+<li>8 张嵌入表单列：完成 0、部分 5、未验证 3、不适用 0。嵌表是上面规则组的子集，<strong>不能相加成总检查数</strong>。</li>
+<li>规则组中的不适用子要求（如独立IP/WHOIS、强制EXIF、特殊AI标签）已在诊断列指出；因同组仍含需验证项目，没有把整组计作不适用。</li>
+<li>“完成”仅指狭义样本检查完成，其中仍发现网站问题，且未完成全站扩展/后台验收。V2新增实测独立列于第五节，不改变此计数。</li>
+</ul>
+<h4>一、逐章与主要规则组</h4>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>组</th>
+<th>原文定位与要求</th>
+<th>上一版实际检查证据</th>
+<th>覆盖状态</th>
+<th>待补检查</th>
+<th>正确诊断口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>适用范围</td>
+<td>L3–23：包含请求页面以外的品牌、属性、Variant、搜索、评论问答、缺货停售、交易、媒体与国际站</td>
+<td>F L22–53列12个页面/状态；未包含多数扩展类型</td>
+<td>部分</td>
+<td>补页面类型清单、适用性和代表样本；独立品牌/属性/场景页是否存在</td>
+<td>12种样本不等于覆盖全局规范，也不等于全站爬取</td>
+</tr>
+<tr>
+<td>架构前提</td>
+<td>L25–39：自研前端+Shopify；前端承担公开 SEO 输出，商品交易事实同源</td>
+<td>确认公开 HTML/Next 流式表现；F L167承认未读生产仓库</td>
+<td>部分</td>
+<td>生产架构/路由/数据来源只读核验、Shopify/GMC字段映射</td>
+<td>HTML能证明输出结果，不能证明具体组件或后台根因</td>
+</tr>
+<tr>
+<td>全局原则：标准地址与真实事实</td>
+<td>L43–59：标准URL信号一致，正文可抓、事实真实、AI无需特殊标签</td>
+<td>F结论、SSR、canonical、PDP；GMC/Shopify未取得</td>
+<td>部分</td>
+<td>内部链接/Feed/跨站实体对齐、事实追溯、低价值页面规模</td>
+<td>局部冲突已证实；不能据此推算全站错误率或收入损失</td>
+</tr>
+<tr>
+<td>三：主域/协议</td>
+<td>L61–95：唯一www、保路径、无多跳</td>
+<td>R L41–43测试非www HTTPS首页、HTTP www首页；首页canonical两跳</td>
+<td>部分</td>
+<td>HTTP裸域、深层商品/类目路径、尾斜杠、大小写、参数保留与站点header canonical</td>
+<td>首页跳转不足以证明所有路径通过；原文示例本身有拼写/多跳矛盾</td>
+</tr>
+<tr>
+<td>三：移动端等价</td>
+<td>L97–114：同URL/正文/Meta/schema/Alt/canonical</td>
+<td>R模拟Googlebot Smartphone UA；N约645px；无同条件双端对照</td>
+<td>未验证</td>
+<td>同URL桌面/移动视口、实际渲染/源码字段对照；m子域行为</td>
+<td>改UA不是移动等价验证；禁JS窄视口也不是完整移动审计</td>
+</tr>
+<tr>
+<td>三：HTTPS与Mixed Content</td>
+<td>L116–134：所有页面/媒体/脚本/CSS/字体/schema/OG资源HTTPS</td>
+<td>访问目标为HTTPS，未有资源级结果</td>
+<td>未验证</td>
+<td>资源URL清单、重定向、控制台/网络Mixed Content、跨CDN抓取</td>
+<td>首页HTTPS不能判全资源通过</td>
+</tr>
+<tr>
+<td>三：IP/WHOIS与访问稳定性</td>
+<td>L136–152：不强制独立IP/公开WHOIS；稳定性/WAF/CDN/Googlebot可达</td>
+<td>10个普通HTTP样本成功；模拟UA4页</td>
+<td>部分</td>
+<td>真实Googlebot日志、美国地域稳定性、CDN/WAF、5xx/429/TTFB分布</td>
+<td>独立IP/WHOIS要求不适用；访问稳定性尚不能下结论</td>
+</tr>
+<tr>
+<td>四：HTTP状态码与错误回退</td>
+<td>L156–179：200/301/308/302/307/404/410/500/503/429/401/403；不伪装200</td>
+<td>正常样本200与少数跳转；A列无效cursor/API失败验收但未执行</td>
+<td>部分</td>
+<td>不存在实体、非法/越界cursor、空结果、停用/权限、API失败测试；校验错误页schema</td>
+<td>不能因正常页面200推断软404不存在；PSI429是API配额，不是Garvee故障</td>
+</tr>
+<tr>
+<td>五：路由/Handle</td>
+<td>L183–233：推荐公开路径、小写连字符、稳定Handle</td>
+<td>样本符合主要路径族；未系统检查Handle</td>
+<td>部分</td>
+<td>存量URL命名、重复路径、大小写/下划线、生成与变更规则</td>
+<td>存量不理想slug不宜仅为格式批量迁移，需权衡重定向成本</td>
+</tr>
+<tr>
+<td>五：URL迁移</td>
+<td>L235–246：旧新一对一301、内部链接/sitemap/Feed更新、历史保留</td>
+<td>无真实迁移案例；A是方案</td>
+<td>未验证</td>
+<td>挑历史迁移商品，查旧新链路、内部链接、Feed、配置/日志</td>
+<td>不能把canonical修复建议当迁移机制已验证</td>
+</tr>
+<tr>
+<td>五：营销参数</td>
+<td>L248–263：canonical/sitemap/常规内链不含营销参数</td>
+<td>J观察翻页继承当次营销参数；F已限制不推断来源</td>
+<td>部分</td>
+<td>无cookie干净进入、不同平台参数、全模板内链、sitemap/Feed参数污染</td>
+<td>已证实当次Next继承；不能断言归因插件就是来源</td>
+</tr>
+<tr>
+<td>六：索引总表</td>
+<td>L267–296：25类页面 index/canonical/sitemap合同</td>
+<td>12样本robots/canonical，少数sitemap成员关系；A URL建议矩阵</td>
+<td>部分</td>
+<td>排序、搜索、游客/登录cart、账户、交易、preview、白名单、变体、空/停售状态</td>
+<td>原文表与后文有冲突，先修合同再判网站符合性</td>
+</tr>
+<tr>
+<td>七：基础head与顺序</td>
+<td>L299–358：doctype/lang/charset/viewport/icon/head唯一与稳定</td>
+<td>主要查title/description/robots/canonical/schema；未给出charset/viewport等逐项证据</td>
+<td>部分</td>
+<td>基础标签存在/有效值/重复、HTTP header冲突、原始/客户端导航一致性</td>
+<td>head排序与X-UA-Compatible不是排名硬要求；有标签不等于值正确</td>
+</tr>
+<tr>
+<td>七：title</td>
+<td>L362–432：准确独有主题/品牌/属性、自定义优先，无硬截断</td>
+<td>10原始样本与渲染样本；博客空、热卖组件标题、PDP泛化标题</td>
+<td>完成</td>
+<td>扩展模板和大样本查重、客户端导航覆盖；自定义与fallback代码需另查</td>
+<td>完成的是样本输出检查；不是全站title唯一性或后台优先级验证</td>
+</tr>
+<tr>
+<td>七：description</td>
+<td>L436–502：重点页独有准确，自定义/fallback，真实承诺</td>
+<td>R逐页description；新品/Halloween/博客缺失；F补全文案方向</td>
+<td>部分</td>
+<td>页面商品范围与描述逐项比对、服务承诺政策源、自定义fallback配置、全站重复率</td>
+<td>不能把“有description”判为内容准确；兄弟类目兜底有误导风险</td>
+</tr>
+<tr>
+<td>七：robots meta</td>
+<td>L506–524：按页面类型/登录状态规则</td>
+<td>J所有样本index,follow；筛选与分页被识别为风险</td>
+<td>部分</td>
+<td>sort/search/variant/cart登录两态/checkout等；meta与X-Robots-Tag合并</td>
+<td>index,follow不是收录证明；noindex必须可被读取，私密页面仍需鉴权</td>
+</tr>
+<tr>
+<td>七：canonical</td>
+<td>L528–563：初始唯一绝对标准地址，不指向跳转/错误/noindex，不与header冲突</td>
+<td>R首页错误目标、其余9原始样本无canonical；J筛选无canonical</td>
+<td>完成</td>
+<td>全站扩展样本、HTTP Link头、客户端切换、所有目标状态及参数等价性</td>
+<td>当前完成样本HTML主要结论，非全站canonical审计；缺失不等于一定不索引</td>
+</tr>
+<tr>
+<td>七：hreflang</td>
+<td>L567–620：自引、互指、真实对应、200且canonical；特例表</td>
+<td>R样本无hreflang；F纠正分页统一指首页；未访问国家站</td>
+<td>部分</td>
+<td>真实国家版本映射、双向关系、目标状态/canonical、IP跳转、x-default</td>
+<td>无hreflang不能自动判所有页面缺陷；只有存在对应国际版本才适用</td>
+</tr>
+<tr>
+<td>七：HTML lang</td>
+<td>L624–641：正确语言，不能替代hreflang</td>
+<td>原始示例/浏览器曾可见en，未逐样本汇总核验</td>
+<td>未验证</td>
+<td>所有模板lang与实际内容、国际站值</td>
+<td>en可表达英语，不能把缺en-US一律当Google识别失败</td>
+</tr>
+<tr>
+<td>七：无须meta</td>
+<td>L645–665：keywords等非必须，旧searchbox指令不应继续使用</td>
+<td>F L219指出keywords不用紧急删除；首页SearchAction说明</td>
+<td>部分</td>
+<td>全部旧meta/robots预览指令清单，区分无效与有害</td>
+<td>不用keywords不是必须移除；SearchAction残留不等于违规或可恢复富结果</td>
+</tr>
+<tr>
+<td>八：品牌名称</td>
+<td>L669–702：logo/title/og:site_name/WebSite/OnlineStore/公司页面一致</td>
+<td>F首页WebSite非www与缺OnlineStore；未核对所有实体信号</td>
+<td>部分</td>
+<td>全模板品牌名、alternateName、About/Contact/footer/OG统一</td>
+<td>展示GARVEE不足以证明法律主体与实体信息正确</td>
+</tr>
+<tr>
+<td>八：Favicon</td>
+<td>L704–742：标签、方形/尺寸、稳定URL、可抓取</td>
+<td>无对应实测结果</td>
+<td>未验证</td>
+<td>请求图标、尺寸/格式、robots、实际资源与首页标签</td>
+<td>favicon存在、可下载、符合尺寸是不同检查</td>
+</tr>
+<tr>
+<td>八：Logo</td>
+<td>L744–767：各位置/实体logo一致，HTTPS、公开稳定、非促销图</td>
+<td>有页面品牌图像观察，未审资源与多处一致性</td>
+<td>未验证</td>
+<td>logo资源状态/尺寸/防盗链、页头页脚/About/OG/schema对齐</td>
+<td>不能仅因看到页头logo判完整通过</td>
+</tr>
+<tr>
+<td>八：sameAs/社交</td>
+<td>L769–791：真实官方、公开、活跃、footer/schema一致</td>
+<td>N/J可见社交footer href，未验证账号官方性或访问</td>
+<td>部分</td>
+<td>逐个目标可用/归属/名称、OnlineStore.sameAs对应</td>
+<td>一个外链存在不能证明真实官方；不得自行补陌生账号</td>
+</tr>
+<tr>
+<td>九：站内搜索表单</td>
+<td>L795–832：search/form get q、可访问名、无JS提交、可复制URL、特殊字符与空搜索</td>
+<td>只观察到搜索输入框；未提交测试</td>
+<td>未验证</td>
+<td>表单action/method/name、禁JS提交、可复制结果、空/特殊字符处理与robots</td>
+<td>可访问输入框不等于真实表单可提交；不主动进行未授权安全攻击测试</td>
+</tr>
+<tr>
+<td>十：OG全局/商品</td>
+<td>L836–877：基础字段、图像尺寸/格式/alt、正确url、variant价格</td>
+<td>未给出逐字段审计；F只建议实体/metadata统一</td>
+<td>未验证</td>
+<td>各模板OG矩阵、图片实际请求、价格币种与variant、URL身份</td>
+<td>不能把title/description检查等同OG检查；OG也不是canonical替代</td>
+</tr>
+<tr>
+<td>十：Article OG与X Card</td>
+<td>L878–923：作者日期section、twitter图文、官方账号、类型适配表</td>
+<td>Article JSON-LD有抽查，不等于OG/X已查</td>
+<td>未验证</td>
+<td>文章OG时间作者、Twitter字段与账号归属、活动/筛选/分页应用</td>
+<td>社交分享元数据和Google结构化数据应分开验收</td>
+</tr>
+<tr>
+<td>十一：HTML5语义</td>
+<td>L927–970：main/header/nav/article/aside/footer明确</td>
+<td>J统计main.innerText；未核验main唯一/landmark结构</td>
+<td>部分</td>
+<td>每模板main数量/范围、导航及搜索landmark、正文是否落在main外</td>
+<td>用main字符计数不证明语义结构合格</td>
+</tr>
+<tr>
+<td>十一：Heading</td>
+<td>L972–997：明确主H1、模块H2/H3、无Logo重复H1</td>
+<td>R/J定位缺H1、文章和PDP双H1；F已提修复</td>
+<td>完成</td>
+<td>完整H2/H3层级/卡片标题、折叠模块/响应式副本</td>
+<td>完成主要H1抽样；非完整标题大纲验证，多H1不是自动处罚</td>
+</tr>
+<tr>
+<td>十一：DOM与hydration</td>
+<td>L999–1024：无重复移动正文/隐藏卡片、无点击生成核心、无伪装</td>
+<td>raw hidden块+三层核心body检查；未做DOM规模/重复/hydration同条件分析</td>
+<td>部分</td>
+<td>桌面移动副本、隐藏modal/卡片、DOM规模/深度、tab与图片文字、事实hydration变化</td>
+<td>React隐藏流片段不是恶意隐藏关键词；不能把所有hidden都算作弊</td>
+</tr>
+<tr>
+<td>十二：链接/锚文本</td>
+<td>L1028–1068：a[href]、描述性锚文</td>
+<td>普通Next实链、导购/变体href、新品View More按钮区别</td>
+<td>部分</td>
+<td>主导航/子导航/博客/推荐全模板链接可抓、空href/div onclick、锚文本语境</td>
+<td>Next是正常功能锚文，不应机械改成长关键词</td>
+</tr>
+<tr>
+<td>十二：商品卡/页脚</td>
+<td>L1070–1094：图文同URL、alt命名、无营销参数；政策与国家入口</td>
+<td>观察卡片和footer；未逐卡验证图与标题目标、政策入口</td>
+<td>部分</td>
+<td>图/title链接一致、标准URL、图片alt、政策/Accessibility/国家入口及目标有效性</td>
+<td>footer未展开的AX不能证明政策链接缺失</td>
+</tr>
+<tr>
+<td>十三：面包屑</td>
+<td>L1098–1166：可见层级/当前页、主分类、JSON-LD一致</td>
+<td>PDP两份不同BreadcrumbList已证实，N可见breadcrumbs</td>
+<td>部分</td>
+<td>所有模板各节点名称/URL/position、当前页标记、跨Collection稳定主路径</td>
+<td>多条面包屑本身可合法；问题是当前不一致/无清晰归属，不宜一刀切所有多路径</td>
+</tr>
+<tr>
+<td>十四：分页与无限滚动</td>
+<td>L1170–1206：唯一集合、自canonical、真实Next/Prev、无Session、越界404</td>
+<td>真实cursor下页不同列表+真实href，noJS不可见；J新品加载button</td>
+<td>部分</td>
+<td>cursor稳定/过期/重放、边界与循环、page=1、最后页、全部模块Load More</td>
+<td>cursor不必改页码；URL可被发现与禁JS可见是两种判断</td>
+</tr>
+<tr>
+<td>十四：head next/prev</td>
+<td>L1208–1219：有则输出绝对link rel next/prev</td>
+<td>报告检查的是body分页a，没有该head字段结论</td>
+<td>未验证</td>
+<td>抽查head next/prev与页面链接一致，纠正文档要求级别</td>
+<td>它是可选互操作字段，不应声称缺失会造成Google不识别分页</td>
+</tr>
+<tr>
+<td>十五：筛选/排序/白名单</td>
+<td>L1223–1284：组合准入、noindex、参数序、空结果、库存/价格/排序</td>
+<td>一个价格+有货组合及其Next；robots组差异</td>
+<td>部分</td>
+<td>颜色/尺寸等更多属性、排序+分页、白名单、空/零商品、参数排列/重复与规模</td>
+<td>一个价格样本不能证明全部filter/sort行为；白名单需需求与供给证据</td>
+</tr>
+<tr>
+<td>十六：图片文件名/稳定URL</td>
+<td>L1288–1318：描述主体、小写连字符、无短期签名</td>
+<td>无系统资源级审计</td>
+<td>未验证</td>
+<td>各类型图名、CDN变换参数、签名有效期、替换策略</td>
+<td>随机文件名是优化机会，不是图片无法索引的充分证据</td>
+</tr>
+<tr>
+<td>十六：alt/title/caption</td>
+<td>L1320–1440：按功能写alt、装饰可空、尺寸图正文补足</td>
+<td>Halloween通用Banner Image；R空alt评分星为装饰；N商品图Product Image</td>
+<td>部分</td>
+<td>主图/角度/尺寸/场景/变体/评论/功能图标、重复alt、caption、tooltip依赖</td>
+<td>空alt不能全算错；易变促销用HTML正文，避免原文Banner-alt条款内冲突</td>
+</tr>
+<tr>
+<td>十六：响应式/资源可抓</td>
+<td>L1442–1470：尺寸、srcset/sizes、高清与移动体积、格式/CDN可抓</td>
+<td>未有资源请求/像素/属性清单</td>
+<td>未验证</td>
+<td>width/height、currentSrc、natural尺寸、srcset/sizes、内容类型/大小、robots/防盗链</td>
+<td>声明属性不等于真实响应式选择正确</td>
+</tr>
+<tr>
+<td>十六：LCP/懒加载</td>
+<td>L1472–1498：首屏非lazy、非首屏lazy、关键图无需交互插入</td>
+<td>首页/Halloween滚动后商品增量；未确认LCP图片属性</td>
+<td>部分</td>
+<td>首屏真实LCP元素、loading/fetchpriority/preload、非首屏图片可发现、轮播/Tab</td>
+<td>滚动与等待并发，不能据观察断言唯一触发器是scroll</td>
+</tr>
+<tr>
+<td>十六：评论图片/EXIF</td>
+<td>L1500–1516：评论图语义，EXIF非必选</td>
+<td>无评论图内容检查</td>
+<td>部分</td>
+<td>评论图片alt与附近评论对应</td>
+<td>EXIF/IPTC批量SEO填充不适用；评论图规则仍未验证</td>
+</tr>
+<tr>
+<td>十七：视频</td>
+<td>L1520–1573：标题描述时间时长缩略图/transcript、稳定URL、VideoObject与可抓</td>
+<td>未选择含视频样本，未执行视频审计</td>
+<td>未验证</td>
+<td>发现商品/安装/KOL视频，查静态文本、poster、播放器/视频资源、schema、预览指令</td>
+<td>没在一个PDP观察到视频不能判全站不适用；点击加载播放器本身并非SEO错误</td>
+</tr>
+<tr>
+<td>十八：schema总则与类型矩阵</td>
+<td>L1577–1616：合法真实可见、无冲突、按主体类型</td>
+<td>10raw样本schema类型+JS PDP/Article/WebSite抽查</td>
+<td>部分</td>
+<td>JSON字段/URL/图片有效性、错误页/作者/视频/账户模板、Rich Results Test</td>
+<td>JSON-LD存在、语法有效、符合富结果和实际展示是四层结论</td>
+</tr>
+<tr>
+<td>十九：WebSite/OnlineStore</td>
+<td>L1620–1688：站名实体ID、legalName/contact/logo/sameAs与公开政策</td>
+<td>首页raw无schema、JS仅WebSite非www；未核事实</td>
+<td>部分</td>
+<td>全部字段、主体/联系/国家实体、退货配送会员政策同步</td>
+<td>当前已知是输出缺口；不能编造legalName/电话/政策</td>
+</tr>
+<tr>
+<td>二十：ProductGroup与字段映射</td>
+<td>L1692–1773：group/variant关系、SKU/GTIN/brand/options/media</td>
+<td>一PDP JS Product、变体href；没有后台映射证据</td>
+<td>部分</td>
+<td>真实group/variant样本、直接恢复选择、id稳定、SKU/Barcode GTIN有效性、商品图/offer URL</td>
+<td>看见变体链接不等于恢复选择成功；Barcode非天然有效GTIN</td>
+</tr>
+<tr>
+<td>二十：Offer/价格</td>
+<td>L1776–1803：各库存状态、有效价/币种、compare-at/会员价</td>
+<td>一PDP可见$127.99 In Stock；未与Shopify/Feed校验</td>
+<td>部分</td>
+<td>缺货/预售/停售、会员与游客价、币种、优惠起止、市场缓存</td>
+<td>页面与schema一致仍可能同源错误；需主数据验证，PreSale不应误删</td>
+</tr>
+<tr>
+<td>二十：评分评论真实性</td>
+<td>L1805–1831：可见一致、真实作者日期正文、无伪造</td>
+<td>166/198冲突、ratingValue4.77；未查真实性/统计规则</td>
+<td>部分</td>
+<td>review/ ratingCount区别、有效/删除状态、group聚合、代表正文、源系统</td>
+<td>不应简单把166改198；评分数据真实与聚合口径一致需单独验</td>
+</tr>
+<tr>
+<td>二十一：FAQ/Q&amp;A/评论分页</td>
+<td>L1837–1871：FAQ用户价值、真实问答锚点时间、代表评论自动可读</td>
+<td>读类目FAQ泛化、PDP评分摘要与评论链接；未测评论正文页/分页</td>
+<td>部分</td>
+<td>Reviews点击前正文、评论分页URL/robots/canonical、问答时间锚点、独立薄页规模</td>
+<td>评分摘要不等于代表性评论正文；FAQ存在不保证有决策价值</td>
+</tr>
+<tr>
+<td>二十三：首页内容合同</td>
+<td>L1875–1899：品牌/业务/场景/服务/商品/政策/实体/导航</td>
+<td>SSR空白、JS分类/滚动商品、H1/canonical/schema</td>
+<td>部分</td>
+<td>品牌说明、服务优势与政策事实、信任信息、主导航和首屏模块清单</td>
+<td>首页抓取风险已验证，不代表原文每一内容项已审</td>
+</tr>
+<tr>
+<td>二十三：Collection内容合同</td>
+<td>L1901–1918：简介列表过滤排序分页子类目决策面包屑</td>
+<td>两个类目模板+翻页/筛选；指南质量、H1/列表/canonical</td>
+<td>部分</td>
+<td>排序、子类目映射、选品数量/主题、同类目重复、空类目</td>
+<td>Rugs专题与普通列表应分模板验收</td>
+</tr>
+<tr>
+<td>二十三：PDP内容合同</td>
+<td>L1920–1946：SKU包装安装安全退换/评论FAQ配件替代/指南</td>
+<td>主名称价格库存规格描述变体和摘要已读</td>
+<td>部分</td>
+<td>按字段列齐缺失/不适用：SKU、包装、安装安全、退换、评论正文、FAQ、配件替代与指南内链</td>
+<td>不同商品并非都需安装/配件，应明确适用性；“PDP SSR完整”不等于内容完整</td>
+</tr>
+<tr>
+<td>二十三：活动内容与生命周期</td>
+<td>L1948–1970：规则/时间/code/限制/价格/过期和去向</td>
+<td>Halloween图片规则与正文缺口；新品热卖分流建议</td>
+<td>部分</td>
+<td>后台真实起止/时区/code、到期切换、历史活动状态/跳转</td>
+<td>常青新品热卖无需虚构coupon/截止；现有截图不能验证结账优惠</td>
+</tr>
+<tr>
+<td>二十三：缺货商品</td>
+<td>L1972–1983：200/canonical/OutOfStock/提醒预计恢复替代/保留内容</td>
+<td>仅当前有货样本及某些变体链接Out of Stock标签</td>
+<td>未验证</td>
+<td>选真实暂缺PDP、schema状态/主内容/提醒与预计信息、替代链接</td>
+<td>变体链接上Out of Stock字样不等于缺货目标页通过</td>
+</tr>
+<tr>
+<td>二十三：停售商品</td>
+<td>L1985–1998：按替代/历史价值处理、禁止全跳首页</td>
+<td>只有实施建议，无真实停售样本</td>
+<td>未验证</td>
+<td>停售200/替代301/410样本、历史价值决策和跳转目标相关性</td>
+<td>保留200必须清楚标停售；不机械将所有停售转分类</td>
+</tr>
+<tr>
+<td>二十三：404</td>
+<td>L2000–2011：真实404、无Product/self-canonical/sitemap，辅助导航</td>
+<td>A列未来验收，未执行</td>
+<td>未验证</td>
+<td>无效商品/类目/文章/活动/游标，错误页head/schema和导航</td>
+<td>禁JSLoading不是已证实软404；需HTTP和内容语义双证据</td>
+</tr>
+<tr>
+<td>二十四：sitemap结构/准入</td>
+<td>L2015–2059：只收正式200/index/self-canonical国家语言URL</td>
+<td>根54子图；读collections1740/blogs846/pages109；部分成员检查</td>
+<td>部分</td>
+<td>全部子图及产品图、样本URL状态/robots/canonical联查、参数/失效/国家污染</td>
+<td>“pages图未见Halloween”不能扩大为所有图未见；图内URL不等于准入合格</td>
+</tr>
+<tr>
+<td>二十四：lastmod/图片图</td>
+<td>L2061–2113：真实实质变化、无需priority/changefreq、清晰稳定可抓图片</td>
+<td>未验证lastmod来源/变化或商品图片sitemap</td>
+<td>未验证</td>
+<td>历史两次快照与内容事件、商品图字段与资源、修改机制</td>
+<td>XML有lastmod不证明可信；未输出图片扩展不是自动SEO错误</td>
+</tr>
+<tr>
+<td>二十五：CWV</td>
+<td>L2119–2131：真实用户p75 LCP/INP/CLS</td>
+<td>PSI请求429；F明确未得分</td>
+<td>未验证</td>
+<td>CrUX/RUM或GSC CWV、模板/设备分布、实验室定位</td>
+<td>429不是性能不达标；实验室分不是真实用户达标证据</td>
+</tr>
+<tr>
+<td>二十五：性能工程</td>
+<td>L2133–2147：图片/CSS/JS/API/降级/布局/font/第三方/hydration</td>
+<td>SSR行为和部分异步内容观察；无网络/trace/布局分析</td>
+<td>部分</td>
+<td>网络瀑布、API串并行、JS体积、缓存、长任务、CLS来源、失败回退</td>
+<td>建议拆边界不等于已定位性能根因或已证实提升</td>
+</tr>
+<tr>
+<td>二十六：AI/Agent</td>
+<td>L2151–2174：传统可抓和事实基础；Agent Discovery独立可选</td>
+<td>SSR/事实审计支持基础；没有agents.md/llms.txt端点核验</td>
+<td>部分</td>
+<td>仅在业务需要时查代理发现能力与声明；政策/联系方式可信度</td>
+<td>特殊AI标签不适用；Agent Discovery不列作Google排名必需项</td>
+</tr>
+<tr>
+<td>二十七：Head清单</td>
+<td>L2178–2206：charset至冲突meta共13项</td>
+<td>title/canonical/robots/schema部分完成，OG/X/favicon/lang等缺口如上</td>
+<td>部分</td>
+<td>逐项关联证据，不能整组勾选</td>
+<td>keywords清单与前文冲突需修正规范</td>
+</tr>
+<tr>
+<td>二十七：页面结构清单</td>
+<td>L2208–2224：main/导航/面包屑/heading/交互/重复与隐藏</td>
+<td>H1与核心JS依赖强证据，其余部分</td>
+<td>部分</td>
+<td>顶层main、完整heading、重复副本/隐藏词、全部导航</td>
+<td>正常streaming hidden不等于隐藏关键词作弊</td>
+</tr>
+<tr>
+<td>二十七：商品清单</td>
+<td>L2226–2246：数据/variant/评论/images/生命周期/GMC</td>
+<td>一个PDP事实冲突、SSR与schema；大部分后台/状态未验证</td>
+<td>部分</td>
+<td>同二十/二十一/二十三；增加Feed/Shopify比对</td>
+<td>未通过源系统核验不能称商品事实准确</td>
+</tr>
+<tr>
+<td>二十七：Collection清单</td>
+<td>L2248–2264：需求数量独有/不重复/分页/白名单/sort/空页</td>
+<td>分页/filter和指南抽样</td>
+<td>部分</td>
+<td>搜索需求、同类目近重复、白名单清单、sort/空类目</td>
+<td>模板抽样不产生全站重复率或搜索需求结论</td>
+</tr>
+<tr>
+<td>二十七：媒体清单</td>
+<td>L2266–2286：文件alt尺寸lazy/OG/video/可抓</td>
+<td>仅部分alt和异步出现证据</td>
+<td>部分</td>
+<td>图片与视频专项补测，优先首屏/关键媒体</td>
+<td>该组是上一版主要漏项之一</td>
+</tr>
+<tr>
+<td>二十七：抓取索引清单</td>
+<td>L2288–2307：主域/404/sitemap/robots/隐私/参数/链路/hreflang</td>
+<td>部分跳转、robots组、canonical、子sitemap抽样</td>
+<td>部分</td>
+<td>错误状态、交易搜索、全子图、国际双向、资源robots与真实Google检查</td>
+<td>不能用12样本替代全站抓取/索引验收</td>
+</tr>
+</tbody>
+</table></div>
+<h4>二、8 张嵌入规则表逐表复核</h4>
+<p><code>feishu-tables.json</code> 返回 8 张有业务规则的嵌入表，另有 <code>Sheet1 A1:T200</code> 占位表；后者不是第9张业务规则表。展开原文中的 Robots、hreflang、OG应用矩阵是正文Markdown表，同样已在上表覆盖。</p>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>表ID / 范围</th>
+<th>展开原文定位</th>
+<th>要求</th>
+<th>上一版实测</th>
+<th>状态</th>
+<th>缺口与正确口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VxSCiz / A1:C9</td>
+<td>L159–168</td>
+<td>8类HTTP状态及对应SEO行为</td>
+<td>正常200、少量301；PSI429不是站点状态</td>
+<td>部分</td>
+<td>补404/410/临时跳转/故障/权限；不能把错误回退建议算实测</td>
+</tr>
+<tr>
+<td>P4K9ix / A1:B11</td>
+<td>L188–201</td>
+<td>10种公开URL体系</td>
+<td>首页/Collection/PDP/pages/blog路由样本</td>
+<td>部分</td>
+<td>搜索/cart/account/真实Checkout未查；路径建议不意味着替代路径天然不可索引</td>
+</tr>
+<tr>
+<td>j4dn4r / A1:D26</td>
+<td>L270–296</td>
+<td>25类index/canonical/sitemap关系</td>
+<td>已选样本及部分子图成员关系</td>
+<td>部分</td>
+<td>Variant/品牌/白名单/搜索/交易/错误/preview等未验；表内cart index与文末冲突</td>
+</tr>
+<tr>
+<td>TBmqX6 / A1:B13</td>
+<td>L1600–1613</td>
+<td>12类结构化数据应用</td>
+<td>WebSite/Article/Breadcrumb/Product类型抽样</td>
+<td>部分</td>
+<td>OnlineStore事实、ProductGroup、视频/作者/错误/交易schema未验；无真实门店则LocalBusiness不适用</td>
+</tr>
+<tr>
+<td>x5u94q / A1:B17</td>
+<td>L1756–1772</td>
+<td>16字段Shopify→Schema映射</td>
+<td>公开Product价格/库存/评分片段，未读后台映射</td>
+<td>未验证</td>
+<td>需源字段/转换/验证/variant/市场/缓存证据；Barcode必须先验GTIN</td>
+</tr>
+<tr>
+<td>pjwWlf / A1:B8</td>
+<td>L1779–1787</td>
+<td>7种库存/销售状态</td>
+<td>当前有货PDP显示In Stock</td>
+<td>部分</td>
+<td>临缺/预订/预售/停售与未知状态未查；状态值需按真实销售机制映射</td>
+</tr>
+<tr>
+<td>l8Gtgr / A1:B5</td>
+<td>L1990–1995</td>
+<td>4种停售处置</td>
+<td>无停售样本</td>
+<td>未验证</td>
+<td>查真实迁移与保留，替代相关性需业务判断</td>
+</tr>
+<tr>
+<td>kX11Q6 / A1:B4</td>
+<td>L2124–2128</td>
+<td>LCP≤2.5s、INP≤200ms、CLS≤0.1</td>
+<td>PSI API配额失败，未得测量</td>
+<td>未验证</td>
+<td>真实用户第75百分位才是该表目标；不能标记通过或失败</td>
+</tr>
+</tbody>
+</table></div>
+<h4>三、原文、已有报告之间需要显式处理的差异</h4>
+<p>这些差异不能混成“网站不合规”。有些是原文本身冲突，有些是审计主动修订规范，有些是验收范围加严。</p>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>定位</th>
+<th>原文与报告的差异</th>
+<th>判断与需要采取的动作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原L49–50；F L73–84/A L26–45</td>
+<td>原文允许“服务端返回<strong>或自动渲染</strong>HTML”，报告要求关键内容禁JS可见</td>
+<td>这是工程验收加严，并非原句原本就要求纯无JS。用户特别追加了SSR/noJS对比，支持纳入审计；应明确“原规范最低可自动渲染”和“建议关键内容服务端可见”两层，不能将所有流式SSR判成未做SSR</td>
+</tr>
+<tr>
+<td>原L79–89及L2292；F L248–260</td>
+<td>域名跳转示例含garve.com并示范两跳；正文禁止多跳；清单只写301而状态表允许308</td>
+<td>修正文档示例和状态合同；301/308均可作为永久重定向。一跳是项目治理目标，不应包装成唯一搜索规范</td>
+</tr>
+<tr>
+<td>原L48/L2246；F L161/A L64</td>
+<td>“Feed URL/GMC URL与canonical一致”过于字面；报告允许Feed链接指选中variant</td>
+<td>报告是合理的语义细化：Feed实际落地变体与主商品canonical可不同；仍需事实、市场与实体对应，后台未验</td>
+</tr>
+<tr>
+<td>原L275–276/L513；F L161/A L66–86</td>
+<td>总表区分独立Variant，但robots表把所有带参数PDP noindex；报告不一刀切</td>
+<td>先按跟踪/variant/其他状态分型，明确单页/多页变体；目前只看到变体链接，没有恢复测试</td>
+</tr>
+<tr>
+<td>原L285/L518；F L248–260</td>
+<td>索引总表search待定，robots表已noindex，最终清单也要求noindex</td>
+<td>原文内部冲突；统一搜索结果noindex的建议后再实测，上一版没有搜索样本</td>
+</tr>
+<tr>
+<td>原L287–288/L520–523/L2299；F URL矩阵/A</td>
+<td>游客cart与登录注册原文index，文末要求搜索账户交易noindex；报告倾向cart/account/checkout noindex</td>
+<td>需明确路由/页面用途与登录两态；登录页如要索引必须有明确用途，不能默认为已获业务确认的所有策略</td>
+</tr>
+<tr>
+<td>原L611–613；F L102/A</td>
+<td>分页、排序、filter hreflang统一指首页；报告要求真实对应或省略</td>
+<td>报告是在纠正原文，不是已完成国际站审计；必须列国家映射证据后判断部署</td>
+</tr>
+<tr>
+<td>原L909–917；F metadata规范</td>
+<td>OG表要求分页/筛选og:url返回母页，而报告统一标准URL语义未专门区分OG</td>
+<td>这是上一版遗漏。社交聚合身份与SEO canonical应分别定义，不能把“全部URL都一致”的口号覆盖原表；按分享目标确认是否合并</td>
+</tr>
+<tr>
+<td>原L1208–1219；F分页/A</td>
+<td>原文要求head rel next/prev；报告仅验证body a[href]</td>
+<td>这是未审字段且原规范应降为可选/互操作目的，不能将其声称Google分页识别必需条件</td>
+</tr>
+<tr>
+<td>原L645–665与L2202；F L219</td>
+<td>前文keywords非必须，最终清单“无Meta Keywords”；报告称无需紧急删除</td>
+<td>应把清单改成“不依赖meta keywords排名”，删除可为代码清理但不是高优先SEO修复</td>
+</tr>
+<tr>
+<td>原L470；F L259</td>
+<td>叶子类目description可兜底兄弟类目，报告反对冒充本页商品范围</td>
+<td>报告纠正规则有理由；仍需实际核对列举品类是否在当前页，不是所有父子/兄弟名称出现都错误</td>
+</tr>
+<tr>
+<td>原L414–422/L482–491/L1948–1970；F L118–136/A L88–96</td>
+<td>所有活动模板要求折扣/优惠码/结束日期；报告区分常青新品热卖与限时促销</td>
+<td>必须记录为规范修订；不可在常青页为了凑字段生成不存在的优惠</td>
+</tr>
+<tr>
+<td>原L1364–1372与L1392–1400</td>
+<td>Banner核心信息只在图中时alt要表达信息，但后文禁止价格优惠入alt</td>
+<td>原文内部张力，上一版未展开。优先HTML表达促销事实，alt描述图意；必要可访问替代与易变信息更新合同需明确，不能机械同时遵守冲突条款</td>
+</tr>
+<tr>
+<td>原L1756–1772；F L260/A L61</td>
+<td>Barcode直接映射gtin；报告要求核验有效GTIN</td>
+<td>是数据验证闸门补全，不是证明当前Barcode错误；主数据映射本轮未验</td>
+</tr>
+<tr>
+<td>原L1783–1786；F L260</td>
+<td>原文PreSale合法，报告明确不应误删</td>
+<td>没有实际差异，不应为了“补全”捏造原文错误；保留并核验真实业务状态</td>
+</tr>
+<tr>
+<td>原L1839–1849；F L144</td>
+<td>原文已说FAQ以用户价值为主，报告给出更具体停显日期</td>
+<td>方向一致。日期属于外部事实需保留官方证据，不是原文遗漏FAQ提醒；本矩阵未重新浏览核实日期</td>
+</tr>
+<tr>
+<td>原L1920–1946；F L150</td>
+<td>原文PDP内容合同很长，报告说“SSR相对完整”</td>
+<td>只能解释为已观察核心字段可读，不能推广为包装/安全/退换/FAQ/配件/代表评论等全部存在；补字段级清单</td>
+</tr>
+<tr>
+<td>F L8 vs F L263–273/J L48–52</td>
+<td>F说“读取全部8表、12样本”，可能被误读为全规范审计完成；J没有保存完整DOM/逐页截图</td>
+<td>应在报告开头明确“原文全读、样本抽查，规则覆盖详见本矩阵”，并补可重放证据；不要宣称所有条款已完成</td>
+</tr>
+</tbody>
+</table></div>
+<h4>四、建议下一轮补测顺序</h4>
+<ol>
+<li><strong>可用现有raw文件先补，无需重新请求</strong>：head基础字段、完整OG/X、lang、图片属性与资源地址、schema逐字段、main/heading/导航/图文卡片目标、head rel next/prev。只能完成静态存在性，资源状态与交互仍需单独测。</li>
+<li><strong>少量代表性浏览器/HTTP补样本</strong>：搜索含空/特殊字符、排序含分页、有效变体直接恢复、真实缺货/停售/无效URL/越界cursor、视频PDP、桌面移动同条件对照；不得主动破坏生产接口制造错误。</li>
+<li><strong>资源与sitemap专项</strong>：首屏图、CDN/robots、OG图、favicon/logo；产品sitemap与准入交叉检查，lastmod需历史/生成机制证据，单次快照不够。</li>
+<li><strong>需后台/长期证据</strong>：GSC索引与Googlecanonical、真实Googlebot日志、GMC/Shopify主数据、评论口径、活动配置与优惠码、CrUX/RUM、跨国家对应关系。无权限时留未验证并列明所需证据，不能用公开页面推断后台事实。</li>
+</ol>
+<p>不建议给当前规范覆盖率百分比：每条规则粒度、模板数量及适用性不同，粗暴按表行计数会制造精确假象。以“已证实问题 / 待验证风险 / 原规范修订”三份清单分别推进更可靠。</p>
+<h4>五、本轮新增证据（与上一版覆盖分开）</h4>
+<p>以下由主审计代理在本轮浏览器实测后同步，详证应落在 <code>browser-v2.md</code>。上面的“上一版覆盖状态”保持原样，避免把后来补测倒填为上版已完成。此处只引用已报告观察，不替代完整浏览器存档。</p>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>补测</th>
+<th>新增观察</th>
+<th>对覆盖状态的影响与边界</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>飞书版本</td>
+<td>outline复查仍为revision 1156</td>
+<td>本矩阵仍对应同一规范版本</td>
+</tr>
+<tr>
+<td>站内搜索</td>
+<td>真实搜索washable rugs进入<code>/search?q=washable%20rugs</code>；H1为Search results for "washable rugs"；title出现重复Garvee品牌；robots为index,follow，无canonical；输入name为空且无form action</td>
+<td>搜索正常词查询与表单语义从未验证变为部分；证实原文noindex规则未落实。空搜索、特殊字符、禁JS提交、防注入仍未验证</td>
+</tr>
+<tr>
+<td>排序</td>
+<td>真实选择Price Low to High进入<code>?sort_by=price-ascending&amp;filter.v.availability=true</code>；index,follow，无canonical</td>
+<td>排序基础样本从未验证变为部分，排序+分页、其他排序与URL换序仍未验证</td>
+</tr>
+<tr>
+<td>双视口</td>
+<td>PDP/普通类目/文章在1280×900与390×844检查，title/canonical/schema一致且无横向溢出</td>
+<td>仅CSS视口响应式对照，不是手机UA、设备或真实Googlebot；只能把这三页所查字段的双视口检查记为部分完成</td>
+</tr>
+<tr>
+<td>文章语义</td>
+<td>两个视口均存在2个H1、2个main</td>
+<td>main唯一性新增已证实样本缺陷，不能外推所有文章模板</td>
+</tr>
+<tr>
+<td>PDP移动H1</td>
+<td>桌面商品主H1可见；390视口商品H1隐藏，但商品文字仍有非H1展示，Customer Reviews H1可见</td>
+<td>应诊断“移动主要标题语义缺失/错位”，不能说移动商品内容丢失或纯CSR</td>
+</tr>
+</tbody>
+</table></div></details><details class="appendix" id="static"><summary>静态与 HTTP 补查</summary><h3>Garvee补充静态审计</h3>
+<p>日期：2026-10-15。范围：读取已有10个原始HTML样本、5个低频普通UA只读HTTP探测，排序受robots限制未请求；未全站爬取。既有报告未修改。</p>
+<h4>结论等级</h4>
+<p>confirmed=源码/HTTP已确认的具体事实；recommendation=依据事实提出但需运行指标验证；pending=缺少业务策略或动态证据，不判通过。所有观察限于本次样本。</p>
+<h4>完整检查表</h4>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>样本</th>
+<th>lang / charset</th>
+<th>viewport禁缩放</th>
+<th>favicon</th>
+<th>canonical</th>
+<th>OG title/type/image/url</th>
+<th>Twitter title/image</th>
+<th>全部a / 空文字a / 无名代理</th>
+<th>img / missing alt / empty alt</th>
+<th>high priority</th>
+<th>JSON-LD解析</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>home</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>有</td>
+<td>有/有/有/缺</td>
+<td>有/有</td>
+<td>105 / 26 / 0</td>
+<td>32 / 0 / 2</td>
+<td>3</td>
+<td>无schema</td>
+</tr>
+<tr>
+<td>category</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>有/有/缺/有</td>
+<td>有/缺</td>
+<td>192 / 32 / 0</td>
+<td>31 / 0 / 2</td>
+<td>1</td>
+<td>无schema</td>
+</tr>
+<tr>
+<td>new-arrivals</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>有/有/缺/有</td>
+<td>有/缺</td>
+<td>97 / 21 / 0</td>
+<td>16 / 0 / 2</td>
+<td>3</td>
+<td>均有效JSON</td>
+</tr>
+<tr>
+<td>best-sellers</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>有/有/缺/有</td>
+<td>有/缺</td>
+<td>100 / 20 / 0</td>
+<td>26 / 0 / 2</td>
+<td>3</td>
+<td>均有效JSON</td>
+</tr>
+<tr>
+<td>halloween</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>有/有/缺/缺</td>
+<td>有/缺</td>
+<td>97 / 20 / 0</td>
+<td>32 / 0 / 2</td>
+<td>3</td>
+<td>无schema</td>
+</tr>
+<tr>
+<td>blog-list</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>缺/有/缺/缺</td>
+<td>缺/缺</td>
+<td>125 / 33 / 0</td>
+<td>25 / 0 / 2</td>
+<td>4</td>
+<td>均有效JSON</td>
+</tr>
+<tr>
+<td>blog-article</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>缺/缺/有/缺</td>
+<td>缺/有</td>
+<td>157 / 33 / 0</td>
+<td>30 / 0 / 2</td>
+<td>2</td>
+<td>均有效JSON</td>
+</tr>
+<tr>
+<td>listing</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>有/有/缺/有</td>
+<td>有/缺</td>
+<td>299 / 103 / 0</td>
+<td>1407 / 0 / 1232</td>
+<td>42</td>
+<td>均有效JSON</td>
+</tr>
+<tr>
+<td>product</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>有/缺/有/缺</td>
+<td>有/有</td>
+<td>147 / 34 / 0</td>
+<td>106 / 0 / 55</td>
+<td>9</td>
+<td>均有效JSON</td>
+</tr>
+<tr>
+<td>listing-page2</td>
+<td>en / utf-8</td>
+<td>是</td>
+<td>有</td>
+<td>无</td>
+<td>有/有/缺/有</td>
+<td>有/缺</td>
+<td>365 / 130 / 0</td>
+<td>1849 / 0 / 1622</td>
+<td>55</td>
+<td>均有效JSON</td>
+</tr>
+</tbody>
+</table></div>
+<p>注：OG字段完整性关系分享身份；不等于Google排名因子。JSON语法有效不等于Rich Results资格通过。空文字a可能包含有alt图片、aria-label或title；“无名代理0”不是完整可访问性评估。hidden真实a[href]仍可静态提取，不能因为不可见就说href无效。</p>
+<h4>已确认缺陷、建议与待验证项</h4>
+<h3>S01 · P1 · confirmed · Article实体URL使用会301跳转的/en路径</h3>
+<p><strong>证据</strong>：blog-article Article.url与mainEntityOfPage.@id含/en；补测该URL301到无/en文章。
+<strong>实施</strong>：Article实体URL、页面canonical、OG URL统一最终200规范路径；共享canonical URL builder，不拼接当前locale默认前缀。
+<strong>验收</strong>：Article.url和mainEntityOfPage.@id直接返回200且与canonical一致。</p>
+<h3>S02 · P1 · confirmed · UTM被分页href继承，缺规范化信号</h3>
+<p><strong>证据</strong>：新无cookie请求 ?utm_source=seo_audit&amp;utm_medium=diagnostic 307加availability后，Next href继续带两项UTM；页面index,follow且无canonical。
+<strong>实施</strong>：分页链接只序列化允许的语义参数（筛选状态和cursor），去掉utm/affiliate/会话参数；canonical剔除追踪参数，保留当前真实分页身份。
+<strong>验收</strong>：输入带UTM URL后Next href不含UTM，仍保留筛选和cursor；参数页canonical为对应干净状态URL。</p>
+<h3>S03 · P2 · confirmed · OG/Twitter继承通用首页信息</h3>
+<p><strong>证据</strong>：rugs、新品、热卖、listing及其后续页og:url=https://www.garvee.com；OG/Twitter title均Garvee | Quality Tools &amp; Home Essentials；og:description为含字面省略号的通用文案；无og:image。
+<strong>实施</strong>：共享metadata构造器按页面对象设置og:url/title/description/image和Twitter；避免子页覆盖丢失父级对象必需字段。
+<strong>验收</strong>：类目分享预览展示该类目的URL/标题/图片，不显示首页身份；服务器原始HTML已存在。</p>
+<h3>S04 · P2 · confirmed · OG协议字段不完整、locale格式不规范</h3>
+<p><strong>证据</strong>：首页有og:title/type/image但没有og:url；博客文章有image却无OG title/type/url；PDP有title/image却无OG type/url；Halloween缺OG image/url；所有出现og:locale处为en。
+<strong>实施</strong>：按OG基本四字段title,type,image,url完整输出；美国英语locale用en_US（OG格式），html lang=en仍合法；不把OG变化承诺成Google直接排名提升。
+<strong>验收</strong>：页面OG基本字段完整唯一；og:url最终200，og:locale遵循language_TERRITORY。</p>
+<h3>S05 · P2 · confirmed · 所有样本viewport声明禁止用户缩放</h3>
+<p><strong>证据</strong>：width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no
+<strong>实施</strong>：移除maximum-scale=1及user-scalable=no，保留width=device-width,initial-scale=1。
+<strong>验收</strong>：移动端用户可以放大至200%且内容可用。浏览器可能忽略限制，但不能依赖该容错。此项属于可访问性，非已证明排名下降。</p>
+<h3>S06 · P2 · confirmed · 商品主图alt描述通用</h3>
+<p><strong>证据</strong>：PDP有8个alt="Product Image"；Halloween有Banner Image / Banner Image Mobile。
+<strong>实施</strong>：主图alt表达商品类型、可见色彩/尺寸/视角；活动图有传达信息则表达活动主题，纯装饰图使用空alt；不要堆词或机械每张复读商品全标题。
+<strong>验收</strong>：每张信息性主图具有与图意一致的描述，图链alt能说明目的地；装饰评分星继续空alt。</p>
+<h3>S07 · P2 · recommendation · 过多图片high priority需按视口验证</h3>
+<p><strong>证据</strong>：listing原始HTML42个fetchpriority=high，后续页55个，PDP9个（8张gallery+国旗）；这只是DOM数量，不是实际网络并发或LCP结果。
+<strong>实施</strong>：只给实际LCP/首屏关键图high，其余auto；离屏图适度lazy。保留尺寸或aspect-ratio；responsive srcset按实际展示宽度配置。
+<strong>验收</strong>：移动端网络瀑布确认首屏主要图优先，离屏图库不抢占；用LCP/CLS现场数据验证改善。</p>
+<h3>S08 · P2 · pending · 商品?variant参数规范化方案</h3>
+<p><strong>证据</strong>：真实序列化ProductVariant/50370238120249拼接参数页200、index/follow、无canonical。只有单个variant样本，不能推断全部variant行为。
+<strong>实施</strong>：确认各变体是否独立商品URL、库存/价格/图片/Feed定位策略；若参数仅预选则canonical到主体商品，若独立有价值页面则明确独立URL与关联实体。
+<strong>验收</strong>：选择策略后body、URL、canonical、Offer URL、Feed落地页一致；不能统一无证据删除variant参数。</p>
+<h4>HTTP小样本探测</h4>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>测试</th>
+<th>结果</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.garvee.com/collections/living-room-rugs?sort_by=price-ascending">sort</a></td>
+<td>NOT_REQUESTED</td>
+<td>robots User-Agent:* Disallow:/collections/<em>sort_by</em>; no bot impersonation bypass</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/__seo_audit_missing_20261015_9f4b2d">404</a></td>
+<td>404</td>
+<td>无跳转</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/collections/living-room-rugs/">trailing-slash</a></td>
+<td>200</td>
+<td>308 /collections/living-room-rugs → 307 /collections/living-room-rugs?filter.v.availability=true</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/collections/living-room-rugs?utm_source=seo_audit&amp;utm_medium=diagnostic">utm</a></td>
+<td>200</td>
+<td>307 /collections/living-room-rugs?utm_source=seo_audit&amp;utm_medium=diagnostic&amp;filter.v.availability=true</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/products/garvee-washable-area-rugs-10x13-living-pho-16khfwwy?variant=50370238120249">variant</a></td>
+<td>200</td>
+<td>无跳转</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/en/blogs/buying-guides/everything-you-need-to-know-about-rug-sizes-and-placement">article-schema-en</a></td>
+<td>200</td>
+<td>301 /blogs/buying-guides/everything-you-need-to-know-about-rug-sizes-and-placement</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>404测试返回真实404，页面title/H1为Page Not Found，meta和X-Robots-Tag均noindex,nofollow；没有重定向首页。这一项样本通过，不推断所有删除商品均正确。</li>
+<li>尾斜杠通过308去斜杠，再307补availability=true后200，两跳行为已确认。不是自动严重缺陷；如默认只售有货商品是业务约束，需确定canonical是否用无参数干净集合URL，并减少无必要跳转。</li>
+<li>排序测试因通用robots禁止未发请求。不能把未抓取写成noindex或canonical已配置。</li>
+<li>变体ID来自原始PDP的Shopify ProductVariant序列化数据；非凭空构造。测试未提交购物车、账户或结算操作。</li>
+</ul>
+<h4>检查通过或无需判错的项目</h4>
+<ul>
+<li>所有样本html lang=en和UTF-8声明存在；英文HTML的lang=en合法，不需机械换en-US。样本均有favicon链接，未进一步请求图标文件验证其状态。</li>
+<li>所有原始a都有非空href，未发现javascript:链接；相对路径、绝对HTTPS和页内fragment均是正常模式。没有图链同时缺文字和图片alt的样本；无名链接代理为0。</li>
+<li>外链主要为support.garvee.com和品牌社交站点；没有凭证或业务关系证据，不能要求所有外链nofollow。广告/付费或用户生成链接需据真实关系使用sponsored/ugc。</li>
+<li>检查到的资源src/link href/video poster没有HTTP明文URL；JSON-LD的http://schema.org是词汇上下文，不是页面混合内容请求。CSS背景图、运行后XHR及播放器内容不在该静态结论范围。</li>
+<li>全部已检JSON-LD解析成功。Breadcrumb相对@id并非自动无效；建议统一最终绝对URL降低实体歧义。PDP多条breadcrumb可有多个合法路径，当前是否故意设计待产品确认；可确认的是初始HTML没有Product/Offer而JS后出现，属于交付可靠性建议，不单独判富结果资格失败；不能仅凭两条Breadcrumb就判违规。</li>
+<li>评分星多数alt为空且aria-hidden=true，属于装饰。PDP空alt非aria-hidden还有物流/信任图与重复布局素材，未看图意前不一概算缺陷。</li>
+</ul>
+<h4>尚需动态/业务验证</h4>
+<ul>
+<li>首屏/LCP不能用DOM顺序代替；源HTML中logo可能先于header并不等于首屏，CSS断点可能只显示桌面或移动图。未测网络瀑布，不宣称所有high priority均实际下载。</li>
+<li>source img srcset统计不能覆盖picture/source或客户端动态注入；没有srcset不自动等于图片SEO失败，需检查实际尺寸/显示宽度/流量。</li>
+<li>图片空alt、泛化alt与关键词不足应按图意决定；正文H1/H2语义改善不使用固定字数、关键词密度或多H1自动处罚。</li>
+<li>暂未验证href目标全量状态、外链存活率、hreflang跨国站配对、GSC选择canonical、Rich Results Test、Merchant Center或真实CWV。本报告不以缺安全头或IndexNow作为Google排名问题。</li>
+</ul>
+<h4>原始细节</h4>
+<p>supplemental-static-audit.json保存每页meta、head link、标题层级、链接分类、空文字锚明细、图片属性、schema实体URL及HTTP探测。新增HTML仅在raw/supplement-*.html。</p>
+<h4>官方依据</h4>
+<ul>
+<li><a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable">Google link best practices</a></li>
+<li><a href="https://developers.google.com/search/docs/appearance/google-images">Google image SEO</a></li>
+<li><a href="https://ogp.me/">Open Graph protocol</a></li>
+<li><a href="https://www.w3.org/WAI/standards-guidelines/act/rules/b4f0c3/">W3C meta viewport allows zoom</a></li>
+<li><a href="https://web.dev/articles/fetch-priority">web.dev fetch priority</a></li>
+</ul></details><details class="appendix" id="browser"><summary>搜索、排序与响应式补查</summary><h3>V2 浏览器补充核验</h3>
+<p>日期：2026-10-15。Chrome 扩展浏览器，通过实际页面与 DOM 读取；无购买、评论、订阅或账户操作。测试结束已恢复临时 viewport override。沿用浏览器现有会话，存在跟踪参数；本记录去除具体营销标识。不是 Google WRS 渲染证据。</p>
+<h4>搜索与排序</h4>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>检查</th>
+<th>观察</th>
+<th>结论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>输入 washable rugs 并回车</td>
+<td>进入 /search?q=washable%20rugs；H1 Search results for "washable rugs"；title Search results for "washable rugs" · Garvee · Garvee；robots index, follow；canonical缺失</td>
+<td>确认搜索页输出与补全后的noindex项目策略不一致；不能说已经被Google收录</td>
+</tr>
+<tr>
+<td>header搜索表单</td>
+<td>主要输入有aria-label但name为空、没有包裹form/action；另有移动输入</td>
+<td>JS搜索功能可用；不满足原文渐进增强表单合同。不是单凭缺form就无法Google收录</td>
+</tr>
+<tr>
+<td>普通类目选择 Price: Low to High</td>
+<td>最终业务参数sort_by=price-ascending&amp;filter.v.availability=true；combobox选中对应值；robots index, follow；canonical缺失</td>
+<td>排序页与原文noindex要求不一致；自动HTTP抓取器遵守robots未抓此页，本记录为真实浏览器检查</td>
+</tr>
+</tbody>
+</table></div>
+<p>搜索页显示1000 results和Showing32，仅记录展示，不断言真实数据库结果数。</p>
+<h4>CSS 视口等价抽样</h4>
+<p>使用明确的1280×900和390×844视口；不是手机UA、触屏或Googlebot Smartphone。均未观察到documentElement级横向溢出。字符数有布局文本差异，不代表SEO内容丢失率。</p>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>模板</th>
+<th>1280视口</th>
+<th>390视口</th>
+<th>共同元数据/事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PDP</td>
+<td>商品H1可见，Customer Reviews H1隐藏；main字符3305</td>
+<td>商品H1被布局隐藏，Customer Reviews H1可见；main字符5997；商品信息在移动布局存在</td>
+<td>title一致；canonical缺失；robots index,follow；Product价127.99USD/InStock；schema评论166，正文198；两main</td>
+</tr>
+<tr>
+<td>普通类目</td>
+<td>H1 Living Room Rugs；main12258字符；35个不同商品href</td>
+<td>H1同；main11887字符；35个不同商品href</td>
+<td>title/robots/Breadcrumb一致，canonical缺失</td>
+</tr>
+<tr>
+<td>博客文章</td>
+<td>两个H1；main11691字符</td>
+<td>同两个H1；main11337字符</td>
+<td>title为空、canonical缺失；Article实体/en路径；6个商品href；两main</td>
+</tr>
+</tbody>
+</table></div>
+<p>重要边界：PDP390视口记录来自同一tab调整尺寸，页面因布局重排发生滚动锚定；不能以当时处在视口中的图片作为移动“首屏”LCP候选。另一次新tab未继承override，实际1908×817，已从移动对照中排除。</p>
+<h4>图片</h4>
+<p>PDP1280视口主图alt为Product Main，eager，有srcset/sizes，自然尺寸1280×1280，显示宽350px；缩略图有srcset且lazy。图片元素没有width/height属性，但是否已由CSS aspect-ratio预留空间尚未验证，不能据此宣称产生CLS。390布局图片使用Product Image等通用alt，需改善语义，不能据尺寸单次观察判Shopping不合格。</p>
+<h4>弹窗</h4>
+<p>390视口实测出现Sale Ends Soon/SITEPOP5促销dialog，覆盖主体较大区域并遮罩页面，已通过Close按钮关闭。触发条件和首次自然搜索落地体验未验证，因此列为体验风险，不能宣称已经受到排名处罚。<a href="https://developers.google.com/search/docs/appearance/avoid-intrusive-interstitials">Google插页建议</a></p>
+<p>截图在工具观察中显示，但本文件未附可重放截图文件；复核应按以上状态重新采样。</p></details><details class="appendix" id="trust"><summary>品牌、政策与媒体抽查</summary><h3>V2 信任入口与媒体资源抽查</h3>
+<p>日期2026-10-15。使用无cookie普通HTTP GET；原始响应及结构化摘要保留在本地v2-evidence/。未提交表单、验证公司注册信息或做法律合规审查。</p>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>公开页面</th>
+<th style="text-align: right;">HTTP</th>
+<th>title</th>
+<th>原始canonical</th>
+<th>事实</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>About GARVEE</td>
+<td style="text-align: right;">200</td>
+<td>About GARVEE</td>
+<td>无</td>
+<td>存在品牌介绍主体</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td style="text-align: right;">200</td>
+<td>Contact Us · Garvee · Garvee</td>
+<td>无</td>
+<td>存在公开联系信息；title品牌后缀重复</td>
+</tr>
+<tr>
+<td>Shipping policy</td>
+<td style="text-align: right;">200</td>
+<td>Shipping Policy - GARVEE · Garvee</td>
+<td>无</td>
+<td>有政策正文，显示更新时间June28,2025</td>
+</tr>
+<tr>
+<td>Refund policy</td>
+<td style="text-align: right;">200</td>
+<td>Refund Policy - GARVEE · Garvee</td>
+<td>无</td>
+<td>有正文，提到30天；未逐SKU核对适用范围</td>
+</tr>
+<tr>
+<td>Privacy policy</td>
+<td style="text-align: right;">200</td>
+<td>Privacy Policy - GARVEE · Garvee</td>
+<td>无</td>
+<td>有正文，显示Last updated September9,2026</td>
+</tr>
+<tr>
+<td>Terms</td>
+<td style="text-align: right;">200</td>
+<td>Terms of Service - GARVEE · Garvee</td>
+<td>无</td>
+<td>有正文和联系入口</td>
+</tr>
+</tbody>
+</table></div>
+<p>这些页面证明公开入口存在，不能直接证明政策真实性、履约或全部商品承诺一致。部分正文也在hidden流式片段；不据此判Google不能索引。</p>
+<p>媒体抽查：</p>
+<ul>
+<li>首页favicon.ico返回200，实际内容为700×700 PNG，正方形；不能因扩展名.ico与PNG不同就判favicon无效。</li>
+<li>header Logo SVG返回200；品牌实体sameAs和法律主体仍需后台审核，未用公开可访问代替官方归属验证。</li>
+<li>一张商品主图width=680请求返回200、680×680 JPEG，约201KB；URL参数format=webp但这次普通请求响应为JPEG，不能仅凭URL推断实际编码，也不能替代浏览器协商/网络瀑布。</li>
+<li>浏览器1280视口选择到1280×1280的主图，说明不能用单个680响应断言原始图片最大尺寸或Shopping资格。</li>
+</ul>
+<p>完整摘要在本地v2-evidence/trust-media-v2.json；本报告公开/私有GitHub归档仅上传此文字摘要，不上传政策快照。</p>
+<p>视频发现补查：从已观察导航进入/pages/diy-ideas，原始GET200，未见video、iframe、YouTube/Vimeo视频链接或VideoObject。它不是已确认的视频样本，不能推断全站无视频或视频能力通过。</p></details><details class="appendix" id="raw"><summary>原始 HTTP 观察记录</summary><h3>Garvee 原始 HTTP / 静态 HTML 审计</h3>
+<blockquote>
+<p>V2复核说明：本文件保留V1证据/分析记录。hidden不等于GoogleSEO无效；多条合法Breadcrumb可保留。优先级、规范与最终诊断以<a href="#overview">本页诊断</a>及<a href="#requirements">完整标准</a>为准。</p>
+</blockquote>
+<p>采样日期：2026-10-15（Asia/Shanghai）。HTTP GET，普通桌面UA附SEOAudit标识，无JavaScript执行。原文件在raw/，逐页HTTP状态、响应头、摘要、链接与schemas在raw-manifest.json。</p>
+<h4>方法与边界</h4>
+<p>正文字符数为BeautifulSoup排除script/style/template后的空白归一文本，包含页头页尾；不代表可见主内容。排除显式hidden后的数值仅是静态代理，不等于浏览器禁JS结果（还可能有CSS隐藏）。React流式SSR的hidden真实HTML、JS序列化数据、执行JS后可见DOM必须分开。HTTP普通UA结果不等于Googlebot、索引或排名结论。抓取遵循通用robots规则，未抓后台/搜索/多重filter组合。</p>
+<h4>页面证据总表</h4>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>样本</th>
+<th style="text-align: right;">HTTP</th>
+<th>title</th>
+<th>canonical</th>
+<th style="text-align: right;">H1数</th>
+<th style="text-align: right;">body字符</th>
+<th style="text-align: right;">排除hidden字符</th>
+<th style="text-align: right;">商品href数</th>
+<th style="text-align: right;">排除hidden商品href数</th>
+<th>JSON-LD类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.garvee.com/">home</a></td>
+<td style="text-align: right;">200</td>
+<td>GARVEE  /  Home Improvement  /  Automotive, Food Service, Power Tools</td>
+<td>['https://garvee.com/en']</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2412</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/collections/rugs">category</a></td>
+<td style="text-align: right;">200</td>
+<td>Garvee Washable Rugs – Floral &amp; Paisley Rugs &amp; Persian Rugs  /  GARVEE</td>
+<td>[]</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7543</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/collections/new-arrivals">new-arrivals</a></td>
+<td style="text-align: right;">200</td>
+<td>New Arrivals  /  Garvee</td>
+<td>[]</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2802</td>
+<td style="text-align: right;">914</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>BreadcrumbList</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/collections/best-sellers">best-sellers</a></td>
+<td style="text-align: right;">200</td>
+<td>Jump to Popular Categories  /  GARVEE</td>
+<td>[]</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2934</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>BreadcrumbList</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/pages/activity-halloween-sale">halloween</a></td>
+<td style="text-align: right;">200</td>
+<td>Garvee Halloween Sale 2026: 10% OFF Seasonal Decorations, Rugs &amp; More  /  Garvee</td>
+<td>[]</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2324</td>
+<td style="text-align: right;">2202</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/blogs/buying-guides">blog-list</a></td>
+<td style="text-align: right;">200</td>
+<td>None</td>
+<td>[]</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5123</td>
+<td style="text-align: right;">2202</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td>BreadcrumbList</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/blogs/buying-guides/everything-you-need-to-know-about-rug-sizes-and-placement">blog-article</a></td>
+<td style="text-align: right;">200</td>
+<td>None</td>
+<td>[]</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">13464</td>
+<td style="text-align: right;">2202</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0</td>
+<td>BreadcrumbList,Article</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/collections/living-room-rugs">listing</a></td>
+<td style="text-align: right;">200</td>
+<td>Living Room Rugs – Bordered Rugs &amp; Floral &amp; Paisley Rugs  /  GARVEE</td>
+<td>[]</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">36338</td>
+<td style="text-align: right;">4872</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">3</td>
+<td>BreadcrumbList</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/products/garvee-washable-area-rugs-10x13-living-pho-16khfwwy">product</a></td>
+<td style="text-align: right;">200</td>
+<td>Bordered Rug with Low Pile, Machine Made, Polyester  /  GARVEE</td>
+<td>[]</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">7300</td>
+<td style="text-align: right;">7300</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">23</td>
+<td>BreadcrumbList,BreadcrumbList</td>
+</tr>
+<tr>
+<td><a href="https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NzM3ODA3MTM1MDMzLCJvZmZzZXQiOjYzfQ%3D%3D">listing-page2</a></td>
+<td style="text-align: right;">200</td>
+<td>Living Room Rugs – Bordered Rugs &amp; Floral &amp; Paisley Rugs  /  GARVEE</td>
+<td>[]</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">44318</td>
+<td style="text-align: right;">4872</td>
+<td style="text-align: right;">57</td>
+<td style="text-align: right;">3</td>
+<td>BreadcrumbList</td>
+</tr>
+</tbody>
+</table></div>
+<h4>已确认问题与实施方案</h4>
+<h3>1. 渲染依赖现象记录：V1优先级由V2证据门槛替代</h3>
+<ul>
+<li>首页与热卖页本次响应的非脚本body文字全部落在hidden流式块；排除hidden为0。新品仅914字符。首页/新品/热卖/Halloween原始a链接中无/products/商品链接，存在客户端业务组件数据，不具备完整商品卡SSR正文。</li>
+<li>rugs有真实文案HTML，但main位于hidden S:0；普通listing标题在hidden S:1、商品列表在hidden S:2。blog-list/blog-article正文在hidden S:1，排除后仅2202字符公共壳层。</li>
+<li>源码证据：<code>&lt;div hidden id="S:1"&gt;</code>，内联脚本<code>$RC("B:0","S:0")</code>；$RC通过document.getElementById、insertBefore搬运真实HTML。属于流式SSR显现依赖，不应误称所有内容纯CSR。</li>
+<li>实施：SEO关键H1、简介、首屏商品/文章、正文、真实a分页放在服务端无需脚本解包的可见HTML；把筛选交互、轮播、推荐增强、评论折叠留给客户端。对当前streaming/Suspense边界做可见首屏回退或提前resolve关键数据。HTML流可继续用于非关键模块。验收分别比较原始节点、禁JS可见body、JS稳定DOM，不比较HTML字节总量。</li>
+</ul>
+<h3>2. P1：canonical策略缺失/错误目标</h3>
+<ul>
+<li>首页canonical为<code>https://garvee.com/en</code>，实测301到www/en，再301到/；其余样本未发现link rel=canonical。建议首页直接self-canonical https://www.garvee.com/；类目、文章、商品自指向最终200规范URL。重复性筛选/排序依照明确索引策略管理，不统一把全部翻页canonical到第一页。</li>
+</ul>
+<h3>3. P1：博客metadata缺失与PDP商品结构化数据缺失</h3>
+<ul>
+<li>blog-list和blog-article原始HTML无title/meta description。new-arrivals与Halloween缺meta description。blog文章有Article JSON-LD，PDP只有两套BreadcrumbList，没有Product/Offer JSON-LD。</li>
+<li>实施：在服务端metadata函数生成每类页面独有title/description/canonical；PDP服务端输出真实Product、Offer（价格、币种、库存、URL、图片等），有证据才添加AggregateRating，不编造评分。消除重复面包屑；当前PDP一套多Products层、一套无此层。</li>
+</ul>
+<h3>4. P1：robots独立Googlebot组覆盖通用限制</h3>
+<ul>
+<li>robots.txt通用组Disallow排序sort_by、多重filter组合及/search；但独立组 <code>User-Agent: Googlebot / Googlebot-image / Bingbot; Allow: /</code>。最具体组不会继承通用组，因此Googlebot并未被通用参数限制覆盖。不要在报告中宣称现有robots已拦截Google参数抓取。</li>
+<li>实施：先定义可索引精选筛选落地页、普通筛选/排序、分页的URL矩阵，再同步最具体bot组规则。noindex需要可抓取，不能同时Disallow后期待爬虫读取noindex。无需把所有筛选都封禁。</li>
+</ul>
+<h3>5. P2：标题层级与通用文案</h3>
+<ul>
+<li>首页、rugs、新品、热卖、Halloween样本无H1。博客文章2个H1；PDP2个H1，其中Customer Reviews 4.77错误升到H1。多H1不是自动SEO处罚，但当前结构和页面主题表达不清。PDP title不含本样本10x13、red-brown，而是通用属性串。</li>
+<li>实施：每模板主主题使用一个明确H1，评论为H2；类目title/description体现独特购买意图，PDP突出名称/规格并控制重复。</li>
+</ul>
+<h3>6. 分页证据与边界</h3>
+<ul>
+<li>普通listing实际分页使用<code>after</code> cursor，不是page=2；初始HTML有aria-label=Next的真实a[href]。因此不能因查不到?page=就判没有分页。后续页HTTP200，有另一组商品与上一页/下一页链接；关键链接仍应纳入禁JS可见性验收。</li>
+<li>首次页Next链接与后续页的完整URL见raw-manifest pagination_links；筛选URL与筛选分页由UI发现后补抓，不猜参数。</li>
+</ul>
+<h3>7. sitemap / 跳转</h3>
+<ul>
+<li>根sitemap200，共54个子图入口；抽取pages、collections、blogs三张。collections1740 URL包含rugs/new-arrivals/best-sellers/living-room-rugs；blogs846 URL包含样本列表和文章。pages109 URL未包含指定Halloween活动页（限定本次pages子图证据，不推断全站无其他入口）。</li>
+<li>https://garvee.com/ 一跳301到https://www.garvee.com/；http://www.garvee.com/ 一跳301到https://www.garvee.com:443/。建议目标规范化显式默认443以减少URL形式差异。</li>
+</ul>
+<h3>不作为问题的现象 / 未验证项</h3>
+<ul>
+<li>大量alt=""来自aria-hidden=true评分星星，属于装饰图，不能按空alt总数制造图片SEO缺陷。</li>
+<li>本轮无hreflang，仅说明样本没有；是否需要部署取决于各语言/地区站点的真实对应页面，不应机械补全。</li>
+<li>未测CrUX/Lighthouse、GSC真实索引、Google选定canonical、Merchant Center诊断；不得将该审计当作这些项已通过或失败。</li>
+</ul>
+<h4>样本明细</h4>
+<h3>home</h3>
+<p>https://www.garvee.com/
+- description: ['GARVEE specialize in commercial equipment to meet different business needs. Includes DIY tools and MRO products for different contexts. This includes business &amp; industrial tool, agriculture, furniture, plumbing, gardening, outdoors, and home, as well as automotive parts &amp; repair tools, and restaurant food equipment.']
+- H1: []
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 0}, {'id': 'S:1', 'chars': 914}, {'id': 'S:3', 'chars': 0}, {'id': 'S:4', 'chars': 0}, {'id': 'S:5', 'chars': 0}, {'id': 'S:2', 'chars': 1287}, {'id': 'S:6', 'chars': 209}, {'id': 'S:7', 'chars': 0}]
+- pagination: []</p>
+<h3>category</h3>
+<p>https://www.garvee.com/collections/rugs
+- description: ['Find GARVEE Garvee Washable Rugs by product type, including Floral &amp; Paisley Rugs and Persian Rugs. Discover more at GARVEE.']
+- H1: []
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 4336}, {'id': 'S:3', 'chars': 0}, {'id': 'S:4', 'chars': 0}, {'id': 'S:1', 'chars': 1287}, {'id': 'S:2', 'chars': 845}, {'id': 'S:5', 'chars': 1072}]
+- pagination: []</p>
+<h3>new-arrivals</h3>
+<p>https://www.garvee.com/collections/new-arrivals
+- description: []
+- H1: []
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 1287}, {'id': 'S:1', 'chars': 200}, {'id': 'S:3', 'chars': 98}, {'id': 'S:4', 'chars': 94}, {'id': 'S:2', 'chars': 9}, {'id': 'S:6', 'chars': 36}, {'id': 'S:7', 'chars': 68}, {'id': 'S:5', 'chars': 54}, {'id': 'S:8', 'chars': 33}]
+- pagination: []</p>
+<h3>best-sellers</h3>
+<p>https://www.garvee.com/collections/best-sellers
+- description: ['Discover Garvee’s best sellers—top-rated tools, gadgets &amp; more. Browse the range at GARVEE.']
+- H1: []
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 914}, {'id': 'S:3', 'chars': 0}, {'id': 'S:4', 'chars': 0}, {'id': 'S:1', 'chars': 1287}, {'id': 'S:2', 'chars': 218}, {'id': 'S:7', 'chars': 40}, {'id': 'S:5', 'chars': 60}, {'id': 'S:6', 'chars': 41}, {'id': 'S:9', 'chars': 53}, {'id': 'S:8', 'chars': 38}, {'id': 'S:d', 'chars': 58}, {'id': 'S:f', 'chars': 46}, {'id': 'S:b', 'chars': 32}, {'id': 'S:a', 'chars': 44}, {'id': 'S:e', 'chars': 45}, {'id': 'S:c', 'chars': 45}]
+- pagination: []</p>
+<h3>halloween</h3>
+<p>https://www.garvee.com/pages/activity-halloween-sale
+- description: []
+- H1: []
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 0}, {'id': 'S:1', 'chars': 121}]
+- pagination: []</p>
+<h3>blog-list</h3>
+<p>https://www.garvee.com/blogs/buying-guides
+- description: []
+- H1: ['Buying Guides']
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 0}, {'id': 'S:1', 'chars': 2920}]
+- pagination: []</p>
+<h3>blog-article</h3>
+<p>https://www.garvee.com/blogs/buying-guides/everything-you-need-to-know-about-rug-sizes-and-placement
+- description: []
+- H1: ['Everything You Need to Know About Rug Sizes and Placement', 'Rug Sizes and Placement: Tips for Elevating and Balancing the Look of Your Space']
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 0}, {'id': 'S:1', 'chars': 11261}]
+- pagination: []</p>
+<h3>listing</h3>
+<p>https://www.garvee.com/collections/living-room-rugs
+- description: ['Find GARVEE Living Room Rugs by product type, including Bordered Rugs and Floral &amp; Paisley Rugs. Explore the collection at GARVEE.']
+- H1: ['Living Room Rugs']
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 1287}, {'id': 'S:1', 'chars': 51}, {'id': 'S:2', 'chars': 30125}, {'id': 'radix-:R26ckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2ackvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2eckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2ickvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2mckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2uckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R32ckvff3qm6jsq:', 'chars': 0}]
+- pagination: [{'href': '/collections/living-room-rugs?filter.v.availability=true&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NzM3ODA3MTM1MDMzLCJvZmZzZXQiOjYzfQ%3D%3D', 'label': 'Next', 'text': ''}]</p>
+<h3>product</h3>
+<p>https://www.garvee.com/products/garvee-washable-area-rugs-10x13-living-pho-16khfwwy
+- description: ['Bordered Rug features Low Pile, Machine Made, Machine Washable, Non Slip, Stain Resistant, Foldable, Polyester, Housewarming, and Red-Brown. Choose yours at GARVEE.']
+- H1: ['Customer Reviews 4.77', 'Deals Garvee Bordered Reddish Brown 10x13 Washable Area Rug, Farmhouse Neutral Low Pile Carpet, Stain Resistant Non Slip Soft Rug for Living Room Bedroom Dining Room']
+- robots: ['index, follow']
+- hidden blocks: []
+- pagination: []</p>
+<h3>listing-page2</h3>
+<p>https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NzM3ODA3MTM1MDMzLCJvZmZzZXQiOjYzfQ%3D%3D
+- description: ['Find GARVEE Living Room Rugs by product type, including Bordered Rugs and Floral &amp; Paisley Rugs. Explore the collection at GARVEE.']
+- H1: ['Living Room Rugs']
+- robots: ['index, follow']
+- hidden blocks: [{'id': 'S:0', 'chars': 1287}, {'id': 'S:1', 'chars': 51}, {'id': 'S:2', 'chars': 38105}, {'id': 'radix-:R26ckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2ackvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2eckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2ickvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2mckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R2uckvff3qm6jsq:', 'chars': 0}, {'id': 'radix-:R32ckvff3qm6jsq:', 'chars': 0}]
+- pagination: [{'href': '/collections/living-room-rugs?filter.v.availability=true&amp;before=eyJsYXN0X3ZhbHVlIjoiNjQiLCJsYXN0X2lkIjo5NDgzMjMxMjk3ODQ5LCJvZmZzZXQiOjY0fQ%3D%3D', 'label': 'Previous', 'text': ''}, {'href': '/collections/living-room-rugs?filter.v.availability=true&amp;after=eyJsYXN0X3ZhbHVlIjoiMTI3IiwibGFzdF9pZCI6OTk3ODkxMDU3Mjg1Nywib2Zmc2V0IjoxMjd9', 'label': 'Next', 'text': ''}]</p>
+<h4>UI发现的筛选样本：HTTP抓取限制</h4>
+<p>主代理浏览器实际操作发现（清除该会话营销参数）：
+- 筛选：https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;filter.v.price.gte=0&amp;filter.v.price.lte=150
+- 筛选翻页：https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;filter.v.price.gte=0&amp;filter.v.price.lte=150&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NDgzMjMxMjk3ODQ5LCJvZmZzZXQiOjYzfQ%3D%3D</p>
+<p>这些URL命中通用robots <code>Disallow: */collections/*filter*&amp;*filter*</code>，本HTTP抓取器未请求，故无raw HTML、meta或HTTP状态结论。应使用主代理实际浏览器检查补齐。Googlebot独立组Allow:/，不能据通用抓取限制推断Googlebot也禁抓。</p>
+<h4>模拟 Googlebot Smartphone UA 对照（非真实 Google 抓取）</h4>
+<p>普通HTTP客户端仅修改User-Agent为Googlebot Smartphone，不发送cookies，不具备Google来源IP，也不是GSC URL Inspection。本实验用于检查当前服务器按UA分流metadata/streaming的可能性；不能证明Google实际收到相同响应。
+|样本|HTTP|title|canonical|JSON-LD|hidden块数|正文字符|去hidden正文字符|
+|---|---:|---|---|---|---:|---:|---:|
+|home|200|GARVEE  /  Home Improvement  /  Automotive, Food Service, Power Tools|['https://garvee.com/en']||8|2412|0|
+|listing|200|Living Room Rugs – Bordered Rugs &amp; Floral &amp; Paisley Rugs  /  GARVEE|[]|BreadcrumbList|10|36338|4872|
+|blog-article|200|None|[]|BreadcrumbList,Article|2|13464|2202|
+|product|200|Bordered Rug with Low Pile, Machine Made, Polyester  /  GARVEE|[]|BreadcrumbList,BreadcrumbList|0|7300|7300|
+逐页原始HTML在raw/googlebot-*.html，响应头、结构化数据、hidden块明细在raw/googlebot-comparison.json。</p>
+<p>PSI mobile首页公共API单次请求：HTTP 429，未获得可用测量；不据此判断CWV通过或失败，不重复请求。</p>
+<p>模拟UA对照结论：四页title/canonical、JSON-LD类型、hidden块数量与排除hidden正文字符均与桌面UA样本一致。本次未观察到通过Googlebot UA获得完整metadata或免JS可见正文的改善；仍需GSC真实抓取与渲染核实。PSI 429具体为公共API日查询配额超限，不是网站故障或性能失败。</p></details><details class="appendix" id="nojs"><summary>禁用 JavaScript 实测</summary><h3>原生浏览器禁用 JavaScript 实测</h3>
+<blockquote>
+<p>V2复核说明：本文件保留V1证据/分析记录。hidden不等于GoogleSEO无效；多条合法Breadcrumb可保留。优先级、规范与最终诊断以<a href="#overview">本页诊断</a>及<a href="#requirements">完整标准</a>为准。</p>
+</blockquote>
+<p>审计日期：2026-10-15（Asia/Shanghai）。工具：<code>mcp__cua_repl</code> 原生 Google Chrome UI，独立新建标签，DevTools Command Menu → Disable JavaScript。没有使用源码解析来代替本测试，没有使用外部 Playwright/CDP。</p>
+<h4>方法与证据边界</h4>
+<ul>
+<li>命令执行后刷新页面，Chrome 地址栏明确显示「已拦截此网页上的 JavaScript。」；每次导航保留该状态。</li>
+<li>读取页面可访问性树（AX），与 DevTools 的 DOM tree 内容分开；首页和类目页另有实际屏幕观察。</li>
+<li>DevTools 右侧停靠，页面宽约 645 CSS px；这会影响响应式布局，但不应导致商品数据和文章正文完全缺失。</li>
+<li>URL 输入后第一帧可能仍含上一页 AX；仅在后续完整 AX 中确认文档 URL 与目标匹配后记录结论。</li>
+<li>页面是否有 SSR 输出需与原始 HTML 审计合并；禁 JS 时不可见不等于源 HTML 无内容，也不等于 Google 一定不能索引。</li>
+<li>使用现有用户浏览器环境，有扩展程序；没有清除 cookies、改变站点数据或购买操作。扩展的工具栏标签 <code>JavaScript is enabled</code> 在 DevTools 禁 JS 时仍保持原文，因此<strong>不能拿它作为测试状态证据</strong>，以 Chrome 自身的拦截标记与 DevTools 命令为准。</li>
+</ul>
+<h4>实测结果</h4>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>确认 URL</th>
+<th>禁 JS 可见/可读取</th>
+<th>缺失核心内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首页</td>
+<td><code>https://www.garvee.com/</code></td>
+<td>AX 仅有页面文档节点；截图为空白主体。DevTools 可见 body 下 template B:0 和 BAILOUT_TO_CLIENT_SIDE_RENDERING 模板</td>
+<td>首页主体、分类链接、商品信息均未在页面 AX 出现</td>
+</tr>
+<tr>
+<td>类目</td>
+<td><code>https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true</code></td>
+<td>Buying Guide、对比表、FAQ、footer；导购中3个商品链接</td>
+<td>H1、商品网格、商品价格、分页；截图为 skeleton</td>
+</tr>
+<tr>
+<td>新品</td>
+<td><code>https://www.garvee.com/collections/new-arrivals?filter.v.availability=true</code></td>
+<td>页面文档节点</td>
+<td>H1、商品网格、价格与分页未在 AX 出现</td>
+</tr>
+<tr>
+<td>热卖</td>
+<td><code>https://www.garvee.com/collections/best-sellers?filter.v.availability=true</code></td>
+<td>页面文档节点</td>
+<td>H1、商品网格、价格与分页未在 AX 出现</td>
+</tr>
+<tr>
+<td>场景活动</td>
+<td><code>https://www.garvee.com/pages/activity-halloween-sale</code></td>
+<td>header/footer、登录链接、搜索框，主区为 Loading</td>
+<td>活动标题、活动正文、商品信息</td>
+</tr>
+<tr>
+<td>博客列表</td>
+<td><code>https://www.garvee.com/blogs/buying-guides</code></td>
+<td>header/footer，主区为 Loading</td>
+<td>文章列表标题、摘要与文章链接</td>
+</tr>
+<tr>
+<td>博客文章</td>
+<td><code>https://www.garvee.com/blogs/buying-guides/everything-you-need-to-know-about-rug-sizes-and-placement</code></td>
+<td>Loading 与 footer</td>
+<td>文章标题、正文</td>
+</tr>
+<tr>
+<td>商品详情</td>
+<td><code>https://www.garvee.com/products/garvee-washable-area-rugs-10x13-living-pho-16khfwwy</code></td>
+<td>商品 H1、价格 $127.99（划线 $199.99）、库存、面包屑、变体链接、Key Features、规格表、Description、评分 4.77/198 reviews 摘要</td>
+<td>本样本关键商品信息没有整体缺失；交互功能未测试</td>
+</tr>
+</tbody>
+</table></div>
+<p>直接访问类目、新品、热卖无参数 URL，浏览器最终文档 URL 均出现 <code>filter.v.availability=true</code>。重定向状态码与机制由原始 HTTP 证据判定，本测试不从浏览器结果反推服务端实现。</p>
+<h3>筛选与翻页补测</h3>
+<p>以下三条都确认 Chrome JS 拦截生效，均仍可读 Buying Guide、同一组3个正文商品链接与FAQ，但商品网格、商品价格、H1、可见分页入口未出现。普通翻页还能看到header/footer；其余样本header显示有差异，不作为核心结论。</p>
+<ol>
+<li>筛选：<code>https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;filter.v.price.gte=0&amp;filter.v.price.lte=150</code></li>
+<li>筛选翻页：<code>https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;filter.v.price.gte=0&amp;filter.v.price.lte=150&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NDgzMjMxMjk3ODQ5LCJvZmZzZXQiOjYzfQ%3D%3D</code></li>
+<li>普通翻页：<code>https://www.garvee.com/collections/living-room-rugs?filter.v.availability=true&amp;after=eyJsYXN0X3ZhbHVlIjoiNjMiLCJsYXN0X2lkIjo5NzM3ODA3MTM1MDMzLCJvZmZzZXQiOjYzfQ%3D%3D</code></li>
+</ol>
+<h3>商品详情附加内容质量发现</h3>
+<p>同一个无 JS 页面中同时读到：</p>
+<ul>
+<li>上部 Specification：<code>Weave Type: Tufted</code>；下部 Description → Specifications：<code>Weave Type: Flat Woven</code>。这是可验证的规格冲突，应回到商品主数据确定真实值。</li>
+<li>上部 Design Style：<code>Traditional Bordered, Vintage-Inspired, Distressed</code>；下部 <code>Pattern: Solid</code>、<code>Style: Modern</code>。后两项未必在所有语义上互斥，但与标题/图案描述存在一致性风险，需商品负责人核对，不应自动批量替换。</li>
+<li>商品标题为 H1，<code>Customer Reviews 4.77</code> 也标记为 H1；属于标题层级治理问题，不应描述为直接排名惩罚。</li>
+</ul>
+<h4>恢复验证</h4>
+<p>完成测试后在同一标签 DevTools Command Menu 执行 Enable JavaScript，刷新普通翻页样本：</p>
+<ul>
+<li>Chrome 地址栏「已拦截此网页上的 JavaScript。」标记消失。</li>
+<li>页面重新出现 H1 <code>Living Room Rugs</code>，大量商品及价格（如 $119.99、$101.99、$43.99 等）。</li>
+<li>已关闭 DevTools，保留恢复后的审计页面；没有修改全局浏览器 JS 设置。</li>
+</ul>
+<h4>实施含义</h4>
+<p>V2纠偏：本测试支持把类目/活动/博客的渲染交付列为优先验证项。无JS不可见不能证明Google失败；只有真实Google渲染失败、交互才生成或已批准非JS兼容目标时，再确定服务端可见改造。应结合原始响应中 hidden streaming chunks 的证据，定位“服务端已生成但依赖内联脚本揭示”与“纯客户端请求后才生成”两种情况；不能统一写成“没有SSR”。验收应以关键语义块、真实商品/文章链接、当前分页商品集在未执行 JS 的浏览器中可读取为准，并另做启用 JS 后一致性比较。</p></details><details class="appendix" id="rendered"><summary>加载 JavaScript 后观察</summary><h3>启用 JavaScript 的浏览器证据摘要</h3>
+<blockquote>
+<p>V2复核说明：本文件保留V1证据/分析记录。hidden不等于GoogleSEO无效；多条合法Breadcrumb可保留。优先级、规范与最终诊断以<a href="#overview">本页诊断</a>及<a href="#requirements">完整标准</a>为准。</p>
+</blockquote>
+<p>日期：2026-10-15。通过浏览器实际访问、读取 DOM、点击真实分页及设置价格筛选取得；不是抓取工具对脚本 JSON 的抽取。</p>
+<h4>口径</h4>
+<ul>
+<li><code>mainChars</code> 是当次 main.innerText 字符数，<code>product href</code> 是 DOM 中不同商品目标 URL 数；可能包含正文推荐、隐藏布局或轮播，不等于卡片数。</li>
+<li>页头/页尾不算 main，但正文审计另读 body，避免遗漏 main 外的商品模块。</li>
+<li>本次不是固定时长、空白 profile、同 viewport 的性能实验。滚动后还经过额外等待，不能把新增内容全部归因于滚动。</li>
+<li>浏览器会话出现联盟跟踪参数，报告去除参数标识；只确认分页继承当次营销参数，不判断参数来源。</li>
+<li>未登录 Google Search Console，未取得 Google 已索引 HTML；浏览器 DOM 不是 Google 收录证明。</li>
+</ul>
+<h4>页面状态</h4>
+<div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>类型</th>
+<th>title</th>
+<th>canonical</th>
+<th>H1</th>
+<th style="text-align: right;">mainChars</th>
+<th style="text-align: right;">不同商品 href</th>
+<th>关键观察</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>首页初始</td>
+<td>存在</td>
+<td>https://garvee.com/en</td>
+<td>无</td>
+<td style="text-align: right;">229</td>
+<td style="text-align: right;">0</td>
+<td>WebSite schema 由 JS 出现</td>
+</tr>
+<tr>
+<td>首页滚动后</td>
+<td>同上</td>
+<td>同上</td>
+<td>无</td>
+<td style="text-align: right;">8039</td>
+<td style="text-align: right;">31</td>
+<td>新增商品内容</td>
+</tr>
+<tr>
+<td>Rugs 专题</td>
+<td>存在</td>
+<td>无</td>
+<td>无</td>
+<td style="text-align: right;">未量化</td>
+<td style="text-align: right;">5 张卡片，另有导购链接</td>
+<td>类目指南丰富不等于完整列表 SSR</td>
+</tr>
+<tr>
+<td>普通类目</td>
+<td>存在</td>
+<td>无</td>
+<td>Living Room Rugs</td>
+<td style="text-align: right;">12258</td>
+<td style="text-align: right;">35</td>
+<td>Next 为真实 href</td>
+</tr>
+<tr>
+<td>普通下一页</td>
+<td>存在</td>
+<td>无</td>
+<td>同上</td>
+<td style="text-align: right;">11773</td>
+<td style="text-align: right;">35</td>
+<td>Previous / Next，列表不同</td>
+</tr>
+<tr>
+<td>$0–150 筛选</td>
+<td>存在</td>
+<td>无</td>
+<td>同上</td>
+<td style="text-align: right;">12270</td>
+<td style="text-align: right;">35</td>
+<td>index, follow；筛选条件进入 URL</td>
+</tr>
+<tr>
+<td>筛选下一页</td>
+<td>存在</td>
+<td>无</td>
+<td>同上</td>
+<td style="text-align: right;">11828</td>
+<td style="text-align: right;">35</td>
+<td>Previous / Next，保留筛选</td>
+</tr>
+<tr>
+<td>新品</td>
+<td>New Arrivals · Garvee</td>
+<td>无</td>
+<td>无</td>
+<td style="text-align: right;">8802</td>
+<td style="text-align: right;">35</td>
+<td>有导航 View More，也有追加加载 button</td>
+</tr>
+<tr>
+<td>热卖</td>
+<td>Jump to Popular Categories · GARVEE</td>
+<td>无</td>
+<td>无</td>
+<td style="text-align: right;">14630</td>
+<td style="text-align: right;">55</td>
+<td>组件文案成为 title</td>
+</tr>
+<tr>
+<td>Halloween 初始</td>
+<td>存在，含 2026、10% OFF</td>
+<td>无</td>
+<td>无</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0</td>
+<td>main 无图片中的完整活动规则</td>
+</tr>
+<tr>
+<td>Halloween 滚动后</td>
+<td>同上</td>
+<td>无</td>
+<td>无</td>
+<td style="text-align: right;">6353</td>
+<td style="text-align: right;">24</td>
+<td>活动产品后续出现</td>
+</tr>
+<tr>
+<td>博客列表</td>
+<td>空</td>
+<td>无</td>
+<td>Buying Guides</td>
+<td style="text-align: right;">2944</td>
+<td style="text-align: right;">0</td>
+<td>文章入口可见；Breadcrumb</td>
+</tr>
+<tr>
+<td>博客文章</td>
+<td>空</td>
+<td>无</td>
+<td>两个</td>
+<td style="text-align: right;">11691</td>
+<td style="text-align: right;">6</td>
+<td>全文与 Article schema 可读</td>
+</tr>
+<tr>
+<td>PDP</td>
+<td>Bordered Rug with Low Pile, Machine Made, Polyester · GARVEE</td>
+<td>无</td>
+<td>两个</td>
+<td style="text-align: right;">3344</td>
+<td style="text-align: right;">38</td>
+<td>body 约4975字符，Product+两套Breadcrumb</td>
+</tr>
+</tbody>
+</table></div>
+<p>本次检查的渲染状态 robots 均为 index, follow。商品 href 数在请求和交互过程中会变化，不应与原始 HTTP 数直接计算“SSR 比例”。完整样本地址见主报告。</p>
+<h4>活动内容核验</h4>
+<p>Halloween Banner 视觉文字：Halloween Sale、10% OFF、Code HC10、10.14–11.2、exclude flash &amp; clearance。图片 alt 为通用的 Banner Image / Banner Image Mobile。初始 main 的可读文本只有分类与模块名；这些关键规则没有相应正文。准确年份、时区、结束时刻与结账优惠有效性尚需活动配置验证。</p>
+<h4>商品事实核验</h4>
+<p>加载 JS 后 Product.aggregateRating 为 ratingValue 4.77、reviewCount 166；可见评论模块为 Average rating based on 198 reviews，页面也有 See all 198。原始 HTML 及模拟 Googlebot UA 均无 Product schema，而保留两套 BreadcrumbList。</p>
+<p>商品可见价格 $127.99 USD、库存 In Stock。两套规格中 Weave Type 为 Tufted 与 Flat Woven；其余 Style / Pattern 也有一致性风险。应核对主数据来源，不自动选择一套覆盖另一套。</p>
+<h4>博客</h4>
+<p>文章 Article.url 与 mainEntityOfPage 使用 /en/blogs/ 路径；正文页面是 /blogs/ 路径。文章有两个 H1。正文出现 2x6 or 2x8 inch rugs，需要编辑核对单位，不能批量把所有 inch 改为 ft。</p>
+<h4>证据联系</h4>
+<ul>
+<li>原始 HTML 与静态解析：raw-audit.md、raw-manifest.json、raw/。</li>
+<li>真实禁 JS 与恢复证明：nojs-observations.md。</li>
+<li>此摘要记录本次工具观察值；没有另存完整渲染 DOM 或逐页截图，不能把本文件当作可重放浏览器快照。</li>
+</ul></details><details class="appendix" id="corrections"><summary>Skill 规则校正与待业务决定</summary><div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>Skill条目</th>
+<th>v2处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title&lt;60、description&lt;155且保证不截断</td>
+<td>取消硬失败/保证；改准确、简洁、展示预览。<a href="https://developers.google.com/search/docs/appearance/snippet">S08</a></td>
+</tr>
+<tr>
+<td>PDP≥200词；首页500/博客1500等最低字数；密度1–3%</td>
+<td>不作为SEO准入，改覆盖用户任务、真实规格与独立价值。<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">S03</a></td>
+</tr>
+<tr>
+<td>rel next/prev或load-more即可</td>
+<td>过时/不充分；Google不用该标记，需要独立URL与href分页。<a href="https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading">S18</a></td>
+</tr>
+<tr>
+<td>内容URL不能有query；URL&gt;100字符失败</td>
+<td>无通用Google规则；分页、variant参数合法，优化稳定性/重复空间。<a href="https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites">S17</a></td>
+</tr>
+<tr>
+<td>图片≥800px才有Shopping资格、至少3张</td>
+<td>错误/项目选择；GMC公告2027-01-31起500×500，建议1500+。图数按信息需要。<a href="https://support.google.com/merchants/answer/6324350">S33</a></td>
+</tr>
+<tr>
+<td>alt 10–125字、JPEG“wrong format”、固定KB红线</td>
+<td>经验/预算，不是Google资格线；按用途、质量、带宽判断。<a href="https://developers.google.com/search/docs/appearance/google-images">S31</a></td>
+</tr>
+<tr>
+<td>Product所有示例字段都required；price必须字符串；availability必须完整URL</td>
+<td>校正为类型当前必需/推荐属性。官方price接受数值，availability支持短名；完整URL可作为项目统一格式。<a href="https://developers.google.com/search/docs/appearance/structured-data/merchant-listing">S24</a></td>
+</tr>
+<tr>
+<td>FAQ只有政府和医疗能用</td>
+<td>已过时，2026-05-07富结果停止。<a href="https://developers.google.com/search/updates">S30</a></td>
+</tr>
+<tr>
+<td>非200页面Google绝不渲染JS</td>
+<td>表述过强；官方称可能跳过，不依赖错误页JS修正状态/metadata。<a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics">S11</a></td>
+</tr>
+<tr>
+<td>每页3点击以内、48px触控、16px字体、安全header、第三方得分</td>
+<td>可用作项目目标，不能伪称Google硬阈值；不因单项直接宣判不可索引。<a href="https://developers.google.com/search/docs/appearance/page-experience">S01</a></td>
+</tr>
+<tr>
+<td>手机优先意味着再也没有桌面Googlebot</td>
+<td>过强；官方明确商品展示、Jobs等仍可能出现桌面抓取。<a href="https://developers.google.com/search/blog/2024/06/mobile-indexing-vlast-final-final.doc">S44</a></td>
+</tr>
+<tr>
+<td>Sitemap URL数&lt;50,000、全部lastmod相同必错</td>
+<td>正确上限是≤50,000且≤50MB；日期应真实，可合法相同。<a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">S39</a></td>
+</tr>
+<tr>
+<td>Schema类型“active”就推荐所有页面</td>
+<td>Schema.org合法性、Google特性支持、页面实体适用性分开；不能给促销强套Event。<a href="https://developers.google.com/search/docs/appearance/structured-data/sd-policies">S23</a></td>
+</tr>
+<tr>
+<td>Cloud NLP分数增强官方E-E-A-T；YouTube相关系数保证AI表现</td>
+<td>不采纳为Google结论；第三方相关性/语言模型分数不是公开排名信号。<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">S01</a></td>
+</tr>
+<tr>
+<td>两套BreadcrumbList必须删除一套</td>
+<td>错误；Google支持multiple trails，需检查是否真实有效而非按数量判错。<a href="https://developers.google.com/search/docs/appearance/structured-data/breadcrumb">S28</a></td>
+</tr>
+<tr>
+<td>URL Inspection API=live test/可取当前渲染HTML</td>
+<td>错误；API只返回已索引版本状态，界面live test是另一个能力。<a href="https://support.google.com/webmasters/answer/9012289">S22</a></td>
+</tr>
+<tr>
+<td>隐藏容器内正文/链接SEO无效</td>
+<td>撤销；href发现、DOM存在、用户访问和权重必须分开，权重不可由本地证据推断。<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">S02</a><a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable">S04</a></td>
+</tr>
+</tbody>
+</table></div><p>这些决定应在实际改动线上索引或内容承诺前确认，本文件不代为批准：</p>
+<ol>
+<li>筛选白名单及独立variant页范围；它们决定新增索引空间。</li>
+<li>新品时间窗口、热卖排序依据；活动截止时区、折扣/退货/免邮的适用边界。</li>
+<li>活动结束及停售商品的长期去向、真正等效替代映射。</li>
+<li>登录页是否承担品牌导航搜索入口；x-default是否统一美国页。</li>
+<li>SEO目标视频是否建立watch page；页面性能与播放器首次交付如何取舍。</li>
+<li>素材未来标准：建议将新增GMC主图≥500×500提前设为内部生产下限，并以1500×1500+作高质量目标；这不意味着2026年旧图已违反未来规则。</li>
+</ol></details><details class="appendix" id="limits"><summary>尚需验证的领域与证据</summary><div aria-label="可横向滚动的数据表" class="table-wrap" role="region" tabindex="0"><table>
+<thead>
+<tr>
+<th>维度</th>
+<th>当前证据与状态</th>
+<th>仍缺的决定性证据</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原规范追溯</td>
+<td>全文/8表读取，revision复查，逐章覆盖矩阵已完成</td>
+<td>后续原文修订需更新基线</td>
+</tr>
+<tr>
+<td>技术head/元数据</td>
+<td>原10样本逐字段；新增搜索排序/政策部分检查</td>
+<td>全站重复率、所有客户端跳转、HTTP Link头全覆盖</td>
+</tr>
+<tr>
+<td>URL/链接/分页</td>
+<td>真a/cursor、UTM扩散、跳转和索引策略样本</td>
+<td>全站抓取深度/孤页、cursor长期稳定、目标全量状态</td>
+</tr>
+<tr>
+<td>SSR/正文</td>
+<td>源码、禁JS、普通浏览器与交互对照</td>
+<td>Google真实渲染与已索引HTML，不能据当前证据判失败</td>
+</tr>
+<tr>
+<td>商品与schema</td>
+<td>语法、类型、价格/评分/规格冲突和实体URL</td>
+<td>Shopify/PIM/评论系统、GMC Feed比对、真实Rich Results结果</td>
+</tr>
+<tr>
+<td>品牌与信任</td>
+<td>公开入口、图标/Logo资源、首页schema差异</td>
+<td>legalName/实体/社交归属与各市场政策事实</td>
+</tr>
+<tr>
+<td>图片</td>
+<td>属性、部分真实尺寸格式、响应式选择</td>
+<td>全部关键图可抓性、尺寸图caption、图片搜索/GMC诊断</td>
+</tr>
+<tr>
+<td>视频</td>
+<td>已补完整要求，尚无代表视频样本实测</td>
+<td>视频页/播放器/资源/transcript/VideoObject；不能记N/A</td>
+</tr>
+<tr>
+<td>移动端</td>
+<td>PDP/类目/文章CSS双视口对照</td>
+<td>其他模板、真实手机UA/触屏/网络、实际移动抓取</td>
+</tr>
+<tr>
+<td>sitemap</td>
+<td>根54子图，抽3张及成员关系</td>
+<td>所有产品子图准入、URL状态/canonical联查、lastmod来源</td>
+</tr>
+<tr>
+<td>国际化</td>
+<td>已纠正规则，样本未见hreflang</td>
+<td>真实国家对应、互返/自引、IP跳转；没有对应不强补</td>
+</tr>
+<tr>
+<td>搜索/排序/筛选</td>
+<td>真实UI确认index策略不符</td>
+<td>空搜索/特殊字符/排序分页/白名单及规模</td>
+</tr>
+<tr>
+<td>缺货/停售/故障</td>
+<td>已给合同，通用404样本通过</td>
+<td>真实缺货停售、商品404、非法cursor、API故障回退</td>
+</tr>
+<tr>
+<td>性能/CWV</td>
+<td>已补阈值与网络验收合同</td>
+<td>PSI429、无CrUX/RUM；不判达标/不达标</td>
+</tr>
+<tr>
+<td>真实索引/效果</td>
+<td>已有采集方法</td>
+<td>GSC权限、Googlebot日志、GMC、季节库存控制后的效果</td>
+</tr>
+</tbody>
+</table></div></details></section><section class="chapter" id="sources"><div class="chapter-num">07</div><h2>官方参考资料</h2><p class="chapter-intro">官方技术资料用于校正规则；不把经验阈值当作排名条件。</p><p>规则中的来源链接指向官方资料。项目策略的具体选择由 GARVEE 决定，来源不表示 Google 批准某项项目方案。以下保留本轮 46 个来源入口。</p><ol class="source-list"><li id="source-S01"><span>S01</span> <a href="https://developers.google.com/search/docs/fundamentals/third-party-seo">developers.google.com / third-party-seo</a></li><li id="source-S02"><span>S02</span> <a href="https://developers.google.com/search/docs/essentials/spam-policies#hidden-text-and-link-abuse">developers.google.com / spam-policies#hidden-text-and-link-abuse</a></li><li id="source-S03"><span>S03</span> <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">developers.google.com / creating-helpful-content</a></li><li id="source-S04"><span>S04</span> <a href="https://developers.google.com/search/docs/crawling-indexing/links-crawlable">developers.google.com / links-crawlable</a></li><li id="source-S05"><span>S05</span> <a href="https://developers.google.com/search/docs/essentials/technical">developers.google.com / technical</a></li><li id="source-S06"><span>S06</span> <a href="https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls">developers.google.com / consolidate-duplicate-urls</a></li><li id="source-S07"><span>S07</span> <a href="https://developers.google.com/crawling/docs/troubleshooting/http-status-codes">developers.google.com / http-status-codes</a></li><li id="source-S08"><span>S08</span> <a href="https://developers.google.com/search/docs/appearance/title-link">developers.google.com / title-link</a></li><li id="source-S09"><span>S09</span> <a href="https://developers.google.com/search/docs/appearance/snippet">developers.google.com / snippet</a></li><li id="source-S10"><span>S10</span> <a href="https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag">developers.google.com / robots-meta-tag</a></li><li id="source-S11"><span>S11</span> <a href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics">developers.google.com / javascript-seo-basics</a></li><li id="source-S12"><span>S12</span> <a href="https://developers.google.com/search/docs/crawling-indexing/special-tags">developers.google.com / special-tags</a></li><li id="source-S13"><span>S13</span> <a href="https://developers.google.com/search/docs/appearance/site-names">developers.google.com / site-names</a></li><li id="source-S14"><span>S14</span> <a href="https://developers.google.com/search/docs/appearance/favicon-in-search">developers.google.com / favicon-in-search</a></li><li id="source-S15"><span>S15</span> <a href="https://developers.google.com/search/docs/appearance/structured-data/organization">developers.google.com / organization</a></li><li id="source-S16"><span>S16</span> <a href="https://support.google.com/merchants/answer/9340054">support.google.com / 9340054</a></li><li id="source-S17"><span>S17</span> <a href="https://developers.google.com/search/docs/specialty/ecommerce/designing-a-url-structure-for-ecommerce-sites">developers.google.com / designing-a-url-structure-for-ecommerce-sites</a></li><li id="source-S18"><span>S18</span> <a href="https://developers.google.com/search/docs/specialty/ecommerce/pagination-and-incremental-page-loading">developers.google.com / pagination-and-incremental-page-loading</a></li><li id="source-S19"><span>S19</span> <a href="https://developers.google.com/search/docs/crawling-indexing/block-indexing">developers.google.com / block-indexing</a></li><li id="source-S20"><span>S20</span> <a href="https://developers.google.com/crawling/docs/faceted-navigation">developers.google.com / faceted-navigation</a></li><li id="source-S21"><span>S21</span> <a href="https://developers.google.com/search/docs/crawling-indexing/javascript/lazy-loading">developers.google.com / lazy-loading</a></li><li id="source-S22"><span>S22</span> <a href="https://developers.google.com/webmaster-tools/v1/urlInspection.index/inspect">developers.google.com / inspect</a></li><li id="source-S23"><span>S23</span> <a href="https://developers.google.com/search/docs/appearance/structured-data/sd-policies">developers.google.com / sd-policies</a></li><li id="source-S24"><span>S24</span> <a href="https://developers.google.com/search/docs/appearance/structured-data/merchant-listing">developers.google.com / merchant-listing</a></li><li id="source-S25"><span>S25</span> <a href="https://developers.google.com/search/docs/appearance/structured-data/product-variants">developers.google.com / product-variants</a></li><li id="source-S26"><span>S26</span> <a href="https://schema.org/PreSale">schema.org / PreSale</a></li><li id="source-S27"><span>S27</span> <a href="https://developers.google.com/search/docs/appearance/structured-data/article">developers.google.com / article</a></li><li id="source-S28"><span>S28</span> <a href="https://developers.google.com/search/docs/appearance/structured-data/breadcrumb">developers.google.com / breadcrumb</a></li><li id="source-S29"><span>S29</span> <a href="https://developers.google.com/search/docs/appearance/video">developers.google.com / video</a></li><li id="source-S30"><span>S30</span> <a href="https://developers.google.com/search/updates">developers.google.com / updates</a></li><li id="source-S31"><span>S31</span> <a href="https://developers.google.com/search/docs/appearance/google-images">developers.google.com / google-images</a></li><li id="source-S32"><span>S32</span> <a href="https://web.dev/articles/vitals">web.dev / vitals</a></li><li id="source-S33"><span>S33</span> <a href="https://support.google.com/merchants/answer/6324350">support.google.com / 6324350</a></li><li id="source-S34"><span>S34</span> <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/image-sitemaps">developers.google.com / image-sitemaps</a></li><li id="source-S35"><span>S35</span> <a href="https://developers.google.com/search/docs/crawling-indexing/mobile/mobile-sites-mobile-first-indexing">developers.google.com / mobile-sites-mobile-first-indexing</a></li><li id="source-S36"><span>S36</span> <a href="https://developers.google.com/search/docs/appearance/page-experience">developers.google.com / page-experience</a></li><li id="source-S37"><span>S37</span> <a href="https://developers.google.com/search/docs/appearance/ai-features">developers.google.com / ai-features</a></li><li id="source-S38"><span>S38</span> <a href="https://developers.google.com/search/docs/specialty/international/localized-versions">developers.google.com / localized-versions</a></li><li id="source-S39"><span>S39</span> <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap">developers.google.com / build-sitemap</a></li><li id="source-S40"><span>S40</span> <a href="https://developers.google.com/crawling/docs/robots-txt/robots-txt-spec">developers.google.com / robots-txt-spec</a></li><li id="source-S41"><span>S41</span> <a href="https://shopify.dev/docs/storefronts/hydrogen">shopify.dev / hydrogen</a></li><li id="source-S42"><span>S42</span> <a href="https://shopify.dev/docs/storefronts/headless/legacy/hydrogen/seo">shopify.dev / seo</a></li><li id="source-S43"><span>S43</span> <a href="https://developers.google.com/search/apis/indexing-api/v3/using-api">developers.google.com / using-api</a></li><li id="source-S44"><span>S44</span> <a href="https://developers.google.com/search/blog/2024/06/mobile-indexing-vlast-final-final.doc">developers.google.com / mobile-indexing-vlast-final-final.doc</a></li><li id="source-S45"><span>S45</span> <a href="https://developers.google.com/search/docs/appearance/structured-data/event">developers.google.com / event</a></li><li id="source-S46"><span>S46</span> <a href="https://support.google.com/webmasters/answer/9012289">support.google.com / 9012289</a></li></ol></section><footer>本报告为线上模板与状态抽样审计。全部正文、规则与证据摘要已嵌入本文件；不含原始飞书、认证材料、cookies 或原始响应快照。20 条标准仍未验证，不能据此宣称全站索引与性能通过。</footer></main></div><script>(()=>{const tools=document.querySelector('#rule-tools');const rules=[...document.querySelectorAll('.rule')];tools.hidden=false;const q=document.querySelector('#rule-search'),s=document.querySelector('#rule-status'),count=document.querySelector('#rule-count'),expand=document.querySelector('#expand-rules');function filter(){const term=q.value.trim().toLocaleLowerCase();let n=0;rules.forEach(r=>{const show=(s.value==='all'||r.dataset.status===s.value)&&(!term||r.textContent.toLocaleLowerCase().includes(term));r.hidden=!show;if(show)n++});document.querySelectorAll('[data-rule-group]').forEach(g=>g.hidden=![...g.querySelectorAll('.rule')].some(r=>!r.hidden));count.textContent=n+' / 80 项'}q.addEventListener('input',filter);s.addEventListener('change',filter);expand.addEventListener('click',()=>{const visible=rules.filter(r=>!r.hidden);const open=visible.some(r=>!r.open);visible.forEach(r=>r.open=open);expand.textContent=open?'收起全部':'展开全部'});document.querySelector('#print-report').addEventListener('click',()=>window.print());function revealHash(){const id=decodeURIComponent(location.hash.slice(1));const target=id&&document.getElementById(id);if(target){let node=target;while(node){if(node.tagName==='DETAILS')node.open=true;node=node.parentElement}if(target.classList.contains('rule')){q.value='';s.value='all';filter()}requestAnimationFrame(()=>target.scrollIntoView({block:'start'}))}}window.addEventListener('hashchange',revealHash);if(location.hash)revealHash();let saved=[];window.addEventListener('beforeprint',()=>{saved=[...document.querySelectorAll('details')].map(d=>[d,d.open]);document.querySelectorAll('details').forEach(d=>d.open=true);rules.forEach(r=>r.hidden=false);document.querySelectorAll('[data-rule-group]').forEach(g=>g.hidden=false)});window.addEventListener('afterprint',()=>{saved.forEach(([d,open])=>d.open=open);filter()})})();</script></body></html>
