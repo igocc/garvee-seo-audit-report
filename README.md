@@ -2,6 +2,8 @@
 
 **[打开单页 HTML](https://igocc.github.io/garvee-seo-audit-report/)**
 
+**[2026-10-16 技术审计 v3：模块 × 页面类型 × 竞品 × 落地](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html)**：62 个检查点，按 Meta、URL 与 Sitemap、结构化数据、SSR 主数据区、HTML 语义化、性能六个模块，逐个给出 GARVEE 源码/渲染现状、VEVOR/Amazon/Etsy 实际值、通配符目标规则与示例、Next.js 落地方法和验收标准；含 Claude Opus 5.5 独立复核与实验室测速。
+
 2026-10-15，V5。按“模块 → 页面类型 → 字段取值 → 生成逻辑 → 代码示例 → 实测诊断 → 实施验收”组织。15 个模块、18 个页面与状态族、98 个合同章节、376 行合同表、78 段代码；结构化数据包含 37 组完整模板及明确虚构的 example.invalid 验收夹具。数字描述文档覆盖，不是网站通过率。
 
 快捷入口：[Head](https://igocc.github.io/garvee-seo-audit-report/#module-H) · [HTML 语义与 DOM](https://igocc.github.io/garvee-seo-audit-report/#module-SEM) · [结构化数据](https://igocc.github.io/garvee-seo-audit-report/#module-D) · [SSR](https://igocc.github.io/garvee-seo-audit-report/#module-R) · [robots 联查](https://igocc.github.io/garvee-seo-audit-report/#module-ROB) · [实施工单](https://igocc.github.io/garvee-seo-audit-report/#delivery)
