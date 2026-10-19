@@ -1,27 +1,30 @@
-# GARVEE SEO 代码规范与四站审计
+# GARVEE 美国站技术 SEO 审计
 
-**[打开单页 HTML](https://igocc.github.io/garvee-seo-audit-report/)**
+**[打开最新单文件 HTML 报告](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html)**
 
-**[2026-10-16 技术审计 v3：模块 × 页面类型 × 竞品 × 落地](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html)**：63 个检查点，按 Meta、URL 与 Sitemap、结构化数据、SSR 主数据区、HTML 语义化、性能六个模块，逐个给出 GARVEE 源码/渲染现状、VEVOR/Amazon/Etsy 实际值、通配符目标规则与示例、Next.js 落地方法和验收标准；含 Claude Opus 5.5 独立复核与实验室测速。
+2026-10-19 已确认规则版。按“模块 → 具体判断节点 → 页面类型/状态 → GARVEE现状 → 竞品实际 → 目标规则与示例 → 实施方法与验收”组织，覆盖URL、Head、结构化数据、SSR、HTML语义、资源、性能及相关发布一致性。
 
-## 2026-10-19 技术审计修订
+## 本次更新
 
-[打开修订后的单文件 HTML](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html)
+- 完整指南含15模块、146个判断节点；发现矩阵65条：做错29、没做19、未验证14、做对3。指南覆盖、实际证据、生产实现与Google收录分开，不将这些数字视为全站通过率。
+- 31种页面/参数/错误场景提供目标规则，包括专题页、博客首页/列表/文章、footer说明与政策、游客登录注册、搜索及对应参数版本。
+- 全部查询参数页面一律noindex；无参游客登录/注册为index,follow。搜索分页/筛选/排序canonical保留q，归该搜索词默认结果；目标本身也是noindex。类目及博客列表分页按项目选择归所属默认页，同时披露与Google分页建议的差异。
+- 适用hreflang指向真实对应语言/地区实体的canonical，不因参数noindex而自动删除；搜索/私密/交易等原排除类型保留，不编造国际映射。
+- 筛选真实零结果404；搜索零结果200+noindex；非法组合/越界404。系统默认库存、长期类目暂时缺货及API失败分别处理。无筛选白名单机制。
+- 新补采44个独立HTTP请求：43个有效200、`/blogs`为404；41个200无源码canonical，2个首页响应canonical错误。均注明请求环境，不冒充浏览器原始导航HTML或Google真实抓取。
+- 另有同日较早32条浏览器同会话HTTP解析记录，与44请求有重叠，不相加；DOM/禁JS、竞品和实验室测量明确标注10-16历史日期。Googlebot专属Allow组不继承通用组的`/search`等禁止规则，旧稿相反结论已纠正。
+- Claude Opus 5.5经现有网关复核本轮合同、发现、HTTP记录、15模块实施计划和政策函数；返回模型标识`claude-opus-5.5`，12条反馈逐项记录处理。它不是重新抓取四站或完成146节点全部实测。
 
-覆盖 27 种页面与参数场景、63 个检查点；补采 32 个 URL，并区分目标规则与实际源码。专题页、账户回跳参数、footer 说明/政策单页、搜索默认/分页/筛选/排序，以及博客首页/列表/文章的参数归并均有规则和示例。类目与博客列表分页按项目要求 canonical 归所属默认页，明确标注与 Google 分页建议的差异及内容发现风险；所有类目筛选采用统一策略。登录注册及回跳参数页采用 noindex,follow。
+## 实施参考与验证
 
-搜索默认页 robots 的飞书表格、总索引表、V5 文档与站点 robots.txt 存在冲突，报告保留待定状态；不将工作建议冒充最终索引策略。31 个返回 200 的新增样本均缺源码 canonical，meta robots 均为 index,follow；`/blogs` 返回 404，实际博客首页为 `/pages/diy-ideas`。GSC 401、PSI 429 和现场 CWV 数据缺口继续披露。已有两轮 Claude 复核标为 2026-10-16 历史证据，不宣称本轮重新完成 Claude 审核。
+报告内嵌可运行政策函数，以及各模块职责、页面差异、通配规则、实例、验收和灰度/回滚顺序。25条合同样例及11个状态/国际对应/缓存分区等分支共36场景通过。实际前端仓库未取得，路径和代码是适配参考，未在生产技术栈编译、部署或修改GARVEE网站。
 
-单文件无外部运行依赖，已验证离线打开、全文检索、按判定筛选及打印样式。本次只更新本审计 HTML 和 README，首页 `index.html` 保留原版本；其 V5 政策不作为本次修订的验收口径。
+单文件无外部运行依赖，支持离线打开、检索、判定筛选与打印；宽表局部横向滚动，打印显示完整数据。结构检查包含唯一发现ID、146节点、15模块、31目标场景、44响应、锚点与表格列一致性。发布后核对Pages部署与线上HTML哈希。
 
-2026-10-15，V5。按“模块 → 页面类型 → 字段取值 → 生成逻辑 → 代码示例 → 实测诊断 → 实施验收”组织。15 个模块、18 个页面与状态族、98 个合同章节、376 行合同表、78 段代码；结构化数据包含 37 组完整模板及明确虚构的 example.invalid 验收夹具。数字描述文档覆盖，不是网站通过率。
+GSC历史401、PSI历史429及CrUX/RUM现场P75缺口继续披露，本轮不声称已重新授权；零结果和越界探针尚缺真实结果集/总页数，国际映射、缓存配置、生命周期等保持未验证。实验室中位数不代替现场CWV；不做流量、搜索量、外链或排名收益分析。
 
-快捷入口：[Head](https://igocc.github.io/garvee-seo-audit-report/#module-H) · [HTML 语义与 DOM](https://igocc.github.io/garvee-seo-audit-report/#module-SEM) · [结构化数据](https://igocc.github.io/garvee-seo-audit-report/#module-D) · [SSR](https://igocc.github.io/garvee-seo-audit-report/#module-R) · [robots 联查](https://igocc.github.io/garvee-seo-audit-report/#module-ROB) · [实施工单](https://igocc.github.io/garvee-seo-audit-report/#delivery)
+## 历史版本
 
-依据飞书同日完整展开快照 revision1156、8 张非空嵌表、相关 SEO Skills 与官方资料；逐模块区分 HTML/Schema 约束、Google 功能资格、可访问性、项目要求及工程建议。示例给出有定义变量、条件、省略/回退和验收，不冒充生产代码或真实商业事实。
+[原V5代码规范与四站审计](https://igocc.github.io/garvee-seo-audit-report/)保留在`index.html`，其历史政策不覆盖本次已确认规则。原110条基线、123条候选、98个实施主题与146节点相互重叠，不能相加。
 
-V5 历史政策（修订差异以上述 2026-10-19 报告为准）：购物车、登录、注册公共入口允许索引；所有有效关键词且有结果的默认搜索第一页允许索引；搜索翻页、排序、组合筛选不索引。普通类目分页独立处理。主数据重要 HTML 必须服务端直接输出，无需页面 JS 才显现。
-
-GARVEE / VEVOR 各 12 个主要样本，Amazon / Etsy 各 2 个选定 SEO 页；另增购物车、默认搜索和 307 响应。28 页正常 DOM 已量测，14 份有效初始页面 HTML（其中 12 份已量测语义）。VEVOR 和 Etsy 未取得的真实初始源码保持未知，不由禁 JS 或正常 DOM 推断完整 SSR 通过。独立 HTTP、禁 JS 和正常 DOM 请求环境分开说明。
-
-本仓库发布单文件报告与说明，不包含飞书全文、认证材料、cookies、原始响应快照、个人会话或评论全文。规范覆盖、实测覆盖、生产实现与实际收录分别标记；本次未修改生产网站。
+依据飞书revision1156、8张非空嵌表、SEO Skills与官方资料，公开规则摘要及审计结论。本仓库不发布飞书全文、认证材料、cookies、原始响应快照、个人会话或评论全文；原飞书文档未修改。
