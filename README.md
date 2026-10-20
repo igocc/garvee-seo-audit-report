@@ -1,53 +1,15 @@
-# GARVEE 技术 SEO：七节点逐页实测与实施清单
+# GARVEE 技术 SEO 优化 PRD
 
-**[打开完整单文件 HTML](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html#priority)**
+[打开 PRD](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html)
 
-2026-10-20 更新。按用户确认的七个一级任务节点组织，节点内按模块、页面类型与参数/生命周期状态展开；固定展示顺序，按依赖并行实施。
+按七个模块组织：补齐 title / description、canonical / robots、hreflang、Head / 社交分享、JSON-LD、HTML5 语义化、URL / SSR / 性能。
 
-1. title / description 缺失与空值：最高优先，2项任务。
-2. canonical 与页面级 robots：3项任务。
-3. hreflang 六站对应与美国默认回退：2项任务，SEO-39/40独立归组。
-4. Head 其余内容、语言及 OG / Twitter：7项任务，含已有标题摘要的后续优化。
-5. JSON-LD 结构化数据：5项任务。
-6. HTML5 代码语义化：4项任务。
-7. URL 唯一化、核心 SSR 与其它：29项任务；HTTP、性能、媒体、Sitemap、生命周期、缓存、GSC 和发布验收分别列项。
+每个模块列页面类型、现状、竞品参考及具体改法。批量页面提供通配路径、取数规则与示例；验收随需求列出。
 
-共52项规划任务，每项给建议责任角色、依赖、范围与通配、具体示例、交付物、验收及适用条件。相较旧版，新增SEO-52独立处理description缺失与全类型空值扫描；已有文案优化不阻塞补空。成本保留为未核商城源码时的暂估，不作为节点排序依据。
+- [SSR 组件需求](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html#ssr-body-regions)：按导航、面包屑、卡片、分页、正文、评论、Footer 等20个组件聚合需改页面；提供取数、共用方案和服务端代码示例。完整导航递归输出全部层级及有效链接。
+- [JSON-LD](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html#schema-complete)：页面类型映射、完整图、逐字段取数与条件规则；可离线下载 JSON。
+- [任务清单](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html#task-plan)：52项任务、责任角色及依赖，可下载 CSV。
 
-每个节点有47项页面/状态适用登记：32项公共场景及15项规范补充分支，包括品牌/属性/场景聚合、变体独立路径、评论问答、生命周期、私密交易、国际页面和非HTML资源。未知路由明确待核，不发明生产路径；登记不是全站实测覆盖率。非HTML、错误及私密页面不机械套用正常公共HTML规则。
+现状按已检查页面列出；其它项标为待确认。竞品样本日期为10月16日。实施状态：待实施。
 
-本次新增50份公开独立HTTP请求：49份有效200 HTML、1份/blogs的404；49份中4份未检出title、12份未检出description。报告列明具体请求、最终URL、日期和逐字段结果，不当成全站统计。另对首页、类目、商品、文章取得禁JS/JS后共8次浏览器观察，与HTTP源响应分开记录；JS观察是当时状态，不冒充所有异步内容稳定。
-
-七节点内每种已有对应样本的页面都给“实测URL/日期 → 实际字段 → 具体问题 → 根因机制/待定位边界 → 实现方法 → 本页代码/字段映射示例 → 验收”，并关联对应竞品历史实际字段。32个公共页面/请求场景均关联请求样本；真实零结果和越界仍须后台事实确认，参数探针不等于有效Variant。其余未取得实际路由/状态/权限的规范分支明确待验证。336个模块×页面样本分析、624条字段结果是交叉分析记录，不是独立页面数、缺陷数或通过数。
-
-新证据修正历史笼统SSR结论：商品样本禁JS已显示主标题、图像和报价，应保留正确输出，再逐项核其它区域；源码仍缺Product主体且有重复BreadcrumbList。首页/类目禁JS无可见正文，文章禁JS未显示文章主区；各自按真实区域定位和实施。文章Article/WebPage仍用/en/blogs/旧身份地址的具体差异已列明。
-
-10月16日/19日历史65发现及竞品记录按日期保留，不冒充当前仍存在；本轮未重采全站或重新调用Claude。
-
-24个实施主题保留已观察现象、可确认机制、待源码核验根因、实施步骤、页面差异、通配、实例、竞品参考与验收。原65条发现、146个指南节点及44份独立HTTP请求记录仍可追溯；发现判定仍为做错29、没做19、未验证14、做对3。任务数量、指南数量与实测数量不相加。
-
-已确认参数noindex、无参游客登录注册index、搜索canonical保留q、适用hreflang指向真实对应语言实体canonical、筛选零结果404及搜索零结果200+noindex等规则保持有效，不建立参数白名单。canonical、URL入口和SSR分别验收；JSON-LD身份字段遵循canonical，商品/Offer/作者/媒体URL按自身语义处理。未取得的源码、国际映射、缓存/生命周期事实及GSC/现场CWV继续标为未验证。
-
-唯一ID/内部锚点、52任务依赖无环、24主题/65历史发现/146节点保留、七组47行逐页审计与规范分支、50请求与8浏览器观察关联、CSV/JSON、节点与任务类型交叉筛选、逐字段离线检索及自动展开、任务卡跳转、浏览器CSV下载、390px无整页溢出、打印展开/恢复验证通过；此前36个参考政策用例通过，政策函数未改。未作截图像素验收。
-
-所有任务为规划，未创建或指派真实实施工单；报告发布不等于商城修复。仅更新本HTML与README；[历史V5](https://igocc.github.io/garvee-seo-audit-report/)的index.html、GARVEE生产及飞书原文保持不动。不发布飞书全文、授权材料、原始响应快照或私密会话。
-
-类目跟踪参数补充：七节点均单列“类目页带跟踪参数”（PT-47），与筛选/排序/翻页独立。复用10-20的真实UTM请求：`/collections/rugs?utm_source=x`被307追加库存筛选参数、缺canonical且robots仍index；给出解除多余跳转、canonical归无参类目、参数noindex及保留归因的实现与验收。gclid/fbclid仅为同规则示例，混合组合尚未独立实测，不冒充新增抓取。
-
-
-hreflang已独立为第3个一级需求节点（稳定锚点node-N7）：覆盖美国en-US、英国en-GB、加拿大英文en-CA、德国de-DE、西班牙es-ES、意大利it-IT。用户确认美国站为示例/审计基准及x-default回退；内页使用同实体美国canonical，其它国家canonical仍各自自指，不归并美国。报告含六站真实取证、完整首页7条alternate示例、逐页面通配、实体映射字段、服务端构建器、参数/排除/缺映射分支、自引用与互返验收。
-
-本次国际节点另取9份独立HTTP（六站根首页及英国三个已声明语言入口）；德国/西班牙/意大利独立HTTP429后，浏览器同站GET与DOM均取得200正常内容，两个证据渠道分开。美国/英国/加拿大首页canonical仍有旧/en地址，英国/en实测301根路径；德国/西班牙/意大利浏览器取得的源码canonical自指根路径、未检出HTML hreflang。不能由HTML缺标记断言HTTP Link/Sitemap渠道从未存在；六国内页同实体映射仍待业务事实核验。
-
-新增节点排序、47页面分支、52任务依赖/导出、完整六国+x-default首页例、参考生成器的对应美国内页/排除/缺映射/冲突/跳转/不可索引目标分支，以及浏览器节点过滤、逐字段检索、实际CSV下载、390px和打印恢复均验证通过。此为报告与规范发布，未修改任何国家站生产代码。
-
-
-## JSON-LD完整取数与SSR逐区更新（2026-10-20）
-
-- [完整JSON-LD与字段取数](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html#schema-complete)：47个页面/状态的类型映射，29个模板/条件分支（适用分支展开完整图，不适用明确不输出），52项字段族。包含归一化取数路径、数组通配、上游适配提示、转换校验、缺值分支，以及单URL/多URL变体、评论、配送、退货、会员等条件示例。JSON可直接从离线HTML下载。
-- [SSR按页面类型与body区域](https://igocc.github.io/garvee-seo-audit-report/audit-2026-10-16-module-pagetype.html#ssr-body-regions)：新增11个请求场景、65条区域对照；各场景独立保留浏览器上下文GET原始HTML、禁JS导航与JS导航，5类页面另有滚动增量。逐区列源码证据、DOM摘录/selector、具体改法、验收和保留范围。65条是区域记录，不是全站独立缺陷数。
-- 商品样本图集、售价、描述及部分公开服务说明已有直出；评论需界定真实首批并核正文交付。博客列表卡片已有直出；文章正文匹配到隐藏HTML，禁JS未正常交付，应修显现边界，不能宣称原始源码完全没有文字。首页/类目/专题的当前商品卡片按各自源码/初始DOM/滚动证据处理。分页、自定义筛选、FAQ等未覆盖或适用未知的区域保留待核，不由selector未命中推断缺陷。
-
-示例全部使用example.invalid合成数据，绝不是GARVEE价格、评论、政策或生产路径。DTO是拟定适配合同，不宣称已拿到商城API/源码。页面身份取canonical，但商品、Offer、作者及媒体地址保留各自真实语义；当前列表项必须来自当前结果集，不能因为分页canonical归默认页就重复默认列表。
-
-离线JSON语法、Schema.org当前词汇/属性domain与对象range、ID引用、市场错配、GTIN、条件政策、缺失数据与安全序列化验证通过；未运行Google Rich Results Test或Schema.org在线Validator，不声称Google展示资格通过。浏览器实测离线JSON下载、任务CSV、字段/SSR搜索展开、锚点、5项Schema任务筛选、390px无整页溢出与打印展开/恢复。52项任务同步引用取数合同和区域证据；文章正文任务按新证据修正。历史竞品仍按原日期引用，本轮未重采竞品、未再次调用Claude。
+单文件 HTML 支持离线搜索、模块筛选及打印。
